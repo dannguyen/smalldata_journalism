@@ -1,0 +1,14 @@
+name: small data Journalism
+markdown: redcarpet
+pygments: true
+relative_permalinks: true
+permalink: pretty
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+
+references_file: references.tsv
+
+# Twitter
+twitter_user: dancow
+twitter_tweet_button: true

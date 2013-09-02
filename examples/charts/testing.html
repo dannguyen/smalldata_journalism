@@ -1,0 +1,20 @@
+
+<div id="canvas-barchart1"></div>
+<script>
+var chart, chartHeight, numbers;
+
+numbers = [4, 8, 15, 16, 2, 12, 4, 8, 15, 16, 23, 12, 34, 8, 15, 13, 4, 5];
+
+chartHeight = 400;
+
+chart = d3.select("#canvas-barchart1").append("svg").attr("width", "100%").attr("height", "100%");
+
+chart.selectAll("rect").data(numbers).enter().append("rect").attr("y", function(d, i) {
+  return chartHeight - (d * 10);
+}).attr("x", function(d, i) {
+  return i * 20;
+}).attr("width", 20).attr("height", function(d) {
+  return d * 10;
+});
+</script>
+

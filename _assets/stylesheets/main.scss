@@ -1,0 +1,103 @@
+@import "vendor/bootstrap/variables";
+
+$default_background_image:    asset_path('tiny_grid_@2X.png');
+body{
+  background: url($default_background_image);
+}
+#table_of_contents{
+  h1,h2,h3{
+    font-family: $font-family-display;
+  }
+}
+
+.nav>li:first-child>a{
+  padding-left: 0;
+}
+
+
+.banner {
+  padding: $jumbotron-padding;
+  margin-bottom: $jumbotron-padding;
+  background-color: $jumbotron-bg;
+
+  .container & {
+    border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    padding-top:    ($jumbotron-padding * 1.4);
+    padding-bottom: ($jumbotron-padding * 1.4);
+
+    .container & {
+      padding-left:  ($jumbotron-padding * 2);
+      padding-right: ($jumbotron-padding * 2);
+    }
+  }
+}
+
+
+
+
+#logo{
+  border-bottom: thin solid #333;
+  padding-bottom: 1.0em; 
+
+  h1{
+    font-size: ($font-size-base * 4.5);    
+    line-height: 1;
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+  
+
+  .sdj{
+    background: url(asset_path('front-header.jpg'));
+    background-repeat:no-repeat;
+    background-position:right; 
+
+    background-color: black;
+    padding-top: 300px;
+
+    h1{
+      color: white;
+      font-family: $font-family-display;
+    }
+  }
+
+  .tagline{
+    margin-top: 1.0em;
+    margin-bottom: 0.5em;
+  }
+
+}
+
+
+.serif{
+  font-family: $font-family-serif;
+}
+
+.navbar{
+  font-family: $font-family-display;
+}
+
+p{
+  margin-bottom: 1.2em;
+}
+
+.content.woz{
+  margin-top: 3em;
+  min-height: 500px;
+  background: url($default_background_image);
+}
+
+footer.woz{
+  background:black;
+  color: white;
+  margin-top: 2.0em;
+  padding-top: 2.0em;
+  padding-bottom: 1.5em;
+
+  p{
+    color: white;
+  }
+}
