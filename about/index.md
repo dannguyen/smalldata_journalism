@@ -3,9 +3,23 @@ layout: page
 title: About the sdJ Book
 ---
 
-The *small data Journalism* book started out as a compilation of reading material and examples for my Fall 2013 Data Journalism class at NYU-SCPS
+The *small data Journalism* book started out as a compilation of reading material and examples for my [Fall 2013 Data Journalism class at NYU-SCPS](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock)
+
+
 
 ### About the NYU Data Journalism class
+
+This is a **five-session course** that meets on Monday nights, from 6:45 - 9:15PM. The term starts at **September 23** and ends **October 21**.
+
+The course number is: [WRIT1-CE9787](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock)
+
+It is a non-credit course administered through the School of Continuing and Professional Studies. However, it is applicable toward the [SCPS Certificate in Digital Journalism](http://www.scps.nyu.edu/content/scps/academics/departments/humanities-arts-and-writing/academics/noncredit/certificate-in-digital-journalism.html).
+
+I'm aiming this class at a broad audience. It won't be a learn-to-code class as I expect there to be at least a few students who have never touched the command line before. I want to focus instead on how to initiate data journalism projects, regardless of your technical skill.
+
+However, it won't be a reading and theory class and I expect students to complete hands-on data assignments. The tools we use won't be advanced or propietary, but they'll be powerful enough for the job.
+
+If you're reading this before the class start date, [you can enroll here](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock).
 
 
 
@@ -14,12 +28,11 @@ The *small data Journalism* book started out as a compilation of reading materia
 
 ### About the author
 
-My name is Dan Nguyen and I've been a journalist and a programmer at several news organizations. I'm currently Head of Data at Skift, an information and news site for the travel industry. Previously, I was a news application developer at ProPublica, the non-profit investigative newsroom. My largest projects there included Dollars for Docs, SOPA Opera, and the Bailout Tracker.
+My name is Dan Nguyen and I've been a journalist and a programmer at several news organizations. I'm currently [Head of Data at Skift](http://skift.com), an information and news site for the travel industry. Previously, I was [a news application developer at ProPublica](http://www.propublica.org/site/author/dan_nguyen), the non-profit investigative newsroom. My largest projects there included [Dollars for Docs](http://projects.propublica.org/docdollars), [SOPA Opera](http://projects.propublica.org/sopa), and the [Bailout Tracker](http://projects.propublica.org/bailout).
 
-I've also written (actually, *trying* to write) a few introductory-level online books for technical books: The Bastards Books of Ruby, Photography, and Regular Expressions.
+I've also written (actually, *still in the process* of writing) a few practical how-to online books: The [Bastards Books of Ruby](http://ruby.bastardsbook.com), [Photography](http://photography.bastardsbook.com), and [Regular Expressions](http://regex.bastardsbook.com).
 
-My personal blog is at danwin.com and you can find me on Twitter at @dancow.
-
+My personal blog is at [danwin.com](http://danwin.com) and you can find me on Twitter at [@dancow](https://twitter.com/dancow).
 
 
 
@@ -37,15 +50,15 @@ You can see the full Gemfile at the [sdJ Github repo](TK). The two Jekyll-specif
 
 The fonts I use are:
 
-- Arvo for the display and headline fonts
-- Droid Serif for the body text
+- [Arvo](http://www.google.com/fonts/specimen/Arvo) for the display and headline fonts
+- [Droid Serif](http://www.google.com/fonts/specimen/Droid+Serif) for the body text
 - Helvetica Neue everywhere else.
 
-I haven't written very many charts yet but I'm planning to use [D3](http://d3js.org/) exclusively. It's my favorite Javascript charting library and it has the added advantage of creating charts that can be exported as images.
+I haven't coded very many charts yet but I'm planning to use [D3](http://d3js.org/) exclusively. It's my favorite Javascript charting library and it has the added advantage of creating charts that can be exported as images.
 
 ----
 
-Check out the Github repo if you'd like to see the raw code. There's nothing too fancy in it, but feel free to submit any corrections via `git pull`
+Check out the [Github repo](https://github.com/dannguyen/smalldata_journalism) if you'd like to see the raw code. There's nothing too fancy in it, but feel free to submit any corrections via `git pull`
 
 
 
