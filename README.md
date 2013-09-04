@@ -5,5 +5,5 @@ An online compendium of practical data journalism for the NYU-SCPS [Data Journal
 
 *The smaller the data, the bigger the story*.
 
-(www.smalldatajournalism.com)[http://www.smalldatajournalism.com]
+Homepage: [www.smalldatajournalism.com](http://www.smalldatajournalism.com)
 
