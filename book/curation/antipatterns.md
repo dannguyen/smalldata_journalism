@@ -13,8 +13,11 @@ This is just a draft/thinking pad...each headline refers to an "antipattern" and
 "If your mother says she loves you, get a second opinion" applies to data, too.
 
 
+
 #### Not keeping a copy of the original data
 When creating a derived column, keep the original column around just in case. For example, when splitting up a `full_name` column into `first_name` and `last_name`, keep the `full_name` column; your spreadsheet (in all but extreme cases) can handle the extra data.
+
+#### Non-reproducible processes
 
 #### A unique identifier that is not unique
 For example, when maintaining a repository of Twitter users and their tweets, [keeping track of a screenname](https://dev.twitter.com/docs/api/1.1/get/users/show) (@rsarver) instead of a user ID (`795649`). Users can change their screenname, but Twitter uses an ID number to keep track of the accounts no matter how many name changes it has.

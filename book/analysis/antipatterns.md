@@ -18,8 +18,13 @@ This is just a draft/thinking pad...each headline refers to an "antipattern" and
 
 #### Proving a tautology
 
+#### Ecological fallacy
+#### Prosecutor's fallacy
+
 
 ### Measurement problems
+
+#### Double counting
 
 #### Confusing percentage points and percent change
 
@@ -42,6 +47,8 @@ Predicting a quarterback will throw 60 touchdown passes in a season based on thr
 ### Sampling problems
 
 #### Not enough data
+
+#### Using nonrepresentative data
 
 #### Selection bias
 Via [The Hill](http://thehill.com/blogs/ballot-box/polls/303339-gallup-overhauling-polling-methods-after-failure-in-2012-election

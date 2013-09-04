@@ -1,0 +1,63 @@
+ <!-- via anotherjavadude : https://gist.github.com/anotherjavadude/2940908 -->
+
+<i>(TODO: Fix this code)</i>
+
+
+ <div id="stacked_bar_a_001"></div>
+ 
+<script type="text/javascript">
+
+var w = 200,
+h = 600;
+
+// create canvas
+var svg = d3.select("#stacked_bar_a_001").append("svg:svg")
+.attr("class", "chart")
+.attr("width", w)
+.attr("height", h )
+.append("svg:g")
+.attr("transform", "translate(10,470)");
+
+var x = d3.scale.ordinal().rangeRoundBands([0, w-50]);
+var y = d3.scale.linear().range([0, h-50]);
+var color = d3.scale.category20c();
+
+// 4 columns: ID,c1,c2,c3
+var matrix = [
+    [ 1,  30, 30, 40]
+];
+console.log(matrix)
+
+var remapped =["c1","c2","c3"].map(function(dat,i){
+    return matrix.map(function(d,ii){
+        return {x: ii, y: d[i+1] };
+    })
+});
+
+var stacked = d3.layout.stack()(remapped)
+
+x.domain(stacked[0].map(function(d) { return d.x; }));
+y.domain([0, 100]);
+
+// show the domains of the scales              
+console.log("x.domain(): " + x.domain())
+console.log("y.domain(): " + y.domain())
+console.log("------------------------------------------------------------------");
+
+// Add a group for each column.
+var valgroup = svg.selectAll("g.valgroup")
+.data(stacked)
+.enter().append("svg:g")
+.attr("class", "valgroup")
+.style("fill", function(d, i) { return color(i); });
+
+// Add a rect for each date.
+var rect = valgroup.selectAll("rect")
+.data(function(d){return d;})
+.enter().append("svg:rect")
+.attr("x", function(d) { return x(d.x); })
+.attr("y", function(d) { return -y(d.y0) - y(d.y); })
+.attr("height", function(d) { return y(d.y); })
+.attr("width", x.rangeBand());
+
+</script>
