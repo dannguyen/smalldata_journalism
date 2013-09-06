@@ -1,5 +1,5 @@
 name: small data Journalism
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 relative_permalinks: true
 permalink: pretty

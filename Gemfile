@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+# https://github.com/kinnetica/jekyll-plugins
 
 gem 'rack-jekyll'
 gem 'thin'
@@ -8,7 +9,11 @@ gem 's3_website'
 gem 'hashie'
 
 gem 'jekyll'
-gem 'maruku'
+
+gem 'kramdown'
+gem 'typogruby'
+
+
 gem 'rake'
 gem 'sass'
 gem 'coffee-script'

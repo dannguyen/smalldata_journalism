@@ -3,8 +3,10 @@ layout: page
 title: Introduction
 ---
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, non asperiores eos vel sapiente quisquam laboriosam cumque! Provident, perspiciatis, nam, nemo, maiores voluptatem blanditiis accusamus veritatis hic nesciunt tenetur amet.</p>
-<p>Porro, accusantium iusto sit reprehenderit eligendi delectus expedita unde laudantium dolore. Dolor, reiciendis, eligendi, atque earum nisi minima est iure praesentium quam amet cupiditate quo odit labore aliquid nemo! Libero.</p>
-<p>Tenetur, alias, at, deleniti sunt delectus quos repellendus suscipit similique maiores natus autem dolorem a cum non tempora dolores officiis libero aliquid iusto consectetur laboriosam blanditiis sapiente illo ea modi.</p>
+small data Journalism is an online compedium of practical data journalism lessons. It's meant for newcomers who find data journalism to be intimidatingly complex. Like most things worth doing, data journalism *is* complex. And so the goal of **sdJ** is not to *uncomplicate* data journalism, but to make it less monolithic. Its work spans a variety of skill sets, and each of those facets can be approached in small, manageable steps.
 
+
+### The smaller the data, the bigger the story
+
+### Counting
 

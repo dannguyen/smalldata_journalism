@@ -32,7 +32,7 @@ Does your database contain a surprisingly high number of values that are coincid
 #### Fuzzy enumerations
 Humans know how that "Yes", "true", "T", "y" all mean the same thing in a column that is simply supposed to have true/false values. But most programs and data software do not.
 
-
+#### Using visual markers to cue data
 
 
 #### OCD random spot checking
