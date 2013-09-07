@@ -1,13 +1,14 @@
 ---
 layout: page
-title: test page
+title: The Test Page
+description: Stuff to talk about
 ---
+
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
 
-# Things to test
 
 
 ## Reference block

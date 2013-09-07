@@ -1,4 +1,4 @@
- <div class="navbar navbar-inverse" role="navigation">
+ <div class="navbar navbar-inverse woz" role="navigation">
   <div class="container">
     <div class="cl-effect-21">
       <div class="navbar-header">
@@ -10,7 +10,9 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/">smalldata</a></li>
+          {% if page.layout != 'frontal' %}
+          <li><a href="/">small data Journalism</a></li>
+          {% endif %}
           <li><a href="/about">About</a></li>
           <li><a href="/blog">News</a></li>
         </ul>
