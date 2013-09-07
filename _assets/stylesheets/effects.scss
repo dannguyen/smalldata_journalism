@@ -1,60 +1,34 @@
+/* http://tympanus.net/codrops/2013/08/06/creative-link-effects/*/
 
-/* Circle */
-.cl a{
-  position: relative
-}
-
-/* Effect 21: borders slight translate */
-.cl-effect-21 a {
-  padding: 10px;
-  text-shadow: none;
+.cl-effect-13 a {
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   transition: color 0.3s;
 }
 
-.cl-effect-21 a::before,
-.cl-effect-21 a::after {
+.cl-effect-13 a::before {
   position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: '';
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  transform: translateY(-10px);
+  top: 50%;
+  left: 50%;
+  color: transparent;
+  content: '•';
+  text-shadow: 0 0 transparent;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 
-.cl-effect-21 a::before {
-  top: 0;
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  transform: translateY(-10px);
-}
-
-.cl-effect-21 a::after {
-  bottom: 0;
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  transform: translateY(10px);
-}
-
-.cl-effect-21 a:hover,
-.cl-effect-21 a:focus {
+.cl-effect-13 a:hover::before,
+.cl-effect-13 a:focus::before {
   color: #fff;
+  text-shadow: 10px 0 #fff, -10px 0 #fff;
 }
 
-.cl-effect-21 a:hover::before,
-.cl-effect-21 a:focus::before,
-.cl-effect-21 a:hover::after,
-.cl-effect-21 a:focus::after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  transform: translateY(0px);
+.cl-effect-13 a:hover,
+.cl-effect-13 a:focus {
+  color: #ba7700;
 }

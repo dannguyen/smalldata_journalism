@@ -1,0 +1,118 @@
+@import "vendor/bootstrap/variables";
+
+$header-banner-size: 250px;
+
+
+$default_background_image:    asset_path('tiny_grid_@2X.png');
+$navbar-font-size: 13px;
+
+body{
+  background: url($default_background_image);
+}
+
+
+.content.woz{
+  min-height: 500px;
+  background: url($default_background_image);
+}
+
+footer.woz{
+  background:black;
+  color: white;
+  margin-top: 2.0em;
+  padding-top: 2.0em;
+  padding-bottom: 1.5em;
+
+  p{
+    color: white;
+  }
+}
+
+
+body.homepage{
+  .navbar{
+    margin-bottom: $navbar-margin-bottom-homepage;
+  }
+}
+
+.navbar{
+  font-family: $font-family-display;
+  font-size: $navbar-font-size;
+  border-radius: 0;
+  border-bottom: #666;
+}
+
+.navbar-collapse{
+  padding-left: 0;
+}
+
+.nav>li:first-child>a{
+  padding-left: 0;
+}
+
+
+header.banner{
+  .description{
+    font-style:italic;
+  }
+}
+
+header.banner.image{
+  .text{
+      text-shadow: 0.05em 0.05em 0.05em #333;
+      color: #eee;
+
+      .description{
+        color: #ccc;
+      }
+    }
+}
+
+@media (min-width: $screen-xs) {
+  header.banner.image{
+    background: black;
+    background-size: auto $header-banner-size;
+    background-repeat: no-repeat;
+    background-position:right; 
+    height: $header-banner-size;
+    position: relative;
+
+    .text{
+        position: absolute;
+        bottom: 10px;
+    }
+  }
+
+
+
+  #logo{
+    border-bottom: thin solid #333;
+    padding-bottom: 1.0em; 
+
+    h1{
+      font-size: ($font-size-base * 4.5);    
+      line-height: 1;
+      margin-bottom: 1px;
+      margin-top: 1px;
+    }
+    
+    .sdj{
+      background: url(asset_path('front-header.jpg'));
+      background-repeat:no-repeat;
+      background-position:right; 
+
+      background-color: black;
+      padding-top: 300px;
+
+      h1{
+        color: white;
+        font-family: $font-family-display;
+      }
+    }
+    .tagline{
+      margin-top: 1.0em;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+

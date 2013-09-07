@@ -3,7 +3,6 @@
 // --------------------------------------------------
 
 
-
 // Global values
 // --------------------------------------------------
 
@@ -237,14 +236,17 @@ $grid-float-breakpoint:     $screen-tablet !default;
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
-$navbar-margin-bottom:             $line-height-computed !default;
+$navbar-height:                    40px !default;
+$navbar-margin-bottom-homepage:    $line-height-computed !default;
+$navbar-margin-bottom:             0;
 $navbar-default-color:             #777 !default;
 $navbar-default-bg:                #f8f8f8 !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+
+
 
 // Navbar links
 $navbar-default-link-color:                #777 !default;

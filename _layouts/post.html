@@ -2,9 +2,15 @@
 layout: default
 permalink: /blog/:title
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="container">
+
+  <h2>{{ page.title }}</h2>
+  <p class="meta">Posted on <a href="{{page.url}}">{{ page.date | date: "%B %d, %Y" }}</a></p>
+
+  <div class="post">
+  {{ content }}
+  </div>
+
+
 </div>
