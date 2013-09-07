@@ -11,7 +11,24 @@ guff: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, cumq
 
 
 
+## Proejcts
 
+{% for project in site.projects %}
+- [{{project.title}}]({{project.url}})
+ {% for part in project.parts %}
+  - [{{part.title}}]({{part.url}})
+ {% endfor %}
+
+{% endfor %}
+
+
+## Weighted pages
+
+{% for wpage in site.weighted_pages %}
+
+- {{ wpage.title }}
+
+{% endfor %}
 
 
 ## Reference block

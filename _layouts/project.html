@@ -1,0 +1,47 @@
+---
+layout: page
+---
+
+<div class="container">
+  <h3>Project meta info </h3>
+
+{% assign project = page.project_object %}
+
+{% if page.project_order == 'introduction'  %}
+  
+  A {{project.size}}-part series.
+
+{% elsif page.project_order == 'conclusion' %}
+
+  The conclusion to <a href="{{ project.url}}">{{project.title}}</a>
+
+{% else %}
+
+ Part {{page.project_order}} of {{project.size }} project: 
+  <a href="{{ project.url}}">{{project.title}}</a>
+
+{% endif %}
+
+
+<h2>Project {Content} here</h2>
+
+{{ content }}
+
+
+<!-- moving to prev page -->
+{% if page.prev_page %}
+  Previous page: <a href="{{ page.prev_page.url}}">
+  {{ page.prev_page.title}}</a>
+{% endif %}
+
+
+<!-- moving to next page -->
+{% if page.next_page %}
+  Next page: <a href="{{ page.next_page.url}}">
+  {{ page.next_page.title}}</a>
+{% endif %}
+
+
+
+</div>
+
