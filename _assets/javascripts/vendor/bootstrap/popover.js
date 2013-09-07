@@ -17,7 +17,7 @@
  * limitations under the License.
  * ======================================================================== */
 
-
+/*
 +function ($) { "use strict";
 
   // POPOVER PUBLIC CLASS DEFINITION
@@ -27,7 +27,7 @@
     this.init('popover', element, options)
   }
 
-  if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
+  if (!$.fn.tooltip) throw new Error('Popovers requires tooltip.js')
 
   Popover.DEFAULTS = $.extend({} , $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right'
@@ -115,3 +115,5 @@
   }
 
 }(window.jQuery);
+
+*/
