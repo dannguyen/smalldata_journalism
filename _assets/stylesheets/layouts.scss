@@ -1,19 +1,10 @@
 @import "vendor/bootstrap/variables";
 
-$header-banner-size: 250px;
-
-
-$default_background_image:    asset_path('tiny_grid_@2X.png');
-$navbar-font-size: 13px;
-
-body{
-  background: url($default_background_image);
-}
+$header-banner-size: 300px;
 
 
 .content.woz{
   min-height: 500px;
-  background: url($default_background_image);
 }
 
 footer.woz{
@@ -29,26 +20,6 @@ footer.woz{
 }
 
 
-body.homepage{
-  .navbar{
-    margin-bottom: $navbar-margin-bottom-homepage;
-  }
-}
-
-.navbar{
-  font-family: $font-family-display;
-  font-size: $navbar-font-size;
-  border-radius: 0;
-  border-bottom: #666;
-}
-
-.navbar-collapse{
-  padding-left: 0;
-}
-
-.nav>li:first-child>a{
-  padding-left: 0;
-}
 
 
 header.banner{
@@ -59,9 +30,7 @@ header.banner{
 
 header.banner.image{
   .text{
-      text-shadow: 0.05em 0.05em 0.05em #333;
-      color: #eee;
-
+      text-shadow: 0.1em 0.1em 0.4em #000;
       .description{
         color: #ccc;
       }
@@ -76,6 +45,10 @@ header.banner.image{
     background-position:right; 
     height: $header-banner-size;
     position: relative;
+
+    h1{
+      color: white;
+    }
 
     .text{
         position: absolute;

@@ -24,6 +24,20 @@ layout: default
 </header>
 
 <div class="page">
+
+
+  <div class="container">
+
+    {% if page.guff %}  
+      <section class="guff">
+        {{ page.guff }}
+      </section>
+    {% endif%}
+
+  </div>
+
+
+
   <div class="container">
 
     {{ content }}
