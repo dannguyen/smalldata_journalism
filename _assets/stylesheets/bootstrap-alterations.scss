@@ -1,9 +1,11 @@
 @import "vendor/bootstrap/variables";
 
 $default_background_image:    asset_path('tiny_grid_@2X.png');
-
 $headings-color: #4F4C4F;
 $navbar-font-size: 14px;
+
+$line-height-base:        1.6 !default; // 20/14
+
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -13,7 +15,10 @@ h1, h2, h3, h4, h5, h6,
 h2{
   color: darken($headings-color, 35%);
   margin-top: $line-height-computed * 2.0;
+}
 
+ul, ol{
+  padding-left: 1.0em;
 }
 
 

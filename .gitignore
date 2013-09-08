@@ -2,3 +2,4 @@ _site
 .DS_Store
 _drafts
 s3_website.yml
+.pygments-cache

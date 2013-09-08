@@ -23,7 +23,7 @@ footer.woz{
 
 
 header.banner{
-  .description{
+  .tagline{
     font-style:italic;
   }
 }
@@ -31,10 +31,16 @@ header.banner{
 header.banner.image{
   .text{
       text-shadow: 0.1em 0.1em 0.4em #000;
-      .description{
+
+      .tagline{
         color: #ccc;
       }
     }
+}
+
+#markdown-toc{
+  border-bottom: thin solid #888;
+  padding-bottom: 1.0em;
 }
 
 @media (min-width: $screen-xs) {

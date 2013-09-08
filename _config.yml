@@ -12,3 +12,4 @@ references_file: references.tsv
 # Twitter
 twitter_user: dancow
 twitter_tweet_button: true
+code_dir: 'downloads/code'

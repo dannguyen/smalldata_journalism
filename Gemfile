@@ -12,6 +12,7 @@ gem 'jekyll'
 
 gem 'kramdown'
 gem 'typogruby'
+gem 'colorator'
 
 
 gem 'rake'

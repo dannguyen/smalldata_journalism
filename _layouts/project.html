@@ -1,10 +1,7 @@
 ---
 layout: page
 ---
-
-<div class="container">
-  <h3>Project meta info </h3>
-
+<div class="standout">
 {% assign project = page.project_object %}
 
 {% if page.project_order == 'introduction'  %}
@@ -17,13 +14,16 @@ layout: page
 
 {% else %}
 
- Part {{page.project_order}} of {{project.size }} project: 
+ Part {{page.project_order}} of {{project.size }} of the project  
   <a href="{{ project.url}}">{{project.title}}</a>
 
+ {% if page.project_order > 1 %}
+ Previously: <a href="{{ page.prev_page.url }}">{{page.prev_page.title}}</a>
+ {% endif %}
+
+
 {% endif %}
-
-
-<h2>Project {Content} here</h2>
+</div>
 
 {{ content }}
 
@@ -43,5 +43,4 @@ layout: page
 
 
 
-</div>
 

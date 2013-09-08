@@ -7,18 +7,27 @@
   }
 }
 
+.standout{
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
+}
 
 .banner {
-  margin-bottom: $jumbotron-padding;
+  padding-top:    1.0em;
+  padding-bottom: 1.0em;
+  margin-bottom:  1.0em;
   background-color: $jumbotron-bg;
+
+  h1,h2,h3{
+    margin-top: 1.0em;
+  }
+
 
   .container & {
     border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
   }
 
   @media screen and (min-width: $screen-tablet) {
-    padding-top:    ($jumbotron-padding * 0.8);
-    padding-bottom: ($jumbotron-padding * 0.8);
 
     .container & {
       padding-left:  ($jumbotron-padding * 2);

@@ -2,7 +2,7 @@
 layout: page
 title: About small data Journalism
 header_image: about-nyu-washingtonsquare.jpg
-description: Some technical and background details about the sdJ
+tagline:  Some technical and background details about the sdJ
 ---
 
 The *small data Journalism* book started out as a compilation of reading material and examples for my [Fall 2013 Data Journalism class at NYU-SCPS](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock)

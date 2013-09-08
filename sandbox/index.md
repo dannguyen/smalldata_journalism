@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Test Page
-description: Stuff to talk about
+tagline:  Stuff to talk about
 header_image: about-nyu-washingtonsquare.jpg
 guff: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, cumque, fugit recusandae doloremque fuga sunt nostrum cupiditate cum nisi eaque accusamus repellendus nemo consequatur rem praesentium id autem ratione harum."
 ---

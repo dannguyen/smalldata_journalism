@@ -1,44 +1,18 @@
 ---
 layout: default
 ---
-
-{% if page.header_image %}
-  <header class="banner image" style="background-image:url(/images/headers/{{ page.header_image }})">
-{% else %}
-  <header class="banner">
-{% endif %}
-
-  <div class="container">
-
-    <div class="text">
-          <h1>
-            {{ page.title }}
-          </h1>
-      {% if page.description %}
-        <div class="description">{{page.description}}</div>
-      {% endif %}
-
-    
-    </div>    
-  </div>
-</header>
-
-<div class="page">
+{% include page_banner.html %}
+{% if page.guff %} 
+<div class="container">
+    <section class="guff">
+      {{ page.guff }}
+    </section>    
+</div>
+{% endif%}
 
 
-  <div class="container">
-    {% if page.guff %}  
-      <section class="guff">
-        {{ page.guff }}
-      </section>
-    {% endif%}
-  </div>
+<div class="container">
 
+  {{ content }}
 
-
-  <div class="container">
-
-    {{ content }}
-
-  </div>
 </div>
