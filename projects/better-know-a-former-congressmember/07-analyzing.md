@@ -1,7 +1,7 @@
 ---
 layout: project
 project: former-congressmembers
-project_order: 6
+project_order: 7
 title: Analysis
 tagline: "Advanced queries"
 header_image: about-nyu-washingtonsquare.jpg

@@ -25,19 +25,21 @@ layout: page
 {% endif %}
 </div>
 
+
+
 {{ content }}
 
 
 <!-- moving to prev page -->
 {% if page.prev_page %}
-  Previous page: <a href="{{ page.prev_page.url}}">
+  Previous part: <a href="{{ page.prev_page.url}}">
   {{ page.prev_page.title}}</a>
 {% endif %}
 
 
 <!-- moving to next page -->
 {% if page.next_page %}
-  Next page: <a href="{{ page.next_page.url}}">
+  Next part: <a href="{{ page.next_page.url}}">
   {{ page.next_page.title}}</a>
 {% endif %}
 
