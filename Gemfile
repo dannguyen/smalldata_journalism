@@ -14,7 +14,6 @@ gem 'kramdown'
 gem 'typogruby'
 gem 'colorator'
 
-
 gem 'rake'
 gem 'sass'
 gem 'coffee-script'

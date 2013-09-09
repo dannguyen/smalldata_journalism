@@ -1,6 +1,6 @@
 module Jekyll
-  
 
+  # A project is a collection of pages
   class Project
     attr_reader :introduction, :conclusion
 
@@ -90,20 +90,7 @@ module Jekyll
     safe true
 
     def generate(site)
-=begin
-      project_pages = site.pages.
-          select{ |p| p.data['project'] }.
-          sort_by{ |p| p.data['project_order']}.
-          inject(Hash.new{|h,k| h[k] = []}){ |h, p|
-            arr = h[ p.data['project'] ] 
-            if p.data['project_order'] > 0
-              p.data['home_project_url'] = arr.first.url
-            end
-            arr << p
-            
-            h
-          }
-=end
+
       project_hash = site.pages.
                        select{ |p| p.data['project'] }.
                        inject(Hash.new{|h,k| h[k] = []}) do |h, p|

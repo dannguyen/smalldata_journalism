@@ -4,6 +4,8 @@
 # This is an article about something
 # {% endreference_item %}
 
+=begin MEH
+
 require 'uri'
 
 module Jekyll
@@ -42,3 +44,4 @@ module Jekyll
 end
 
 Liquid::Template.register_tag('reference_item', Jekyll::ReferenceItem)
+=end

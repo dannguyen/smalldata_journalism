@@ -8,6 +8,7 @@ header_image: about-nyu-washingtonsquare.jpg
 guff: "We've got a lot of lists to organize"
 ---
 
+### Understanding the schema
 
 
 ### Understanding the schema as a programmer

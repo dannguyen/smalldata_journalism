@@ -10,6 +10,7 @@ guff: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, cumq
 {% include auto-toc.md %}
 
 
+What's "going on?"
 
 ## Proejcts
 
@@ -33,9 +34,6 @@ guff: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, cumq
 
 ## Reference block
 
-{% reference_item John Doe http://example.com Title of the item %}
-This is an article about something
-{% endreference_item %}
 
 
 
@@ -45,3 +43,22 @@ This is an article about something
 Flying is learning how to throw yourself at the ground and miss.
 {% endblockquote %}
 
+
+## References
+
+{% for reference_arr in site.references %}
+#### {{reference_arr[0]}}
+
+ {% for r in reference_arr[1] %}
+<div class="reference_item">
+  <div class="title"><span class="type">{{r.type}}:</span> <a href="{{r.source_url}}">{{r.title}}</a></div>
+  <div class="byline">via {{r.author}} [<a href="{{r.source_url}}">{{r.base_host}}</a>]</div>
+  <p class="description">
+  {{r.description}}  
+  </p>
+</div>
+
+  
+ {% endfor %}
+
+{% endfor %}

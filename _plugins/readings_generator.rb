@@ -1,3 +1,4 @@
+=begin 
 # http://jimpravetz.com/blog/2011/12/generating-jekyll-pages-from-data/
 require 'csv'
 require 'hashie'
@@ -59,3 +60,4 @@ module Jekyll
 
 end
 
+=end
