@@ -48,7 +48,6 @@ You can see updates to sDJ on the blog. Or follow me on Twitter &ndash; @dancow 
 
 I've put together a list of readings and will just add more as I remember them. For my class, I want to put together some thorough guides to some all-purpose tools, including spreadsheets and the web inspector.
 
-For now, I'm skipping the 
 
 
 

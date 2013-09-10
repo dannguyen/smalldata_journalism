@@ -10,7 +10,20 @@ guff: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, cumq
 {% include auto-toc.md %}
 
 
-What's "going on?"
+<div style="background: #fdd;">
+
+This is span level kramdown [example](http://nytimes.com)
+zzzz
+
+### inside a span
+
+- a
+- b
+- c
+
+yes yes yes
+
+</div>
 
 ## Proejcts
 
@@ -50,14 +63,9 @@ Flying is learning how to throw yourself at the ground and miss.
 #### {{reference_arr[0]}}
 
  {% for r in reference_arr[1] %}
-<div class="reference_item">
-  <div class="title"><span class="type">{{r.type}}:</span> <a href="{{r.source_url}}">{{r.title}}</a></div>
-  <div class="byline">via {{r.author}} [<a href="{{r.source_url}}">{{r.base_host}}</a>]</div>
-  <p class="description">
-  {{r.description}}  
-  </p>
-</div>
 
+- <span class="type">{{r.type}}:</span> 
+[{{r.title}}]({{r.source_url}}) <span class="author" style="display:block;">via {{r.author}} [{{r.base_host}}]({{r.source_url}})</span> <span class="description">*x{{r.description}}x*</span>
   
  {% endfor %}
 
