@@ -1,15 +1,7 @@
 @import "vendor/bootstrap/variables";
-
-$header-banner-size: 300px;
-
+@import "my-variables";
 
 
-$shadow: 3px 3px 3px 3px #aaa;
-.box-shadow{
--moz-box-shadow: $shadow;
--webkit-box-shadow: $shadow;
-box-shadow: $shadow;
-}
 
 .banner {
   @extend .box-shadow;

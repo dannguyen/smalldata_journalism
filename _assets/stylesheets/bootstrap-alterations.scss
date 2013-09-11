@@ -1,10 +1,6 @@
 @import "vendor/bootstrap/variables";
+@import "my-variables";
 
-$default_background_image:    asset_path('tiny_grid_@2X.png');
-$headings-color: #4F4C4F;
-$navbar-font-size: 14px;
-
-$line-height-base:        1.6 !default; // 20/14
 
 
 h1, h2, h3, h4, h5, h6,
@@ -60,6 +56,8 @@ body.homepage{
 }
 
 .navbar{
+  @extend .box-shadow;
+
   font-family: $font-family-display;
   font-size: $navbar-font-size;
   border-radius: 0;

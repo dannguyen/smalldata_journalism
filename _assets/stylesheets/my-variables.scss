@@ -1,0 +1,15 @@
+$header-banner-size: 300px;
+$shadow: 1px 1px 10px 1px #ccc;
+
+
+$default_background_image:    asset_path('tiny_grid_@2X.png');
+$headings-color: #4F4C4F;
+$navbar-font-size: 14px;
+$line-height-base:        1.6 !default; // 20/14
+
+
+.box-shadow{
+-moz-box-shadow: $shadow;
+-webkit-box-shadow: $shadow;
+box-shadow: $shadow;
+}
