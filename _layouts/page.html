@@ -11,8 +11,12 @@ layout: default
 {% endif%}
 
 
+{% unless page.container == false %}
 <div class="container">
+{% endunless %}
 
   {{ content }}
 
+{% unless page.container == false %}
 </div>
+{% endunless %}

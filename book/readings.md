@@ -1,23 +1,37 @@
 ---
 layout: page
+container: false
 title: Suggested Readings
 tagline: A short list of online articles and references on data journalism
-header_image: about-nyu-washingtonsquare.jpg
+header_image: library.jpg
 ---
 
 
 {% for reference_arr in site.references %}
 
 <div class="banner">
-<h2>{{reference_arr[0]}}</h2>
+<div class="container">
+  <h2>{{reference_arr[0]}}</h2>
+</div>
 </div>
 
- {% for r in reference_arr[1] %}
+<div class="container">
+<ul class="references">
+{% for r in reference_arr[1] %}
 
-- <span class="type">{{r.type}}:</span> 
-[{{r.title}}]({{r.source_url}}) <span class="author" style="display:block;">via {{r.author}} [{{r.base_host}}]({{r.source_url}})</span> <span class="description">*&nbsp;{{r.description}}*</span>
-{: .references}
-  
+  <li>
+    <div class="title">
+    <span class="type">{{r.type}}:</span>
+    <a href="{{r.source_url}}">{{r.title}}</a>
+    </div>
+    <div class="description">{{r.description}}</div>
+    <div class="author">via {{r.author}} 
+      <span class="host">[<a href="{{r.source_url}}">{{r.base_host}}</a>]</span>
+    </div> 
+  </li>  
+
 {% endfor %}
 
+</ul>
+</div>
 {% endfor %}

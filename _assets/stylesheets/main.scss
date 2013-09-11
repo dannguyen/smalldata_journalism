@@ -23,13 +23,24 @@ ul.references{
     margin-left: 0;
 
     .type{
-      font-weight: bold;
-      color: #666;
+      font-family: $font-family-display;
+      color: #a99;
     }
 
+    .title{
+      
+    }
+
+    .description{
+      
+    }
     .author{
       font-size: smaller;
-      font-style:italic;
+      font-style: italic;
+    }
+
+    .host{
+      font-style: normal;
     }
   }
 }
