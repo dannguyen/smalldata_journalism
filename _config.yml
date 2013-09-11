@@ -7,7 +7,7 @@ assets:
   js_compressor:  uglifier
   css_compressor: sass
 
-references_file: references.tsv
+references_file: references.csv
 
 # Twitter
 twitter_user: dancow

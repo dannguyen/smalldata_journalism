@@ -7,35 +7,37 @@
   }
 }
 
-.standout{
-  margin-top: 1.0em;
-  margin-bottom: 1.0em;
-}
-
-.banner {
-  padding-top:    1.0em;
-  padding-bottom: 1.0em;
-  margin-bottom:  1.0em;
-  background-color: $jumbotron-bg;
-
-  h1,h2,h3{
-    margin-top: 1.0em;
-  }
 
 
-  .container & {
-    border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
-  }
 
-  @media screen and (min-width: $screen-tablet) {
 
-    .container & {
-      padding-left:  ($jumbotron-padding * 2);
-      padding-right: ($jumbotron-padding * 2);
+ul.references{
+
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  li{
+    margin-bottom: 0.8em;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+
+    .type{
+      font-weight: bold;
+      color: #666;
+    }
+
+    .author{
+      font-size: smaller;
+      font-style:italic;
     }
   }
 }
 
+.standout{
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
+}
 
 
 

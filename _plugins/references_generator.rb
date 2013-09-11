@@ -35,7 +35,7 @@ module Jekyll
 
     def load_references_data(tsv_path)
       data_mash = Hashie::Mash.new{|h, cat| h[cat] = []}
-      CSV.foreach(tsv_path, col_sep: "\t", headers: :first_row) do |row|
+      CSV.foreach(tsv_path, col_sep: ",", headers: :first_row) do |row|
     # use row here...
         data_mash[row['category'].to_s] << ReferenceItem.new(row)
       end

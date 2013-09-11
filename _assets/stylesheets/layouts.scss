@@ -3,6 +3,44 @@
 $header-banner-size: 300px;
 
 
+
+$shadow: 3px 3px 3px 3px #aaa;
+.box-shadow{
+-moz-box-shadow: $shadow;
+-webkit-box-shadow: $shadow;
+box-shadow: $shadow;
+}
+
+.banner {
+  @extend .box-shadow;
+
+  padding-top:    1.0em;
+  padding-bottom: 1.0em;
+  margin-bottom:  1.0em;
+  background-color: $jumbotron-bg;
+
+  h1,h2,h3{
+    margin-top: 1.0em;
+  }
+
+
+  .container & {
+    border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+
+    .container & {
+      padding-left:  ($jumbotron-padding * 2);
+      padding-right: ($jumbotron-padding * 2);
+    }
+  }
+}
+
+
+
+
+
 .content.woz{
   min-height: 500px;
 }
@@ -68,8 +106,12 @@ header.banner.image{
     border-bottom: thin solid #333;
     padding-bottom: 1.0em; 
 
+  
+
     h1{
+      color: #222;
       font-size: ($font-size-base * 4.5);    
+      text-shadow: 0.03em 0.03em 0.06em #444;
       line-height: 1;
       margin-bottom: 1px;
       margin-top: 1px;

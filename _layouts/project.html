@@ -14,11 +14,12 @@ layout: page
 
 {% else %}
 
- Part {{page.project_order}} of {{project.size }} of the project  
+ <strong>Part {{page.project_order}} of {{project.size }}-part project:</strong>   
   <a href="{{ project.url}}">{{project.title}}</a>
 
  {% if page.project_order > 1 %}
- Previously: <a href="{{ page.prev_page.url }}">{{page.prev_page.title}}</a>
+ <br>
+ <strong>Previously:</strong> <a href="{{ page.prev_page.url }}">{{page.prev_page.title}}</a>
  {% endif %}
 
 
@@ -30,18 +31,22 @@ layout: page
 {{ content }}
 
 
+<div class="standout">
 <!-- moving to prev page -->
 {% if page.prev_page %}
-  Previous part: <a href="{{ page.prev_page.url}}">
-  {{ page.prev_page.title}}</a>
+  <strong>Previous:</strong> <a href="{{ page.prev_page.url}}">
+  {{ page.prev_page.title }}</a>
+  <br>
 {% endif %}
-
 
 <!-- moving to next page -->
+
 {% if page.next_page %}
-  Next part: <a href="{{ page.next_page.url}}">
+  <strong>Next:</strong> <a href="{{ page.next_page.url}}">
   {{ page.next_page.title}}</a>
 {% endif %}
+
+</div>
 
 
 
