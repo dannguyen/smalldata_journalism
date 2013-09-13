@@ -98,7 +98,7 @@ You can insert the CSV generated above into your SQL database manually. The SQL 
 
 
 
-## A more granular data source
+## Payday
 
 So before I became re-acquainted with the [Honest Leadership and Open Government Act of 2007](http://www.gpo.gov/fdsys/pkg/PLAW-110publ81/html/PLAW-110publ81.htm), I had my eyes on another useful Congressional dataset.
 
@@ -114,12 +114,36 @@ Where might there be a precise and complete listing of job titles and employment
 
 The payroll.
 
-### Collecting the payroll
+### Public data, kind of
+
 
 Of course, any given payroll isn't public knowledge, but we're talking about Congress, and Congress, to their credit, has publicly published its members' and staff salaries.
 
 There's a couple major caveats though. 
 
+- PDF
+- Paper only for Senate
+
+### Sunlight Foundation to the rescue!
+
+http://sunlightfoundation.com/tools/expenditures/
 
 
-### Collecting the payroll as a programmer
+### Working with the parsed payroll data
+
+The Sunlight CSVs start from Q3 2009. Let's take a look at one file before collecting them all. The following link corresponds to the **first quarter of 2012**:
+
+http://assets.sunlightfoundation.com.s3.amazonaws.com/expenditures/house/2012Q1-detail.csv
+
+Below is a four-column table. The first column shows the **headers** for the CSV file, the next three columns contain sample data.
+
+<table class="table table-striped table-bordered"><thead><tr><th>Headers</th><th>Rep. staff</th><th>Office staff</th><th>Rep. expenses</th></tr></thead><tbody><tr><td>BIOGUIDE_ID</td><td>F000451</td><td></td><td>P000197</td></tr><tr><td>OFFICE</td><td>HON. MICHAEL G. FITZPATRICK</td><td>OFFICE OF THE SPEAKER</td><td>HON. NANCY PELOSI</td></tr><tr><td>QUARTER</td><td>2012Q1</td><td>2012Q1</td><td>2012Q1</td></tr><tr><td>CATEGORY</td><td>PERSONNEL COMPENSATION</td><td>PERSONNEL COMPENSATION</td><td>RENT, COMMUNICATION, UTILITIES</td></tr><tr><td>DATE</td><td></td><td></td><td>16-Jan</td></tr><tr><td>PAYEE</td><td>LYDEN, PATRICK</td><td>HALEY, KATHERINE C</td><td>DELTA PARKING MANAGEMENT LLC</td></tr><tr><td>START DATE</td><td>1/1/12</td><td>1/1/12</td><td>1/3/12</td></tr><tr><td>END DATE</td><td>1/2/12</td><td>3/31/12</td><td>2/2/12</td></tr><tr><td>PURPOSE</td><td>CHIEF OF STAFF</td><td>ASST TO SPEAKER FOR POLICY</td><td>DISTRICT OFFICE PARKING</td></tr><tr><td>AMOUNT</td><td>722.22</td><td>22125</td><td>120</td></tr><tr><td>YEAR</td><td>2011</td><td>2012</td><td>2012</td></tr><tr><td>TRANSCODE</td><td></td><td></td><td>AP</td></tr><tr><td>TRANSCODELONG</td><td></td><td></td><td>Accounts payable</td></tr><tr><td>RECORDID</td><td></td><td></td><td>351828</td></tr><tr><td>RECIP (orig.)</td><td>LYDEN, PATRICK</td><td>HALEY, KATHERINE C</td><td>DELTA PARKING MANAGEMENT LLC</td></tr></tbody></table>
+
+### Working with the parsed payroll data as a programmer
+
+#### 
+
+
+
+
+
