@@ -11,7 +11,7 @@ guff: "Data, like the parts of life it attempts to record, is messy and typo-rid
 
 #### Get all the names together
 
-
+- Reconcile the aliases from Sunlight payroll
 
 
 #### Cluster matching aliases
