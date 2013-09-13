@@ -13,3 +13,5 @@ references_file: references.csv
 twitter_user: dancow
 twitter_tweet_button: true
 code_dir: 'downloads/code'
+
+github_repo: dannguyen/smalldata_journalism

@@ -56,12 +56,11 @@ body.homepage{
 }
 
 .navbar{
-  @extend .box-shadow;
 
   font-family: $font-family-display;
   font-size: $navbar-font-size;
   border-radius: 0;
-  border-bottom: thin solid #334;
+  border-bottom: thin solid #000;
 }
 
 .navbar-collapse{

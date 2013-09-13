@@ -3,7 +3,7 @@ layout: project
 title: Using Excel
 tagline: Get it on a computer
 project: creating-viz
-project_order: 2
+project_order: 7
 ---
 
 So after the laborious exercise of hand-drawing our chart, let's see how much easier it is to use proper graphing software (I'm going to skip an attempt at computerized drawing via MS Paint).

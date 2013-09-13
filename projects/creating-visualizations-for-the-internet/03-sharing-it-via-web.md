@@ -1,10 +1,13 @@
 ---
 layout: project
 title: Sharing it on the Web
-tagline: Freeing the file
+tagline: Showing the world what you've drawn
 project: creating-viz
-project_order: 4
+project_order: 3
 ---
+
+
+
 
 
 ### Pros
