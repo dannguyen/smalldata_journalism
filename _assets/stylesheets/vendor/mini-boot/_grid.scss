@@ -1,0 +1,45 @@
+$banner-container-max-width: 960px;
+$content-container-max-width: 960px;
+$container-text-width: $content-container-max-width * 0.8;
+
+
+
+// -------  My alterations
+
+.container{
+  zoom: 1;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+}
+
+article{
+  .container{
+    max-width: $content-container-max-width;
+    
+    h1,h2,h3,h4,h5,h6,
+    p,ul,ol,li{
+      line-height: $line-height-base;
+      max-width: $container-text-width;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  
+  }
+}
+
+.banner{
+  .container{
+    max-width: $banner-container-max-width;        
+  }
+}
+
+header.banner{
+  text-align: center;
+}
+
+
+@media (max-width: $screen-xs-max){
+
+}

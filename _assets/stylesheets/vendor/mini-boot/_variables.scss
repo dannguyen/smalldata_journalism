@@ -1,0 +1,85 @@
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             #cdcdcd !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+
+
+
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       'Droid Serif', Georgia, "Times New Roman", Times, serif !default;
+$font-family-display:     'Arvo', 'Helvetica Neue';
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$font-family-base:        'Droid Serif', $font-family-sans-serif !default;
+$font-size-base:          18px !default;
+$font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
+
+
+$headings-font-family:    $font-family-display !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+
+
+
+$jumbotron-padding:              30px !default;
+$jumbotron-color:                inherit !default;
+$jumbotron-bg:                   $gray-lighter !default;
+
+$jumbotron-heading-color:        inherit !default;
+
+
+
+
+// Heights
+
+$line-height-base:        1.6 !default; // 20/14
+$line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
+
+
+$border-radius-base:             4px !default;
+$border-radius-large:            6px !default;
+$border-radius-small:            3px !default;
+
+
+
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+$navbar-height:                    40px !default;
+$navbar-margin-bottom-homepage:    $line-height-computed !default;
+$navbar-margin-bottom:             0;
+
+
+
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-phone:               $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-tablet:              $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-desktop:             $screen-md !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-desktop:          $screen-lg !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1) !default;
+$screen-sm-max:              ($screen-md - 1) !default;
+$screen-md-max:              ($screen-lg - 1) !default;

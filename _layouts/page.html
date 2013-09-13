@@ -2,10 +2,14 @@
 layout: default
 ---
 {% include page_banner.html %}
+
+<article class="page">
+
+
 {% if page.guff %} 
 <div class="container">
     <section class="guff">
-      {{ page.guff }}
+      <p>{{ page.guff }}</p>
     </section>    
 </div>
 {% endif%}
@@ -20,3 +24,5 @@ layout: default
 {% unless page.container == false %}
 </div>
 {% endunless %}
+
+</article>
