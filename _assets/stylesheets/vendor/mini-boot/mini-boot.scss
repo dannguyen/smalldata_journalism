@@ -1,10 +1,15 @@
 @import "variables";
+@import "mixins";
 @import "normalize";
 @import "print";
+@import "scaffolding";
 
-
+@import "navs";
+@import "navbar";
 @import "grid";
 @import "type";
+
+@import "component-animations";
 
 body{
   font-family: $font-family-serif;

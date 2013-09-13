@@ -1,3 +1,46 @@
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-phone:               $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-tablet:              $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-desktop:             $screen-md !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-desktop:          $screen-lg !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1) !default;
+$screen-sm-max:              ($screen-md - 1) !default;
+$screen-md-max:              ($screen-lg - 1) !default;
+
+
+
+
+// Grid system
+// --------------------------------------------------
+/*
+// Number of columns in the grid system
+$grid-columns:              12 !default;
+*/
+
+// Padding, to be divided by two and applied to the left and right of all columns
+$grid-gutter-width:         30px !default;
+
+// Point at which the navbar stops collapsing
+$grid-float-breakpoint:     $screen-tablet !default;
+
+
+
 // Grays
 // -------------------------
 
@@ -8,6 +51,18 @@ $gray-light:             #cdcdcd !default;   // #999
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
 
+// Scaffolding
+// -------------------------
+
+$body-bg:               #eee !default;
+$text-color:            $gray-dark !default;
+
+// Links
+// -------------------------
+
+$brand-primary: #BA44CC !default;
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%) !default;
 
 
 
@@ -35,6 +90,31 @@ $jumbotron-heading-color:        inherit !default;
 
 
 
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+$padding-base-vertical:          6px !default;
+$padding-base-horizontal:        12px !default;
+
+$padding-large-vertical:         10px !default;
+$padding-large-horizontal:       16px !default;
+
+$padding-small-vertical:         5px !default;
+$padding-small-horizontal:       10px !default;
+
+$line-height-large:              1.33 !default;
+$line-height-small:              1.5 !default;
+
+$border-radius-base:             4px !default;
+$border-radius-large:            6px !default;
+$border-radius-small:            3px !default;
+
+$component-active-bg:            $brand-primary !default;
+
+$caret-width-base:               4px !default;
+$caret-width-large:              5px !default;
+
 
 // Heights
 
@@ -47,39 +127,156 @@ $border-radius-large:            6px !default;
 $border-radius-small:            3px !default;
 
 
+// Hr border color
+$hr-border:                   $gray-lighter !default;
 
 
 // Navbar
 // -------------------------
 
+
 // Basics of a navbar
 $navbar-height:                    40px !default;
 $navbar-margin-bottom-homepage:    $line-height-computed !default;
 $navbar-margin-bottom:             0;
+$navbar-default-color:             #777 !default;
+$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-border-radius:             $border-radius-base !default;
+$navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
+$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+
+
+
+// Navbar links
+$navbar-default-link-color:                #777 !default;
+$navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+// Inverted navbar
+//
+// Reset inverted navbar basics
+$navbar-inverse-color:                      $gray-light !default;
+$navbar-inverse-bg:                         #000 !default;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 $gray-light !default;
+$navbar-inverse-link-hover-color:           #fff !default;
+$navbar-inverse-link-hover-bg:              transparent !default;
+$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
+$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
+$navbar-inverse-link-disabled-color:        #444 !default;
+$navbar-inverse-link-disabled-bg:           transparent !default;
+
+// Inverted navbar brand label
+$navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
+$navbar-inverse-brand-hover-color:          #fff !default;
+$navbar-inverse-brand-hover-bg:             transparent !default;
+
+// Inverted navbar search
+// Normal navbar needs no special styles or vars
+$navbar-inverse-search-bg:                  lighten($navbar-inverse-bg, 25%) !default;
+$navbar-inverse-search-bg-focus:            #fff !default;
+$navbar-inverse-search-border:              $navbar-inverse-bg !default;
+$navbar-inverse-search-placeholder-color:   #ccc !default;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            #333 !default;
+$navbar-inverse-toggle-icon-bar-bg:         #fff !default;
+$navbar-inverse-toggle-border-color:        #333 !default;
+
+
+
+// Navs
+// -------------------------
+
+$nav-link-padding:                          10px 15px !default;
+$nav-link-hover-bg:                         $gray-lighter !default;
+
+$nav-disabled-link-color:                   $gray-light !default;
+$nav-disabled-link-hover-color:             $gray-light !default;
+
+$nav-open-link-hover-color:                 #fff !default;
+$nav-open-caret-border-color:               #fff !default;
+
+// Tabs
+$nav-tabs-border-color:                     #ddd !default;
+
+$nav-tabs-link-hover-border-color:          $gray-lighter !default;
+
+$nav-tabs-active-link-hover-bg:             $body-bg !default;
+$nav-tabs-active-link-hover-color:          $gray !default;
+$nav-tabs-active-link-hover-border-color:   #ddd !default;
+
+$nav-tabs-justified-link-border-color:            #ddd !default;
+$nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 
 
 
-// Media queries breakpoints
-// --------------------------------------------------
+// Forms
+// -------------------------
 
-// Extra small screen / phone
-$screen-xs:                  480px !default;
-$screen-phone:               $screen-xs !default;
+$input-bg:                       #fff !default;
+$input-bg-disabled:              $gray-lighter !default;
 
-// Small screen / tablet
-$screen-sm:                  768px !default;
-$screen-tablet:              $screen-sm !default;
+$input-color:                    $gray !default;
+$input-border:                   #ccc !default;
+$input-border-radius:            $border-radius-base !default;
+$input-border-focus:             #66afe9 !default;
 
-// Medium screen / desktop
-$screen-md:                  992px !default;
-$screen-desktop:             $screen-md !default;
+$input-color-placeholder:        $gray-light !default;
 
-// Large screen / wide desktop
-$screen-lg:                  1200px !default;
-$screen-lg-desktop:          $screen-lg !default;
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+$input-height-large:             (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 
-// So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm - 1) !default;
-$screen-sm-max:              ($screen-md - 1) !default;
-$screen-md-max:              ($screen-lg - 1) !default;
+$legend-color:                   $gray-dark !default;
+$legend-border-color:            #e5e5e5 !default;
+
+$input-group-addon-bg:           $gray-lighter !default;
+$input-group-addon-border-color: $input-border !default;
+
+
+// Dropdowns
+// -------------------------
+
+$dropdown-bg:                    #fff !default;
+$dropdown-border:                rgba(0,0,0,.15) !default;
+$dropdown-fallback-border:       #ccc !default;
+$dropdown-divider-bg:            #e5e5e5 !default;
+
+$dropdown-link-active-color:     #fff !default;
+$dropdown-link-active-bg:        $component-active-bg !default;
+
+$dropdown-link-color:            $gray-dark !default;
+$dropdown-link-hover-color:      #fff !default;
+$dropdown-link-hover-bg:         $dropdown-link-active-bg !default;
+
+$dropdown-link-disabled-color:   $gray-light !default;
+
+$dropdown-header-color:          $gray-light !default;
+
+$dropdown-caret-color:           #000 !default;
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-popover:           1010 !default;
+$zindex-tooltip:           1030 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+
+
+

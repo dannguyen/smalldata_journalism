@@ -1,5 +1,5 @@
 $header-banner-size: 300px;
-$shadow: 1px 1px 10px 1px #ccc;
+$boxshadow: 1px 1px 1px 1px #ccc;
 
 
 $default_background_image:    asset_path('tiny_grid_@2X.png');
@@ -9,7 +9,7 @@ $line-height-base:        1.6 !default; // 20/14
 
 
 .box-shadow{
--moz-box-shadow: $shadow;
--webkit-box-shadow: $shadow;
-box-shadow: $shadow;
+-moz-box-shadow: $boxshadow;
+-webkit-box-shadow: $boxshadow;
+box-shadow: $boxshadow;
 }
