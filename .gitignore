@@ -4,3 +4,5 @@ _drafts
 s3_website.yml
 .pygments-cache
 sandbox
+.ruby-version
+.ruby-gemset

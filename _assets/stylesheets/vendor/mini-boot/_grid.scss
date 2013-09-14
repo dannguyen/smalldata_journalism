@@ -13,6 +13,12 @@ $container-text-width: $content-container-max-width * 0.8;
   @include container-fixed();
 }
 
+// mobile first defaults
+.row {
+  @include make-row();
+}
+
+
 article{
   .container{
     max-width: $content-container-max-width;
@@ -37,6 +43,25 @@ article{
 
 header.banner{
   text-align: center;
+}
+
+
+@media (min-width: $screen-xs) {
+  .col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4{ 
+    float: left;
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-left:  ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+  }
+
+  .col-lg-1{ width: percentage((1 / $grid-columns));}
+  .col-lg-2{ width: percentage((2 / $grid-columns));}
+  .col-lg-3{ width: percentage((3 / $grid-columns));}
+  .col-lg-4{ width: percentage((4 / $grid-columns));}
+
 }
 
 

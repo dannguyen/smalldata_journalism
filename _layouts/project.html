@@ -6,21 +6,20 @@ layout: page
 
 {% if page.project_order == 'introduction'  %}
   
-  A {{project.size}}-part series.
+  <p>A {{project.size}}-part series.</p>
 
 {% elsif page.project_order == 'conclusion' %}
 
-  The conclusion to <a href="{{ project.url}}">{{project.title}}</a>
+  <p>The conclusion to <a href="{{ project.url}}">{{project.title}}</a></p>
 
 {% else %}
 
- <strong>Part {{page.project_order}} of {{project.size }}-part project:</strong>   
-  <a href="{{ project.url}}">{{project.title}}</a>
+ <p><strong>Part {{page.project_order}} of a {{project.size }}-part series:</strong>   
+   <a href="{{ project.url}}">{{project.title}}</a></p>
 
  {% if page.project_order > 1 %}
- <br>
- <strong>Previously:</strong> <a href="{{ page.prev_page.url }}">{{page.prev_page.title}}</a>
- {% endif %}
+<p> <strong>Previously:</strong> <a href="{{ page.prev_page.url }}">{{page.prev_page.title}}</a>
+ </p> {% endif %}
 
 
 {% endif %}

@@ -77,6 +77,9 @@ header.banner.image{
 @media (max-width: $screen-xs-max) {
   header.banner.image{
 
+    h1{
+      color: white;
+    }
     background-size: auto $header-banner-size;
     background-repeat: no-repeat;
     height: $header-banner-size;
@@ -117,15 +120,12 @@ header.banner.image{
     }
   }
 
-
-
   #logo{
     border-bottom: thin solid #333;
     padding-bottom: 1.0em; 
 
-  
-
     h1{
+      text-align: justify;
       color: #222;
       font-size: ($font-size-base * 4.5);    
       text-shadow: 0.03em 0.03em 0.06em #444;
