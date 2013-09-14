@@ -9,6 +9,13 @@
   }
 }
 
+@mixin sansserif(){
+  font-family: $font-family-sans-serif;
+}
+
+@mixin serif(){
+  font-family: $font-family-serif;
+}
 
 // Box sizing
 @mixin box-sizing($boxmodel) {

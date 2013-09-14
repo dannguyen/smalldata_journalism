@@ -7,11 +7,13 @@ project: inspect-the-web
 project_order: 1
 ---
 
-{% include auto-toc.md %}
 
 The Web inspector is built into nearly every major browser, with only slight variations in labels and functionality. I'll be using [Google's Chrome browser](http://www.google.com/chrome), which is cross-platform and can be [downloaded here](http://www.google.com/chrome).
 
 I'll also sometimes refer to menu items and shortcut keys by their **Mac OS X** shortcuts and labels, but nothing here is operating-system specific. For example, to do a **Find** on a webpage, the Mac key shortcut is: **Command-F**. For Windows, it's **Ctrl-F**.
+
+{% include auto-toc.md %}
+
 
 ## Browser basics
 
@@ -47,6 +49,7 @@ Save this current lesson page with the **Webpage, Complete** option. Check it ou
 Interesting...the webpage for this lesson consists of not just a single webpage file, but several other types of files, including images. This is **a very basic but key concept** to have in mind when thinking about the Web.
 
 ### Right-clicking
+
 Ah...The number of times I've led a class with at least one Mac user who raises their hand and asked, "What's a *right*-click?"
 
 If you're on a standard PC mouse, right-clicking involves the right-mouse button, obviously. On a default Mac trackpad, you can right-click by tapping the trackpad with **two-fingers**.
@@ -75,6 +78,11 @@ As we'll learn later, *everytime* you visit a website, you **are automatically d
 One last exercise: View the source of this current webpage and do a **Find** again for the words "hot dog". Again, you should see it twice, but it'll be wrapped up in HTML:
 
 TKIMG
+
+
+### The URL
+
+TK - The address system of the web
 
 
 ## Opening the inspector
