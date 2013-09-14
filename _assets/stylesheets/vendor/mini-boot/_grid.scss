@@ -9,8 +9,8 @@ $container-text-width: $content-container-max-width * 0.8;
 .container{
   zoom: 1;
   margin: 0 auto;
-  position: relative;
   width: 80%;
+  @include container-fixed();
 }
 
 article{

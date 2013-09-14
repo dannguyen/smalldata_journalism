@@ -14,24 +14,18 @@
   h1,h2,h3{
     margin-top: 1.0em;
   }
-
-
+ 
   .container & {
     border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
   }
 
   @media screen and (min-width: $screen-tablet) {
-
     .container & {
       padding-left:  ($jumbotron-padding * 2);
       padding-right: ($jumbotron-padding * 2);
     }
   }
 }
-
-
-
-
 
 .content.woz{
   min-height: 500px;
@@ -44,13 +38,10 @@ footer.woz{
   padding-top: 3.0em;
   padding-bottom: 4.5em;
 
-  p{
-    color: white;
+  h1,h2,h3,h4,h5,h6,ul,li,p{
+    color: #D9D9D9;
   }
 }
-
-
-
 
 header.banner{
   .tagline{
@@ -59,7 +50,16 @@ header.banner{
 }
 
 header.banner.image{
+   .banner-box{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+
   .text{
+      position: relative;
       text-shadow: 0.1em 0.1em 0.4em #000;
 
       .tagline{
@@ -72,6 +72,31 @@ header.banner.image{
   border-bottom: thin solid #888;
   padding-bottom: 1.0em;
 }
+
+/* deal with banner image */
+@media (max-width: $screen-xs-max) {
+  header.banner.image{
+
+    background-size: auto $header-banner-size;
+    background-repeat: no-repeat;
+    height: $header-banner-size;
+
+
+    .banner-box{
+      position: static;
+      text-align: center;
+      width: 100%;
+    }
+
+
+    .text{
+      position: static;
+    }
+
+  }
+
+}
+
 
 @media (min-width: $screen-xs) {
   header.banner.image{
@@ -87,7 +112,7 @@ header.banner.image{
     }
 
     .text{
-        position: absolute;
+        position: relative;
         bottom: 10px;
     }
   }

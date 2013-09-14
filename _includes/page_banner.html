@@ -1,3 +1,5 @@
+<!-- TK add another container to hold background image -->
+
 
 {% if page.header_image %}
 <header class="banner image" style="background-image:url(/images/headers/{{ page.header_image }})">
@@ -5,17 +7,16 @@
 <header class="banner">
 {% endif %}
 
-  <div class="container">
-
+  <div class="banner-box">
     <div class="text">
           <h1>
             {{ page.title }}
           </h1>
       {% if page.tagline %}
         <div class="tagline">{{page.tagline}}</div>
-      {% endif %}
-
-    
+      {% endif %}    
     </div>    
   </div>
+
+
 </header>
