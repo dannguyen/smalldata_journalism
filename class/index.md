@@ -5,15 +5,23 @@ tagline:  The Fall 2013 syllabus and class schedule for WRIT1-CE9787
 header_image: about-nyu-washingtonsquare.jpg
 ---
 
+**Note:** If you're reading this before the class start date of **Sept. 23, 2013**, [you can still enroll here](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock).
+
+
 {% include auto-toc.md %}
 
 ## Course Description
+
+**Name:** [WRIT1-CE9787](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787)
 
 **Date:** September 23, 2013 - October 21, 2013
 
 **Time:** Monday nights, 6:45PM - 9:15PM
 
-**Instructor:** Dan Nguyen
+**Instructor:** [Dan Nguyen](/about/#about-the-author)
+
+
+**NYU Homepage**: [http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787)
 
 The rise of personal computing and the Internet has transformed data journalism, long a niche of the newsroom, into one of the most visible fields in today's media landscape. However, while new technologies and techniques have made data journalism more accessible to audiences, they have also made data journalism increasingly intimidating to those who wish to practice it.
 
@@ -30,12 +38,13 @@ This class will be taught in a small group setting with a focus on hands-on inst
 
 ### Prerequisites 
 
-- A Google Account with Fusion Tables setup
-- Open Refine
-- A web browser, preferably Google Chrome
-- Access to a web server
+- A [Google Account with Fusion Tables](https://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595) set up
+- [Open Refine](http://openrefine.org/)
+- A web browser, preferably [Google Chrome](https://www.google.com/intl/en/chrome/browser/)
+- An [Amazon Account with access to AWS-S3](http://aws.amazon.com/s3/), or any other public web server
 
-If you do not have access to a computer in which you can install things, contact the instructor Dan Nguyen at dcn1@nyu.edu
+(*We'll go through the installation processes in class, or I'll have written guides for them.*)
+
 
 ### Text and Resources
 
@@ -107,9 +116,6 @@ https://support.google.com/fusiontables/answer/171254?hl=en
 ## Policies and Academics
 
 
-
-
-
 ### Academic Integrity
 
 Plagiarism involves borrowing or using information from other sources without proper and full credit. Students are expected to demonstrate how what they have learned incorporates an understanding of the research and expertise of scholars and other appropriate experts; and thus recognizing others’ published work or teachings – whether that of authors, lecturers, or one’s peers – is a required practice in all academic projects.” 
@@ -121,7 +127,6 @@ It will be strictly enforced.
 ### Students with disabilities
 
 New York University is committed to providing equal educational opportunity and participation for students with disabilities. Any student who needs a reasonable accommodation based on a qualified disability is required to register with The Henry and Lucy Moses Center for Students with Disabilities (CSD) for assistance.
-
 
 
 ### Grading Criteria
