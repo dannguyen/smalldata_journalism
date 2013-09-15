@@ -3,11 +3,35 @@ layout: project
 title: Publishing your Webpage
 tagline: Showing your hand-crafted HTML to the world
 project: creating-viz
-project_order: 7
+project_order: 6
 ---
 
 
-### Create an S3 account
+## Create an Amazon/AWS account
+
+TKIMGX - Sign in or Create an AWS Account
+
+TKIMGX - Verify identity
+
+TKIMGX - Select basic Support
+
+- > Launch the AWS Management Console 
+
+- Create a Bucket - Select a Bucket Name and Region
+
+- Select "Properties"
+- Enable Web Hosting
+- Click on the bucket
+- Create a new folder TKIMGX
+- Make Public - TKIMGX
+- Upload - Add Files TKIMGX
+- TKIMGX - file selection
+- TKIMGX - showfile listing
+- TKIMGX - get link from properties
+
+- Upload overwrite a file
+- Reset permissions
+
 
 
 

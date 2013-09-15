@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<!-- This is a comment; it won't show up on the page-->
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- this will appear in the title bar of the page -->
+  <title>My First Internet Chart with Google</title>
+
+  <!-- Google Charts specific code-->
+  <!-- https://developers.google.com/chart/interactive/docs/gallery/linechart -->
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+     google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+      
+        // The data goes here
+        var data = google.visualization.arrayToDataTable([
+            ["Year", "U.S.", "Germany"],
+            ["2003", 6, 9.8],
+            ["2004", 5.6, 10.2],
+            ["2005", 5.2, 11.5],
+            ["2006", 4.7, 10.4],
+            ["2007", 4.5, 8.9],
+            ["2008", 5, 7.8],
+            ["2009", 9, 7.8],
+            ["2010", 9.9, 7.3],
+            ["2011", 9, 6.1],
+            ["2012", 8.1, 5.5],
+            ["2013", 7.5, 5.4]
+        ]);
+
+        var options = {
+          title: 'Unemployment Rate, U.S. vs. Germany'
+        };
+
+        // this "Id" part is necessary:
+        var chart = new google.visualization.LineChart(document.getElementById('chart-holder'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+</head>
+<body>
+  
+<!-- some CSS to make the page look nice...you don't have to worry about it-->
+<style>
+  body{ width: 900px; padding: 20px; font-family: "Helvetica Neue", "Arial", sans-serif;}
+</style>
+
+
+  <!-- this is the Id specified in the code above, e.g. chart-holder -->
+
+  <div id="chart-holder" style="height: 600px">
+    
+
+  </div>
+  
+
+
+  <!-- you don't need to add anything after this-->
+</body>
+</html>

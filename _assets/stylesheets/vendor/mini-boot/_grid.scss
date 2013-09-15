@@ -1,8 +1,3 @@
-$banner-container-max-width: 960px;
-$content-container-max-width: 960px;
-$container-text-width: $content-container-max-width * 0.8;
-
-
 
 // -------  My alterations
 
@@ -26,9 +21,7 @@ article{
     h1,h2,h3,h4,h5,h6,
     p,ul,ol,li{
       line-height: $line-height-base;
-      max-width: $container-text-width;
-      margin-left: auto;
-      margin-right: auto;
+      @include article-constraint();
     }
 
   

@@ -3,7 +3,7 @@ layout: project
 title: Creating a webpage, locally
 tagline: Building your own home
 project: creating-viz
-project_order: 6
+project_order: 5
 ---
 
 

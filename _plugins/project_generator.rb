@@ -1,6 +1,6 @@
 module Jekyll
 
-  # A project is a collection of pages
+  # A project is a collection of pages with the same project_name
   class Project
     attr_reader :introduction, :conclusion
 

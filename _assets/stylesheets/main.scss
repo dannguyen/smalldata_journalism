@@ -43,6 +43,7 @@ ul.references{
 }
 
 .standout{
+  @include article-constraint();
   margin-top: 1.0em;
   margin-bottom: 1.0em;
 }

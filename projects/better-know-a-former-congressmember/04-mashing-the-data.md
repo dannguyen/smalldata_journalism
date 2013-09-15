@@ -34,7 +34,7 @@ Use last name as the foreign key
     ALTER TABLE lobbyists ADD COLUMN last_name VARCHAR(255);
     UPDATE lobbyists 
       SET last_name = UPPER(SUBSTRING_INDEX(`LobbyistName`, ',', 1));
-    CREATE INDEX last_name_on_lobbyists ON orgs(last_name);
+    CREATE INDEX last_name_on_lobbyists ON lobbyists(last_name);
 
 
 

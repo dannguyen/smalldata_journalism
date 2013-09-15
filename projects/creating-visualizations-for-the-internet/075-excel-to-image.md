@@ -3,7 +3,7 @@ layout: project
 title: Converting from Excel to an image
 tagline: More openness
 project: creating-viz
-project_order: 9
+project_order: 8
 guff: "This is a short transition chapter to show how we can move Excel to a more universal file format and what we gain, and lose, in the conversion."
 ---
 

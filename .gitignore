@@ -6,3 +6,6 @@ s3_website.yml
 sandbox
 .ruby-version
 .ruby-gemset
+downloads/code/**/d3.v3.js
+downloads/code/**/jquery.js
+downloads/code/**/highcharts.js

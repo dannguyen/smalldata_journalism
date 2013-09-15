@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<!-- This is a comment; it won't show up on the page-->
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- this will appear in the title bar of the page -->
+  <title>My First Internet Chart with Highcharts</title>
+
+  <!-- Highcharts specific code-->
+  <!-- via http://www.highcharts.com/docs/chart-and-series-types/line-chart -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="highcharts.js"></script>
+    <script type="text/javascript">
+   
+
+   $(function () {
+        $('#chart-holder').highcharts({
+            title: {
+                text: 'Unemployment Rate, U.S. vs. Germany',
+                x: -20 //center
+            },
+            subtitle: {
+                text: 'April, year-over-year',
+                x: -20
+            },
+            xAxis: {
+                categories: ["2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013"]
+            },
+            yAxis: {
+                title: {
+                    text: 'Unemployment rate'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: '%'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{
+                name: 'U.S.',
+                data: [6, 5.6, 5.2, 4.7, 4.5, 5, 9, 9.9, 9, 8.1, 7.5],
+                color: '#990000'
+            }, {
+                name: 'Germany',
+                data: [9.8, 10.2, 11.5, 10.4, 8.9, 7.8, 7.8, 7.3, 6.1, 5.5, 5.4],
+                color: '#000099'
+            }]
+        });
+    });
+    
+    </script>
+
+</head>
+<body>
+  
+<!-- some CSS to make the page look nice...you don't have to worry about it-->
+<style>
+  body{ width: 900px; padding: 20px; font-family: "Helvetica Neue", "Arial", sans-serif;}
+</style>
+
+
+  <h1>Highcharts Version</h1>
+  <!-- this is the Id specified in the code above, e.g. chart-holder -->
+
+  <div id="chart-holder" style="height: 600px">
+    
+
+  </div>
+  
+
+
+  <!-- you don't need to add anything after this-->
+</body>
+</html>

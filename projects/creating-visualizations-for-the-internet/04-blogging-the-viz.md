@@ -3,7 +3,7 @@ layout: project
 title: Blogging the Visualization
 tagline: A container for your image
 project: creating-viz
-project_order: 5
+project_order: 4
 ---
 
 

@@ -14,8 +14,8 @@ layout: page
 
 {% else %}
 
- <p><strong>Part {{page.project_order}} of a {{project.size }}-part series:</strong>   
-   <a href="{{ project.url}}">{{project.title}}</a></p>
+ <p><strong>Part {{page.project_order}} of <a href="{{ project.url}}">{{project.title}}</a>, a {{project.size }}-part series.</strong>   
+   </p>
 
  {% if page.project_order > 1 %}
 <p> <strong>Previously:</strong> <a href="{{ page.prev_page.url }}">{{page.prev_page.title}}</a>
@@ -31,8 +31,11 @@ layout: page
 
 
 <div class="standout">
+
+<p>
 <!-- moving to prev page -->
 {% if page.prev_page %}
+
   <strong>Previous:</strong> <a href="{{ page.prev_page.url}}">
   {{ page.prev_page.title }}</a>
   <br>
@@ -45,6 +48,7 @@ layout: page
   {{ page.next_page.title}}</a>
 {% endif %}
 
+</p>
 </div>
 
 
