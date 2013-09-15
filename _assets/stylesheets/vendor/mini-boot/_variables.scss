@@ -73,11 +73,11 @@ $link-hover-color:      darken($link-color, 15%) !default;
 
 
 
-$font-family-sans-serif:  "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       'Droid Serif', Georgia, "Times New Roman", Times, serif !default;
 $font-family-display:     'Arvo', 'Helvetica Neue';
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
-$font-family-base:        'Droid Serif', $font-family-sans-serif !default;
+$font-family-base:        'Ubuntu', $font-family-sans-serif !default;
 $font-size-base:          18px !default;
 $font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
 $font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px

@@ -1,4 +1,3 @@
-@import "vendor/mini-boot/variables";
 @import "my-variables";
 
 
@@ -37,18 +36,19 @@ body.homepage{
 }
 
 .navbar{
-
   font-family: $font-family-display;
   font-size: $navbar-font-size;
   border-radius: 0;
   border-bottom: thin solid #000;
 }
 
-.navbar-collapse{
-  padding-left: 0;
-}
 
-.nav>li:first-child>a{
-  padding-left: 0;
-}
+@media (min-width: $screen-xs) {
+  .navbar-collapse{
+    padding-left: 0;
+  }
 
+  .nav>li:first-child>a{
+    padding-left: 0;
+  }
+}

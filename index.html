@@ -6,11 +6,11 @@ photo_url: "http://www.flickr.com/photos/zokuga/9223081499/in/photostream/"
 ---
   <div id="logo" class="box-shadow">
       <div class="sdj">
-        <div class="container">
+        <div class="container article-constraint">
           <h1 class="">small data</h1>
         </div>
       </div>
-    <div class="container">
+    <div class="container article-constraint">
       <h1><span class="serif">Journalism</span></h1>
     
       <p class="tagline">
@@ -24,6 +24,7 @@ photo_url: "http://www.flickr.com/photos/zokuga/9223081499/in/photostream/"
     </div>  
   </div>
 {% include nav.html %}
+<article>
 
 <div class="container">
 
@@ -42,7 +43,7 @@ photo_url: "http://www.flickr.com/photos/zokuga/9223081499/in/photostream/"
   <p>You can read more about the authorship and technical details behind this book in the <a href="/about">About section</a>. Otherwise, keep scrolling down to see the <a href="#table_of_contents">Table of Contents</a>.</p>
 
   
-  {% include tweet-this.html %}
+<div class="article-constraint">  {% include tweet-this.html %}</div>
 
 </div>
 
@@ -55,67 +56,6 @@ photo_url: "http://www.flickr.com/photos/zokuga/9223081499/in/photostream/"
     </div>
   </div>
 
-  <section>
-    <div class="container">
-      <h3>Reporting</h3>
-      <p>How data fits into the journalistic pursuit.</p>
-
-      <ul class="article-list">
-        <li><b>Don't Believe in Magic</b> &ndash; if you're not a programmer, learn how to solve problems yourself.</li>
-        <li><b>Spreadsheet Everything</b> &ndash; the single best tool for every kind of data collaboration.</li>
-        <li><b>Opinionated, Politically Incorrect Data</b> &ndash; data gets dirty before it enters the database</li>
-        <li><b>Meet the Web Inspector</b> &ndash; learning HTML/CSS is less important than learning how they provide structure to data. This will be a revision of a <a href="http://ruby.bastardsbook.com/chapters/web-inspecting-html">tutorial I wrote for the Bastards Book of Ruby</a></li>
-        <li><b>Meet the Command Line</b> &ndash; Working with your computer, <i>sans</i> mouse</li>
-
-      </ul>
-
-    </div>  
-  </section>
-
-
-  <section>
-    <div class="container">
-      <h3>Analysis</h3>
-      <p>The meaning of the data.</p>
-      <ul>
-        <li><b>Analyzing Nonsense</b> &ndash; How to find interesting questions and leads even when the data is total bull.</li>
-        <li><a href="{{site_url}}book/analysis/antipatterns">Antipatterns</a></li>
-      </ul>
-    </div>  
-  </section>
-
-  <section>
-    <div class="container">
-      <h3>Visualization</h3>
-      <p>The portrayal of the data.</p>
-
-      <li><strong>From the Brain to D3</strong> &ndash; moving from one visualization platform to the other is just a matter of seeing the similarities in execution.</li>
-      <li><b>Text as Visualization</b> &ndash; if lines and art aren't your thing, plain text itself can be a rich data canvas.</li>
-      <li><b>Tables and Small Multiples</b> &ndash; sometimes, keeping your data in a spreadsheet-like format can be both the easiest and best visualization.</li>
-      <li><b>Tool: Fusion Tables</b> &ndash; easy, spreadsheet-powered, collaborative visualizations</li>
-      <li><a href="{{site_url}}book/visualization/antipatterns">Antipatterns</a></li>
-      <li><b>Chartography</b> -- a visual chart of data visualization charts.</li>
-    </div>  
-  </section>
-
-  <section>
-    <div class="container">
-      <h3>Curation</h3>
-      <p>The collecting and organizing of the data.</p>
-      <ul>
-        <li><b>Tool: Open Refine</b> &ndash; one of the best narrow-purpose tools available to data wranglers. While I write a new tutorial out, see <a href="http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning">this guide to Refine I wrote for ProPublica</a>. </li>
-        <li><a href="{{site_url}}book/curation/antipatterns">Antipatterns</a></li>
-      </ul>
-    </div>  
-  </section>
-
-  <section>
-    <div class="container">
-      <h3>Projects</h3>
-
-    </div>
-
-  </section>
 
 </section>
 
@@ -124,7 +64,7 @@ photo_url: "http://www.flickr.com/photos/zokuga/9223081499/in/photostream/"
 <div class="container">
 
 
-<h4>About the class</h4>
+<h3>The NYU-SCPS Data Journalism class</h3>
 
 <p>Data journalism is one of the fastest growing fields within today’s media landscape, thanks to the new story formats made possible through the Web, the proliferation of public data sources (including social media), and the variety of software and tools to analyze, collect, and visualize the data.
      </p>     
@@ -133,8 +73,17 @@ photo_url: "http://www.flickr.com/photos/zokuga/9223081499/in/photostream/"
 </p>
 
 
+<p>
+  If you're interested in taking my Fall 2013 Data Journalism class, you can sign up here:
+</p>
 
-<p>Are you interested in taking the Data Journalism Fall 2013 class?</p>
+<div class="article-constraint">
     <button type="button" class="btn btn-default btn-lg"><a href="http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787">Sign up</a></button>
 
 </div>
+
+
+
+</div>
+
+</article>

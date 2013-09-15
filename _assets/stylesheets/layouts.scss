@@ -1,10 +1,27 @@
-@import "vendor/mini-boot/variables";
 @import "my-variables";
 
 
 
+
+article{ 
+  ol, li{
+    margin-top: 1.0em
+  }
+
+  li{
+    @include sansserif();
+    @media (min-width: $screen-sm) {
+      margin-bottom: 0.5em;   
+    }
+
+    ul,ol{
+      margin-top: 0.5em;
+    }
+  }
+}
+
+
 .banner {
-  @extend .box-shadow;
 
   padding-top:    1.0em;
   padding-bottom: 1.0em;
@@ -71,9 +88,12 @@ header.banner.image{
 #markdown-toc{
   border-bottom: thin solid #888;
   padding-bottom: 1.0em;
+
+  li{ margin-bottom: 2px; margin-top: 2px; font-size: 15px; }
+  
 }
 
-/* deal with banner image */
+/* deal with banner image TK*/
 @media (max-width: $screen-xs-max) {
   header.banner.image{
 
@@ -153,4 +173,57 @@ header.banner.image{
     }
   }
 }
+
+
+
+
+/************ bespoke stuff  **/
+
+#table_of_contents{
+  h1,h2,h3{
+    font-family: $font-family-display;
+  }
+}
+
+
+ul.references{
+
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  li{
+    margin-bottom: 0.8em;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+
+    .type{
+      font-family: $font-family-display;
+      color: #a99;
+    }
+
+    .title{
+      
+    }
+
+    .description{
+      
+    }
+    .author{
+      font-size: smaller;
+      font-style: italic;
+    }
+
+    .host{
+      font-style: normal;
+    }
+  }
+}
+
+.standout{
+  @include article-constraint();
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
+}
+
 

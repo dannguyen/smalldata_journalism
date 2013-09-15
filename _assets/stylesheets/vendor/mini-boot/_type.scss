@@ -82,20 +82,3 @@ h6, .h6 { font-size: ceil($font-size-base-xs );  }
 }
 
 
-
-ol, li{
-  margin-top: 1.0em
-}
-
-li{
-  @include sansserif();
-  @media (min-width: $screen-sm) {
-    margin-bottom: 0.5em;  
-  
-    
-  }
-
-  ul,ol{
-    margin-top: 0.5em;
-  }
-}

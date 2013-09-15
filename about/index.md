@@ -2,8 +2,19 @@
 layout: page
 title: About small data Journalism
 tagline: Journalism that counts
-guff: 'sdJ is a compendium of practical data journalism lessons edited by Dan Nguyen.'
 ---
+
+
+I built this site in preparation for the Data Journalism class I'm teaching in Fall 2013 at New York University (SCPS). There's not much here right now except for a [long list of recommended readings](/readings) and a few technical walkthroughs, plus [the class syllabus](/class). 
+
+The Fall 2013 class is only five weeks long, but I've written about or taught data journalism concepts before and will continue doing so, and I thought [smalldatajournalism.com](http://www.smalldatajournalism.com) would be a good home for this material, for both my students and for everyone else. 
+
+I've got a lot of essays and code projects in various stages of completion and hope to add them as I complete them, now that I'm done building the site structure for now. You can see updates to **sDJ** [on the blog](/blog). Or follow me on Twitter &ndash; [@dancow](https://twitter.com/dancow) &ndash; or the [Github repo](https://github.com/{{site.github}}) for updates.
+
+
+
+{% include auto-toc.md %}
+
 
 ## Introduction
 
@@ -84,18 +95,6 @@ The least intersting of these fields and unfortunately, the most underrated. Whe
 
 
 
-## About sdJ
-
-This section contains boilerplate information and details about about the compilation of *small data Journalism*, how it was built, about me, the editor, and about the data journalism class I'm teaching.
-
-### Current status of sdJ
-
-You can see updates to sDJ [on the blog](/blog). Or follow me on Twitter &ndash; @dancow &ndash; or the Github repo for updates.
-
-**As of September 2013:** I've created small Data Journalism to be an online repository for my [Fall 2013 data journalism class at NYU](TK). There's quite a few essays and walkthroughs that I've half-started but won't finish before the class starts.
-
-So in the meantime, **sdJ** mostly consists of several technical walkthroughs and a long reading list that will be useful to students.
-
 
 
 ##  About the author
@@ -127,7 +126,7 @@ The fonts I use are:
 
 - [Arvo](http://www.google.com/fonts/specimen/Arvo) for the display and headline fonts
 - [Droid Serif](http://www.google.com/fonts/specimen/Droid+Serif) for the body text
-- [PT Sans](http://www.google.com/fonts/specimen/PT+Sans) as the sans-serif font.
+- [Ubuntu](http://www.google.com/fonts/specimen/PT+Sans) as the sans-serif font.
 
 The off-white background pattern is from [SubtlePatterns](), a site that every web-designer should bookmark.
 
