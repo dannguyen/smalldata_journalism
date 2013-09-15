@@ -56,7 +56,7 @@ var svg = d3.select("#chart-holder").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // need to refer to absolute address of TSV for embedding purposes
-d3.tsv("/downloads/code/projects/creating-visualizations-for-the-internet/d3-chart/unemployment-data.tsv", function(error, data) {
+d3.tsv("/downloads/code/projects/creating-viz/d3-chart/unemployment-data.tsv", function(error, data) {
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "Year"; }));
 
   data.forEach(function(d) {

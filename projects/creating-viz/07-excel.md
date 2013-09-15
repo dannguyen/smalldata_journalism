@@ -11,7 +11,7 @@ So after the laborious exercise of hand-drawing our chart, let's see how much ea
 
 ## Entering the data into the proper format
 
-![The data in Excel](/images/projects/creating-visualizations-for-the-internet/02-as-excel-data.png)
+![The data in Excel](/images/projects/creating-viz/02-as-excel-data.png)
 
 
 ## Producing a chart
@@ -19,7 +19,7 @@ So after the laborious exercise of hand-drawing our chart, let's see how much ea
 
 ### Highlight the data fields
 
-![Highlight the data](/images/projects/creating-visualizations-for-the-internet/02-excel-highlighted-data.png)
+![Highlight the data](/images/projects/creating-viz/02-excel-highlighted-data.png)
 
 
 ### Select the Line Chart option
@@ -28,13 +28,13 @@ So after the laborious exercise of hand-drawing our chart, let's see how much ea
 2. A new icon-toolbar should pop-up. Click on the **Line** icon.
 3. Click the **2-D &raquo; Line** icon.
 
-![Selecting the Line Chart option](/images/projects/creating-visualizations-for-the-internet/02-excel-select-line-chart.png)
+![Selecting the Line Chart option](/images/projects/creating-viz/02-excel-select-line-chart.png)
 
 
 ### The finished chart
 
 
-![The Excel generated chart](/images/projects/creating-visualizations-for-the-internet/02-finished-excel-line-chart.png)
+![The Excel generated chart](/images/projects/creating-viz/02-finished-excel-line-chart.png)
 
 By **right-clicking** on the chart, you have the option to configure how it looks, such as the color of each line, the font-size, and the way the axes are labeled.
 
