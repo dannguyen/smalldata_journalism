@@ -39,8 +39,8 @@ h1, .h1 { font-size: floor($font-size-base * 2.60); text-align: center; } // ~36
 h2, .h2 { font-size: floor($font-size-base * 2.0); text-align: center; } // ~30px
 h3, .h3 { font-size: ceil($font-size-base * 1.60); } // ~24px
 h4, .h4 { font-size: ceil($font-size-base * 1.30);  } // ~18px
-h5, .h5 { font-size:  $font-size-base;  }
-h6, .h6 { font-size: ceil($font-size-base * 0.85);  } // ~12px
+h5, .h5 { font-size:  ceil($font-size-base * 1.2);   }
+h6, .h6 { font-size: ceil($font-size-base * 1.0); font-weight: bold;  } // ~12px
 
 h1,h2,h3{
   margin-bottom:5px;

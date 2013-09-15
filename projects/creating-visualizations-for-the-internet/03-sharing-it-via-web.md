@@ -8,6 +8,20 @@ project_order: 3
 
 
 
+## Uploading to Imgur
+
+
+
+
+## Uploading to Google Plus
+
+
+
+
+
+
+
+
 
 
 ### Pros

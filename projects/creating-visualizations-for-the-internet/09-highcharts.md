@@ -1,7 +1,7 @@
 ---
 layout: project
-title: With RaphaelJS
-tagline: Our own JavaScript 
+title: Using the Highcharts JavaScript library
+tagline: Hosting all of our own code
 project: creating-viz
 project_order: 11
 ---

@@ -7,3 +7,7 @@ An online compendium of practical data journalism for the NYU-SCPS [Data Journal
 
 Homepage: [www.smalldatajournalism.com](http://www.smalldatajournalism.com)
 
+sdJ runs off of Jekyll, the static-site generator, with Ruby 1.9.3. After running a `bundle install`, you should be able to run the site as is (though I'm not sure what the point would be). Feel free to submit pull request for corrections to the existing text.
+
+
+

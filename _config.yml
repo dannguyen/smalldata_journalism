@@ -1,5 +1,7 @@
 name: small data Journalism
 markdown: kramdown
+kramdown:
+  toc_levels: 1..4
 pygments: true
 relative_permalinks: true
 permalink: pretty

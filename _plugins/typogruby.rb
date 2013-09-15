@@ -1,3 +1,5 @@
+=begin This does not play well with partials
+
 # Plugin/Gem Loader
 require 'typogruby'
 require 'kramdown'
@@ -11,3 +13,5 @@ module Jekyll
     end
   end
 end
+
+=end
