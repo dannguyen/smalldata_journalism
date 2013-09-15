@@ -1,74 +1,102 @@
-title,author,type,category,source_url,description,date,priority
-When Maps Shouldn’t Be Maps,Matthew Ericson,Article,Visualization,http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/,,10/14/2011,
-A fundamental way newspaper sites need to change,Adrian Holovaty,Article,Curation,http://www.holovaty.com/writing/fundamental-change/,,9/6/2006,
-The Data Journalism Handbook,The European Journalism Center and the Open Knowledge Foundation,Book,Journalism,http://datajournalismhandbook.org/,,,
-My Favorite (Excel) Things,MaryJo Webster,Article,Curation,http://extra.twincities.com/car/mj/ExcelClassHandout.pdf,,2010,
-Design Principles for News Apps & Graphics,Lena Groeger,Article,Visualization,http://www.propublica.org/nerds/item/design-principles-for-news-apps-graphics,,5/30/2013,
-Visual Literacy in an Age of Data,Shazna Nessa,Article,Visualization,http://source.mozillaopennews.org/en-US/learning/visual-literacy-age-data/,,6/13/2013,
-PowerPoint does Rocket Science - and Better Techniques for Technical Reports,Edward Tufte,Article,Visualization,http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001yB&topic_id=1,,,
-Pie Charts,Edward Tufte discussion board,Article,Visualization,http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=00018S,,,
-Does High Public Debt Consistently Stifle Economic Growth? A Critique of Reinhart and Rogoff,"Thomas Herndon, Michael Ash, and Robert Pollin",Article,Curation,http://www.peri.umass.edu/236/hash/31e2ff374b6377b2ddec04deaa6388b1/publication/566/,,,
-Common Static Visualization Types,Angela Zoss,Guide,Visualization,http://guides.library.duke.edu/vis_types,,,
-Using Google Refine to Clean Messy Data,Daniel Nguyen,Guide,Curation,http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning,,12/30/2010,
-Using Small Multiples to get to ‘Aha!,Matt Linderman,Article,Visualization,http://37signals.com/svn/posts/266-using-small-multiples-to-get-to-aha,,2/13/2007,
-Beautiful spider loses its way,Kaiser Fung,Article,Visualization,http://junkcharts.typepad.com/junk_charts/2013/08/beautiful-spider-loses-its-way-.html,,,
-"If correlation doesn’t imply causation, then what does?",Michael Nielsen,Article,Analysis,http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/,,1/23/2012,
-Know Your Stats,Dave Stanton,Article,Analysis,http://source.mozillaopennews.org/en-US/learning/know-your-stats/,,,
-The Perils of Polling Twitter,Jacob Harris,Article,Analysis,http://source.mozillaopennews.org/en-US/learning/perils-polling-twitter/,,,
-Finding Stories in the Structure of Data,Matt Waite,Article,Journalism,http://source.mozillaopennews.org/en-US/learning/finding-stories-structure-data/,,,
-How the Data Sausage Gets Made,Jacob Harris,Article,Curation,http://source.mozillaopennews.org/en-US/learning/how-sausage-gets-made/,,,
-Freeing the Plum Book,Derek Willis,Article,Curation,http://source.mozillaopennews.org/en-US/learning/freeing-plum-book/,,,
-Sane Data Updates are Harder Than You Think,Adrian Holovaty,Article,Curation,http://source.mozillaopennews.org/en-US/learning/sane-data-updates-are-harder-you-think/,,,
-Culture Hacking with a Staff Database,Ian Malpass ,Article,Curation,http://codeascraft.com/2013/05/31/culture-hacking-with-a-staff-database/,,,
-For Example,Mike Bostock,Article,Visualization,http://bost.ocks.org/mike/example/,,,
-The different sketch styles of the designers at 37signals,Jason Fried ,Article,Visualization,http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals,,8/27/2009,
-Why we skip Photoshop,Jason Fried ,Article,Visualization,http://37signals.com/svn/posts/1061-why-we-skip-photoshop,,,
-Common MySQL Queries,Peter Brawley and Arthur Fuller,Guide,Curation,http://www.artfulsoftware.com/infotree/queries.php,,,
-Machine Learning in R: Clustering,Ricky Ho,Guide,Analysis,http://horicky.blogspot.com/2012/04/machine-learning-in-r-clustering.html,,,
-Getting your heart rate using R and Ruby,Sau Sheong Chang,Guide,Curation,http://blog.airbrake.io/guest-post/exploring-everything/,,,
-"Story hunting in birth, death data",Anthony DeBarros,Article,Journalism,http://www.anthonydebarros.com/2010/09/07/data-analysis-births-deaths/,,,
-Word clouds considered harmful,Jacob Harris,Article,Visualization,http://www.niemanlab.org/2011/10/word-clouds-considered-harmful/,,,
-A Gentle Introduction to SQL using SQLite,Troy Thibodeaux,Guide,Curation,https://github.com/tthibo/SQL-Tutorial/blob/master/tutorial_files/part1.textile,,,
-"I had no idea how to make custom maps, so I learnt by doing. You should too.",Alastair Coote,Guide,Visualization,http://blogging.alastair.is/i-had-no-idea-how-to-make-custom-maps-so-i-learnt-by-doing-you-should-too/,,,
-Serious Fun With Numbers,Janet Paskin,Article,Journalism,http://www.cjr.org/reports/serious_fun_with_numbers.php?page=all&print=true,,,
-"Console productivity hack: Discover the frequent; then make it the easy",Matt Might,Guide,Curation,http://matt.might.net/articles/console-hacks-exploiting-frequency/,,,
-Data Mining: Finding Similar Items and Users,Alexandru Nedelcu,Guide,Analysis,https://www.bionicspirit.com/blog/2012/01/16/cosine-similarity-euclidean-distance.html,,,
-Data Mining the Web: $100 Worth of Priceless,,Article,Curation,http://blog.luckyoyster.com/post/33592990831/data-mining-the-web-100-worth-of-priceless,A high-level description of the engineering used to mine and index 3.4 billion web pages in about 14 hours.,,
-A Programmer's Guide to Data Mining,Ron Zacharski,Book,Curation,http://guidetodatamining.com/,"A guide to practical data mining, collective intelligence, and building recommendation systems",,
-Think Stats,Allen B. Downey,Book,Analysis,http://www.greenteapress.com/thinkstats/,An introduction to Probability and Statistics for Python programmers.,,
-Think Bayes,Allen B. Downey,Book,Analysis,http://www.greenteapress.com/thinkbayes/thinkbayes.pdf,"An exploration of Bayesian statistics, using the Python programming language",,
-Predictive Analytics: Data Preparation,Ricky Ho,Guide,Curation,http://horicky.blogspot.com.au/2012/05/predictive-analytics-data-preparation.html,,,
-Big Data Tutorials,Neal Caren,Guide,Curation,http://nealcaren.web.unc.edu/big-data/,,,
-Bastards Book of Regular Expressions,Daniel Nguyen,Book,Curation,http://regex.bastardsbook.com/,,,8
-Data Analysis for Politics and Policy,Edward Tufte,Book,Analysis,http://www.edwardtufte.com/tufte/ebooks,,,
-Up and Down the Ladder of Abstraction,Bret Victor,Article,Visualization,http://worrydream.com/LadderOfAbstraction/,,,9
-Scientific Communication as Sequential Art,Bret Victor,Article,Visualization,http://worrydream.com/#!/ScientificCommunicationAsSequentialArt,,,
-How to Design an Infographic: How Many Households,Bret Victor,Article,Visualization,http://worrydream.com/#!/HowManyHouseholds,,,8
-Attempts to Map Music,Daniel Brownstein ,Article,Visualization,http://dabrownstein.wordpress.com/2013/08/03/attempts-at-mapping-music/,,8/3/2013,
-Mapping NYC stop and frisks: some cartographic observations,Steven Romalewski,Article,Visualization,http://spatialityblog.com/2012/07/27/nyc-stop-frisk-cartographic-observations/,,7/27/2012,9
-How 2 Blade staffers overcame obstacles to cover Toledo’s gangs,Taylor Dungjen,Article,Curation,http://www.toledoblade.com/Police-Fire/2013/04/28/How-2-Blade-staffers-overcame-obstacles-to-cover-Toledo-s-gangs.html,,,10
-Design Tip: Never Use Black,Ian Storm Taylor,Article,Visualization,http://ianstormtaylor.com/design-tip-never-use-black/,,,8
-The Greatest Paper Map of the United States You’ll Ever See,Seth Stevenson,Article,Visualization,http://www.slate.com/articles/arts/culturebox/2012/01/the_best_american_wall_map_david_imus_the_essential_geography_of_the_united_states_of_america_.html,A case for where hand-editing has advantages over algorithmic rendering.,,
-The Map That Lincoln Used to See the Reach of Slavery,,,,http://www.slate.com/blogs/the_vault/2013/09/04/abraham_lincoln_the_president_used_this_map_to_see_where_slavery_was_strongest.html,,,
-People Power Prevails!,John Keefe,Article,Curation,http://source.mozillaopennews.org/en-US/learning/people-power-prevails/,,,8
-Cicada Tracker,WNYC and Radiolab,Guide,Curation,http://project.wnyc.org/cicadas/,,,10
-GIS Analyses of Dr. Snow's Map        ,John Mackenzie ,Guide,Visualization,http://www.udel.edu/johnmack/frec480/cholera/cholera2.html,,,
-Mapping Chicago’s shooting victims,Andy Boyle,Guide,Visualization,http://blog.apps.chicagotribune.com/2013/07/15/mapping-chicagos-shooting-victims/,,,
-"Proto-analysis of Boston Globe Traffic on Facebook",Sonya Song,Article,Analysis,http://sonya2song.blogspot.com/2013/07/proto-analysis-of-boston-globe-traffic.html,,,
-Under the Hood of the Open Gender Tracker,Irene Ros and Nathan Matias ,Article,Curation,http://source.mozillaopennews.org/en-US/articles/under-hood-open-gender-tracker/,,,
-Creating a Metric for News Apps,Brian Abelson,Article,Analysis,http://brianabelson.com/open-news/2013/03/18/A-Metric-For-News-Apps.html,,,
-Matching Methods for Causal Inference,Elizabeth A. Stuart,Guide,Analysis,http://biostat.jhsph.edu/~estuart/Stuart10.StatSci.pdf,,,
-Style and Substance: Analyzing a Beach Ball Chart,Joe Germuska,Article,Visualization,http://blog.apps.chicagotribune.com/2012/02/07/style-and-substance-analyzing-a-beach-ball-chart/,,,
-Better web cartography with dot density maps and new tools,Christopher Groskopf,Guide,Visualization,http://blog.apps.chicagotribune.com/2011/08/12/better-web-cartography-with-dot-density-maps-and-new-tools/,,,
-How Not to Lie with Statistics: Avoiding Common Mistakes in Quantitative Political Science,Gary King,Guide,Analysis,http://dash.harvard.edu/bitstream/handle/1/4455012/not%20lie%20stat.pdf?sequence=1,,,
-How we identified America's 50 worst charities,Kendall Taggart and Kris Hundley,Article,Reporting,http://www.tampabay.com/news/business/how-we-identified-americas-50-worst-charities/2124085,,,
+title,author,type,category,source_url,keywords,description,date,priority
+When Maps Shouldn’t Be Maps,Matthew Ericson,Article,Visualization,http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/,,"Computers have made mapping almost too easy, to the point where we overlook clearer, more efficient ways to display data that isn't particularly geospatially interesting.",10/14/2011,
+A fundamental way newspaper sites need to change,Adrian Holovaty,Article,Curation,http://www.holovaty.com/writing/fundamental-change/,,"A hallmark essay on how data can be used in the very core of journalsitic operations, by the journalist who created the popular Django framework. Too bad his advice hasn't been heeded.",9/6/2006,
+The Data Journalism Handbook,The European Journalism Center and the Open Knowledge Foundation,Book,Reporting,http://datajournalismhandbook.org/,,An international collaboration of the best of data journalism worldwide.,,
+My Favorite (Excel) Things,MaryJo Webster,Article,Curation,http://extra.twincities.com/car/mj/ExcelClassHandout.pdf,,A short readable guide to one of the most vital and fundamental data journalism tools.,2010,
+Design Principles for News Apps & Graphics,Lena Groeger,Article,Visualization,http://www.propublica.org/nerds/item/design-principles-for-news-apps-graphics,,A well-lillustrated list of design concepts to bring to visualizations and news interactives. ,5/30/2013,
+Visual Literacy in an Age of Data,Shazna Nessa,Article,Visualization,http://source.mozillaopennews.org/en-US/learning/visual-literacy-age-data/,,Are modern web interactives becoming too complicate for users to interpret? Probably.,6/13/2013,10
+PowerPoint does Rocket Science - and Better Techniques for Technical Reports,Edward Tufte,Article,Visualization,http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001yB&topic_id=1,,"How ugly formatting, including improperly bolded text, can obscure the important information in technical presentations.",,10
+Pie Charts,Edward Tufte discussion board,Article,Visualization,http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=00018S,,A great discussion between Edward Tufte and his readers on why pie charts aren't ideal.,,10
+Does High Public Debt Consistently Stifle Economic Growth? A Critique of Reinhart and Rogoff,"Thomas Herndon, Michael Ash, and Robert Pollin",Article,Curation,http://www.peri.umass.edu/236/hash/31e2ff374b6377b2ddec04deaa6388b1/publication/566/,,"An influential economic analysis by two Harvard economists, based on a spreadsheet snafu? This paper and the articles that followed are a bag of laughs.",,
+Common Static Visualization Types,Angela Zoss,Guide,Visualization,http://guides.library.duke.edu/vis_types,,"Chart types, from simple to exotic, in tabular form.",,
+Using Google Refine to Clean Messy Data,Daniel Nguyen,Guide,Curation,http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning,,Google Refine is now Open Refine and its interface and feature sets have improved quite a bit since I wrote this essay. But it's still a good overview of how a single digital tool can make a data-intensive investigation possible.,12/30/2010,
+Using Small Multiples to get to ‘Aha!,Matt Linderman,Article,Visualization,http://37signals.com/svn/posts/266-using-small-multiples-to-get-to-aha,,Applying Tufte's principle of small multiples to online video thumbnails.,2/13/2007,6
+Beautiful spider loses its way,Kaiser Fung,Article,Visualization,http://junkcharts.typepad.com/junk_charts/2013/08/beautiful-spider-loses-its-way-.html,,Charts can be too beautiful for their own good.,,10
+"If correlation doesn’t imply causation, then what does?",Michael Nielsen,Article,Analysis,http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/,,"Predictably, the answer is very complicated and involves calculus.",1/23/2012,
+Know Your Stats,Dave Stanton,Article,Analysis,http://source.mozillaopennews.org/en-US/learning/know-your-stats/,,A short list of statistical snafus as applied to data journalism.,,8
+The Perils of Polling Twitter,Jacob Harris,Article,Analysis,http://source.mozillaopennews.org/en-US/learning/perils-polling-twitter/,,"A nice explanation of selection bias, in the context of Twitter and other social media.",,
+Finding Stories in the Structure of Data,Matt Waite,Article,Reporting,http://source.mozillaopennews.org/en-US/learning/finding-stories-structure-data/,,How the structure of data can create new kinds of storytelling.,,
+How the Data Sausage Gets Made,Jacob Harris,Article,Curation,http://source.mozillaopennews.org/en-US/learning/how-sausage-gets-made/,,The horror of scraping government data.,,10
+Freeing the Plum Book,Derek Willis,Article,Curation,http://source.mozillaopennews.org/en-US/learning/freeing-plum-book/,,A brilliant example of a (legal) hack to get public data.,,9
+Sane Data Updates are Harder Than You Think,Adrian Holovaty,Article,Curation,http://source.mozillaopennews.org/en-US/learning/sane-data-updates-are-harder-you-think/,,A three-part series to just how complicated just doing data updates can be.,,10
+Culture Hacking with a Staff Database,Ian Malpass ,Article,Curation,http://codeascraft.com/2013/05/31/culture-hacking-with-a-staff-database/,,Etsy found interesting and practical ways to mash up the (non-HR-private) data of its staff.,,10
+For Example,Mike Bostock,Article,Visualization,http://bost.ocks.org/mike/example/,,"An awe-inspiring visual essay from the creator of D3, its purpose ""to share my love of examples with you.""",,10
+The different sketch styles of the designers at 37signals,Jason Fried ,Article,Visualization,http://37signals.com/svn/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals,,Drawn sketches can hint at what's visually compelling to the designer.,8/27/2009,
+Why we skip Photoshop,Jason Fried ,Article,Visualization,http://37signals.com/svn/posts/1061-why-we-skip-photoshop,,"This is not really about data, but about the details of the creation process, and the importance of streamlining your workflow.",,
+Common MySQL Queries,Peter Brawley and Arthur Fuller,Guide,Curation,http://www.artfulsoftware.com/infotree/queries.php,,"If you're new to SQL, or even if you're skilled at it, this is one of the best collections of virtually every half-way complicated query you can dream of.",,10
+Machine Learning in R: Clustering,Ricky Ho,Guide,Analysis,http://horicky.blogspot.com/2012/04/machine-learning-in-r-clustering.html,,,,
+Getting your heart rate using R and Ruby,Sau Sheong Chang,Guide,Curation,http://blog.airbrake.io/guest-post/exploring-everything/,,"A clever example of how to use code and available technology to track variables in the ""meatspace""",,
+"Story hunting in birth, death data",Anthony DeBarros,Article,Reporting,http://www.anthonydebarros.com/2010/09/07/data-analysis-births-deaths/,,,,
+Word clouds considered harmful,Jacob Harris,Article,Visualization,http://www.niemanlab.org/2011/10/word-clouds-considered-harmful/,,Another popular web visualization that is more junk than data.,,10
+A Gentle Introduction to SQL using SQLite,Troy Thibodeaux,Guide,Curation,https://github.com/tthibo/SQL-Tutorial/blob/master/tutorial_files/part1.textile,,,,
+"I had no idea how to make custom maps, so I learnt by doing. You should too.",Alastair Coote,Guide,Visualization,http://blogging.alastair.is/i-had-no-idea-how-to-make-custom-maps-so-i-learnt-by-doing-you-should-too/,,"When you want something done beautifully, sometimes you have to do it yourself.",,10
+Serious Fun With Numbers,Janet Paskin,Article,Reporting,http://www.cjr.org/reports/serious_fun_with_numbers.php?page=all&print=true,,,,
+"Console productivity hack: Discover the frequent; then make it the easy
+
+",Matt Might,Guide,Curation,http://matt.might.net/articles/console-hacks-exploiting-frequency/,,,,
+Data Mining: Finding Similar Items and Users,Alexandru Nedelcu,Guide,Analysis,https://www.bionicspirit.com/blog/2012/01/16/cosine-similarity-euclidean-distance.html,,,,
+Data Mining the Web: $100 Worth of Priceless,,Article,Curation,http://blog.luckyoyster.com/post/33592990831/data-mining-the-web-100-worth-of-priceless,,A high-level description of the engineering used to mine and index 3.4 billion web pages in about 14 hours.,,
+A Programmer's Guide to Data Mining,Ron Zacharski,Book,Curation,http://guidetodatamining.com/,,"A guide to practical data mining, collective intelligence, and building recommendation systems",,
+Think Stats,Allen B. Downey,Book,Analysis,http://www.greenteapress.com/thinkstats/,,An introduction to Probability and Statistics for Python programmers.,,
+Think Bayes,Allen B. Downey,Book,Analysis,http://www.greenteapress.com/thinkbayes/thinkbayes.pdf,,"An exploration of Bayesian statistics, using the Python programming language",,
+Predictive Analytics: Data Preparation,Ricky Ho,Guide,Curation,http://horicky.blogspot.com.au/2012/05/predictive-analytics-data-preparation.html,,,,
+Big Data Tutorials,Neal Caren,Guide,Curation,http://nealcaren.web.unc.edu/big-data/,,,,
+Bastards Book of Regular Expressions,Daniel Nguyen,Book,Curation,http://regex.bastardsbook.com/,,"If there's one data-related skill I wish I had learned years ago, it would be regular expressions.",,10
+Data Analysis for Politics and Policy,Edward Tufte,Book,Analysis,http://www.edwardtufte.com/tufte/ebooks,,,,
+Up and Down the Ladder of Abstraction,Bret Victor,Article,Visualization,http://worrydream.com/LadderOfAbstraction/,,,,9
+Scientific Communication as Sequential Art,Bret Victor,Article,Visualization,http://worrydream.com/#!/ScientificCommunicationAsSequentialArt,,,,
+How to Design an Infographic: How Many Households,Bret Victor,Article,Visualization,http://worrydream.com/#!/HowManyHouseholds,,A critique of a well-liked New York Times interactive.,,8
+Attempts to Map Music,Daniel Brownstein ,Article,Visualization,http://dabrownstein.wordpress.com/2013/08/03/attempts-at-mapping-music/,,,8/3/2013,
+Mapping NYC stop and frisks: some cartographic observations,Steven Romalewski,Article,Visualization,http://spatialityblog.com/2012/07/27/nyc-stop-frisk-cartographic-observations/,,"A critique of map design and thresholds, in the contest of the NYPD's stop-and-frisk data",7/27/2012,9
+How 2 Blade staffers overcame obstacles to cover Toledo’s gangs,Taylor Dungjen,Article,Curation,http://www.toledoblade.com/Police-Fire/2013/04/28/How-2-Blade-staffers-overcame-obstacles-to-cover-Toledo-s-gangs.html,,,,10
+Design Tip: Never Use Black,Ian Storm Taylor,Article,Visualization,http://ianstormtaylor.com/design-tip-never-use-black/,,,,8
+The Greatest Paper Map of the United States You’ll Ever See,Seth Stevenson,Article,Visualization,http://www.slate.com/articles/arts/culturebox/2012/01/the_best_american_wall_map_david_imus_the_essential_geography_of_the_united_states_of_america_.html,,A case for where hand-editing has advantages over algorithmic rendering.,,
+Visualizing Slavery,Susan Schulten,Article,Visualization,http://opinionator.blogs.nytimes.com/2010/12/09/visualizing-slavery/,,,,
+People Power Prevails!,John Keefe,Article,Curation,http://source.mozillaopennews.org/en-US/learning/people-power-prevails/,,,,8
+Cicada Tracker,WNYC and Radiolab,Guide,Curation,http://project.wnyc.org/cicadas/,,Easily one of the most esoteric and brilliant crowdsourcing data projects yet conceived.,,10
+GIS Analyses of Dr. Snow's Map        ,John Mackenzie ,Guide,Visualization,http://www.udel.edu/johnmack/frec480/cholera/cholera2.html,,,,
+Mapping Chicago’s shooting victims,Andy Boyle,Guide,Visualization,http://blog.apps.chicagotribune.com/2013/07/15/mapping-chicagos-shooting-victims/,,,,
+Proto-analysis of Boston Globe Traffic on Facebook,Sonya Song,Article,Analysis,http://sonya2song.blogspot.com/2013/07/proto-analysis-of-boston-globe-traffic.html,,,,
+Under the Hood of the Open Gender Tracker,Irene Ros and Nathan Matias ,Article,Curation,http://source.mozillaopennews.org/en-US/articles/under-hood-open-gender-tracker/,,,,
+Creating a Metric for News Apps,Brian Abelson,Article,Analysis,http://brianabelson.com/open-news/2013/03/18/A-Metric-For-News-Apps.html,,A great explainer of how to implement real metrics to the field of news applications.,,10
+Matching Methods for Causal Inference,Elizabeth A. Stuart,Guide,Analysis,http://biostat.jhsph.edu/~estuart/Stuart10.StatSci.pdf,,,,
+Style and Substance: Analyzing a Beach Ball Chart,Joe Germuska,Article,Visualization,http://blog.apps.chicagotribune.com/2012/02/07/style-and-substance-analyzing-a-beach-ball-chart/,,The beach ball chart is about as dumb as it sounds.,,10
+Better web cartography with dot density maps and new tools,Christopher Groskopf,Guide,Visualization,http://blog.apps.chicagotribune.com/2011/08/12/better-web-cartography-with-dot-density-maps-and-new-tools/,,,,
+How Not to Lie with Statistics: Avoiding Common Mistakes in Quantitative Political Science,Gary King,Guide,Analysis,http://dash.harvard.edu/bitstream/handle/1/4455012/not%20lie%20stat.pdf?sequence=1,,,,
+How we identified America's 50 worst charities,Kendall Taggart and Kris Hundley,Article,Reporting,http://www.tampabay.com/news/business/how-we-identified-americas-50-worst-charities/2124085,,"How exactly do you define ""worst""? Here's a high-level description of the factors reporters used to rank the performance of charity, and the amount of data they had to sift and analyze to do so.",6/6/2013,8
 "Example story memos and assessments for class on ""Real-Time Data; Using APIs""
-",Derek Willis,Guide,Reporting,http://dwillis.github.io/data-reporting/apr25.html,,,
-"Analyzing the Analyzers: An Introspective Survey of Data Scientists and Their Work","Harlan Harris, Sean Murphy, Marck Vaisman",Book,Analysis,http://oreilly.com/data/stratareports/analyzing-the-analyzers.csp?intcmp=il-strata-ebooks-analyzing-the-analyzers-strata-right-rail,,,
-Drawing Conclusions from Data,Jonathan Stray,Article,Analysis,http://source.mozillaopennews.org/en-US/learning/statistically-sound-data-journalism/,,,
-Making the WNYC Census Map,John Keefe,Guide,Visualization,http://johnkeefe.net/47474697,,,
+",Derek Willis,Guide,Reporting,http://dwillis.github.io/data-reporting/apr25.html,,,,
+Analyzing the Analyzers: An Introspective Survey of Data Scientists and Their Work,"Harlan Harris, Sean Murphy, Marck Vaisman",Book,Analysis,http://oreilly.com/data/stratareports/analyzing-the-analyzers.csp?intcmp=il-strata-ebooks-analyzing-the-analyzers-strata-right-rail,,,,
+Drawing Conclusions from Data,Jonathan Stray,Article,Analysis,http://source.mozillaopennews.org/en-US/learning/statistically-sound-data-journalism/,,,,
+Making the WNYC Census Map,John Keefe,Guide,Visualization,http://johnkeefe.net/47474697,,,,
 "Months after West blast, a report highlights what we don’t know about chemical safety
-",Richard Parker,Article,Reporting,http://www.cjr.org/united_states_project/laurel_dallas_morning_news_investigation_chemical_safety_data.php?page=all,,,
+",Richard Parker,Article,Reporting,http://www.cjr.org/united_states_project/laurel_dallas_morning_news_investigation_chemical_safety_data.php?page=all,,,,
 "Principles of Information Display for Visualization Practitioners
-",Al Globus,Article,Visualization,http://www2.cs.uregina.ca/~rbm/cs100/notes/spreadsheets/tufte_paper.html,,,
-Small Multiples with Details on Demand,Jim Vallandingham,Guide,Visualization,http://vallandingham.me/small_multiples_with_details.html,,,
+",Al Globus,Article,Visualization,http://www2.cs.uregina.ca/~rbm/cs100/notes/spreadsheets/tufte_paper.html,,,,
+Small Multiples with Details on Demand,Jim Vallandingham,Guide,Visualization,http://vallandingham.me/small_multiples_with_details.html,,,,
+The Rhetoric of Data,Nicholas Diakopoulos,Article,Reporting,http://towcenter.org/blog/the-rhetoric-of-data/,,,,
+Mapping Millions of Dots,Eric Fischer,Article,Visualization,http://www.mapbox.com/blog/mapping-millions-of-dots/,,"Millions and millions of beautiful dots, without crashing your computer",,
+Visualizing Data Uncertainty: An Experiment with D3.js,Alex Krusz,Article,Visualization,http://blog.velir.com/index.php/2013/07/11/visualizing-data-uncertainty-an-experiment-with-d3-js/,,,,
+Hexbins!,Zachary Forest Johnson,Article,Visualization,http://indiemaps.com/blog/2011/10/hexbins/,,,10/18/2011,9
+Election 2012: Electoral combinations,Christopher Groskopf ,Guide,Visualization,http://blog.apps.npr.org/2012/11/13/election-2012-generating-the-combinations.html,,,,
+The NYT's Visual Election Outcome Explorer,Mike Bostock,Article,Visualization,http://source.mozillaopennews.org/en-US/articles/nyts-512-paths-white-house/,,An behind-the-scenes explanation of how one of the best web visualizations ever was built.,,10
+Journalism in the Age of Data,Geoff McGhee,Article,Reporting,http://datajournalism.stanford.edu/,,A video report on data visualization as a storytelling medium,9/28/2010,
+"Counting the Jay-Z subway crowd
+",John Keefe,Article,Reporting,http://johnkeefe.net/counting-the-jay-z-subway-crowd,,Using the MTA turnstile data to see what kind of crowds Jay-Z drew at Jay-Z's inaugural concert with Barclays Center.,2012-09,7
+Mapping Dollars in a District,John Keefe,Guide,Reporting,http://johnkeefe.net/dollars-in-a-district,,"WNYC's political team wanted to know: how much money was being raised by candidates for a state legislative district from within the district itself? John Keefe walks through his use of Fusion Tables and additional database techniques for the analysis and visualization.
+",2011-09,9
+"Free, Live Election data: Now's your chance to play",John Keefe,Guide,Visualization,http://johnkeefe.net/96855599,,How to use Google-provided election data to build a Fusion Table-powered map.,2012,9
+"Making the NYC Evacuation Map
+",John Keefe,Article,Reporting,http://johnkeefe.net/making-the-nyc-evacuation-map,,"One day John Keefe was just browsing the official NYC data site and tucked away some code that involved the city's flood zones. When Hurricane Irene stuck, NYC.gov was flooded (with web traffic) and WNYC became an invaluable resource.",,10
+"Mapping Campaign Contributions on the Fly
+",John Keefe,Guide,Visualization,http://johnkeefe.net/campaign-finance-mapping-on-the-fly,,"With Fusion Tables and a little Ruby magic, John Keefe describes how he mapped contributions to presumptive NYC mayoral candidates by zip code by lunchtime.",,8
+We Have Met the Enemy and He Is PowerPoint,Elisabeth Bumiller,Article,Visualization,http://www.nytimes.com/2010/04/27/world/27powerpoint.html,,"“When we understand that slide, we’ll have won the war.”",,10
+The Data Driven Congressional Reporter,Derek Willis,Article,Reporting,http://thescoop.org/archives/2012/12/26/the-data-driven-congressional-reporter/,,Why aren't more Congressional reporters taking advantage of the copious generated by our legislators?,,8
+On Legislative Data Transparency,Derek Willis,Article,Curation,http://thescoop.org/archives/2012/02/04/on-legislative-data-transparency/,,"This says everything you need to know about the complexity and annoyance of real-life data: ""For example, in the Senate it is possible for the Majority Leader and Minority Leader to alter the rules of math when it comes to how many senators constitute a three-fifths majority.""",2/4/2012,10
+"The NYPD's crash data has a booboo. Here's a band-aid.
+",John Krauss,Article,Curation,http://blog.accursedware.com/nypd-crash-data-band-aid/,,"Citizen data journalism at its best, from John Krauss: ""I already knew that they were finally releasing -- after the Council forced them to -- crash data as idiotically obfuscated PDFs, but reading that they justified this out of concern for ""the integrity of the data,"" was so galling that it goaded me into action. I would make the data accessible as friendly, parseable CSVs.""",2/16/2012,10
+White House Safety Datapalooza data journalism talk,Chrys Wu,Article,Reporting,http://blog.chryswu.com/2012/09/14/the-transcript-of-my-white-house-datapalooza-data-journalism-talk/,,,,
+The NYT's Amanda Cox on Winning the Internet,Erin Kissane,Article,Visualization,http://source.mozillaopennews.org/en-US/articles/nyts-amanda-cox-wins-internet/,,A visualization of what makes great visualizations at the New York Times,,8
+The One-Query Story,"Kate Martin, Grant Smith, Megan Luther",Guide,Reporting,https://docs.google.com/presentation/d/1QB2pfbo2sOupG8qCjdwonCw4J-hl8gsdzrwQI8QAcdQ/edit?pli=1#slide=id.gaf5af151_00,,A brilliant walkthrough of benign data sets and the code that could potentially launch  investigative projects.,,10
+Disputes over crime maps highlight challenge of outsourcing public data,Adam Hochberg,Article,Reporting,http://www.poynter.org/latest-news/making-sense-of-news/213443/disputes-over-crime-maps-highlight-challenge-of-outsourcing-public-data/,,,,
+"Oscar Predictions, Election Style",Nate Silver,Article,Analysis,http://fivethirtyeight.blogs.nytimes.com/2013/02/22/oscar-predictions-election-style/,,The master of presidential predictions explains why he's not so great at predicting Oscar winners.,,10
