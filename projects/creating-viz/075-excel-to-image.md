@@ -14,13 +14,12 @@ However, when it comes to sharing, we've lost some universality: users must have
 
 ## Converting to PNG
 
-
 ## Uploading to the Web
 
 
 ## Advantages
 
-## Disadvantages
+## Concerns
 
 
 

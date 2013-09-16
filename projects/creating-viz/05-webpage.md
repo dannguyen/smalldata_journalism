@@ -7,10 +7,23 @@ project_order: 5
 ---
 
 
-### Open a text file
-### Write a little HTML
+## It's just text
+- You'll need a text editor for this. Do not use Microsoft Word or TextEdit.
+
+### Open a new text file
+
+### Write (or copy and paste) a little HTML
+
 ### Include the image file
 
+### Add a headline
+
+
+
+## All together
+
+
+## The takeaway
 
 
 

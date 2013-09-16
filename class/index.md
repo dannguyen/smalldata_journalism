@@ -36,6 +36,9 @@ By the end of the course, students will be expected to have the experience and i
 This class will be taught in a small group setting with a focus on hands-on instruction.
 
 
+**Note:** I won't be teaching any programming, but if you already how to code, you'll learn how to apply it in data journalism. And if you can't code yet, you'll learn how it can be useful &ndash; which is always good to have in mind before learning to code mid-career.
+
+
 ### Prerequisites 
 
 - A [Google Account with Fusion Tables](https://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595) set up

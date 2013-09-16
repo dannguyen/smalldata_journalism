@@ -8,6 +8,31 @@ project_order: 10
 
 
 
+## Creating the HTML file
+
+
+
+## Adding the Google Charts JavaScript code
+
+
+## The data format
+
+
+
+## All together
+
+
+### Edit numbers, colors and data on the fly
+
+
+## The takeaway
+
+- You can edit numbers on the fly for truly dynamic graphs
+- Your graphs can be interactive
+- You're notw working inside a new set of rules. JavaScript is ubiquitous now, but even the simplest JavaScript chart will have more compatability issues than a static image.
+
+
+
 ### Pros
 - Finally, no longer need to go into Excel to update the data
 - Some interactivity is allowed

@@ -110,13 +110,13 @@ My personal blog is at [danwin.com](http://danwin.com) and you can find me on Tw
 
 ## Techncial details
 
-The sdJ site is built using [Jekyll](TK), the static-blog generator that powers [Github pages](TK), a few [notable government sites](http://developmentseed.org/blog/new-healthcare-gov-is-open-and-cms-free/), and perhaps, most famously, the [Obama campaign's $250 million fundraising platform](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/). Don't worry, it's politically-neutral...but the Obama example shows how Jekyll can serve as both a flexible (with a bit of hacking) and low-maintenence publishing platform.
+The sdJ site is built using [Jekyll](https://github.com/mojombo/jekyll), the static-blog generator that powers [Github pages](http://pages.github.com/), a few [notable government sites](http://developmentseed.org/blog/new-healthcare-gov-is-open-and-cms-free/), and perhaps, most famously, the [Obama campaign's $250 million fundraising platform](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/). Don't worry, it's politically-neutral...but the Obama example shows how Jekyll can serve as both a flexible (with a bit of hacking) and low-maintenence publishing platform.
 
 Previously, I've used [Octopress](http://octopress.org) to build out the [Bastards Book of Photography](http://photography.bastardsbook.com). This time I wanted to see ow far I could get with a few gems and custom plugins. Octopress is still in active development and is a great way to try out Jekyll without having to write so much boilerplate code.
 
-You can see the full Gemfile at the [sdJ Github repo](TK). The two Jekyll-specific gems I use are [jekyll-assets](TK) to allow compilation of SASS and CoffeeScript files and [s3_website](TK) to deploy sdJ to Amazon S3. Check out Alastair Coote's [excellent explainer of using S3 to cheaply serve up hundreds of thousands of webpages](http://blogging.alastair.is/how-i-served-100k-users-without-crashing-and-only-spent-0-32/).
+You can see the full Gemfile at the [sdJ Github repo](https://github.com/{{site.github}}). The two Jekyll-specific gems I use are [jekyll-assets](https://github.com/ixti/jekyll-assets) to allow compilation of SASS and CoffeeScript files and [s3_website](https://github.com/laurilehmijoki/s3_website) to deploy sdJ to Amazon S3. Check out Alastair Coote's [excellent explainer of using S3 to cheaply serve up hundreds of thousands of webpages](http://blogging.alastair.is/how-i-served-100k-users-without-crashing-and-only-spent-0-32/).
 
-The flavor of Markdown I use is [Kramdown](), which allows for auto-generated table of contents among other nice features that I'm still learning.
+The flavor of Markdown I use is [Kramdown](http://kramdown.rubyforge.org/), which allows for auto-generated table of contents among other nice features that I'm still learning.
 
 ### Design and layout
 
@@ -126,9 +126,9 @@ The fonts I use are:
 
 - [Arvo](http://www.google.com/fonts/specimen/Arvo) for the display and headline fonts
 - [Droid Serif](http://www.google.com/fonts/specimen/Droid+Serif) for the body text
-- [Ubuntu](http://www.google.com/fonts/specimen/PT+Sans) as the sans-serif font.
+- [Ubuntu](http://www.google.com/fonts/specimen/Ubuntu) as the sans-serif font.
 
-The off-white background pattern is from [SubtlePatterns](), a site that every web-designer should bookmark.
+The off-white background pattern is from [SubtlePatterns](http://subtlepatterns.com/), a site that every web-designer should bookmark.
 
 I haven't coded very many charts yet but I'm planning to use [D3](http://d3js.org/) exclusively. It's my favorite Javascript charting library and it has the added advantage of creating charts that can be exported as images.
 
@@ -143,19 +143,4 @@ This is a **five-session course** that meets on Monday nights, from 6:45 - 9:15P
 
 The course number is: [WRIT1-CE9787](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock)
 
-It is a non-credit course administered through the School of Continuing and Professional Studies. However, it is applicable toward the [SCPS Certificate in Digital Journalism](http://www.scps.nyu.edu/content/scps/academics/departments/humanities-arts-and-writing/academics/noncredit/certificate-in-digital-journalism.html).
-
-I'm aiming this class at a broad audience. It won't be a learn-to-code class as I expect there to be at least a few students who have never touched the command line before. I want to focus instead on how to conceive of and initiate data journalism projects, regardless of your technical skill. 
-
-However, it won't be a reading and theory class and I expect students to complete hands-on data assignments. The tools we use won't be advanced or propietary, but they'll be powerful enough for the job:
-
-* A spreadsheet program
-* Your browser's Web inspector
-* OpenRefine
-* Google Fusion Tables (for easily embeddable charts and maps)
-
-I won't be teaching any programming, but if you already how to code, you'll learn how to apply it in data journalism. And if you can't code yet, you'll learn how it can be useful &ndash; which is always good to have in mind before learning to code mid-career.
-
-If you're reading this before the class start date of **Sept. 23, 2013**, [you can still enroll here](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock).
-
-Drop me an email at dan@danwin.com if you have any questions.
+Read more about it on the [class homepage](/class).
