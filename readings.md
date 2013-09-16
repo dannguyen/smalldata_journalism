@@ -6,7 +6,11 @@ tagline: A short list of online articles and references on data journalism
 header_image: library.jpg
 ---
 
-This is a list of both useful and eclectic articles and guides to data journalism, in no particular order, though I've sorted them into rough categories for now.
+<div class="container">
+<p>
+  This is a list of both useful and eclectic articles and guides to data journalism, in no particular order, though I've sorted them into rough categories for now. This list [is auto-generated from a Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0At3Q3D3lDxXcdGxlS1BWZV94NVZ0TGJNYm1zM2t3d1E&usp=sharing).
+</p>
+</div>
 
 {% for reference_arr in site.references %}
 

@@ -9,7 +9,7 @@ assets:
   js_compressor:  uglifier
   css_compressor: sass
 
-references_file: references.csv
+references_file: readings.csv
 
 # Twitter
 twitter_user: dancow

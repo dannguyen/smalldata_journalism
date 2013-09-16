@@ -1,7 +1,7 @@
 @import "my-variables";
 
 
-
+img{max-width: 100%}
 
 article{ 
   ol, li{
@@ -26,10 +26,12 @@ article{
   padding-top:    1.0em;
   padding-bottom: 1.0em;
   margin-bottom:  1.0em;
-  background-color: $jumbotron-bg;
+  background-color: #ddd;
+
+  margin-top: 2.0em;
 
   h1,h2,h3{
-    margin-top: 1.0em;
+    margin-top: 0.5em;
   }
  
   .container & {
@@ -61,8 +63,9 @@ footer.woz{
 }
 
 header.banner{
+  margin-top: 0em;
+
   .tagline{
-    font-style:italic;
   }
 }
 
@@ -77,10 +80,10 @@ header.banner.image{
 
   .text{
       position: relative;
-      text-shadow: 0.1em 0.1em 0.4em #000;
+      text-shadow: 0.1em 0.2em 0.4em #000;
 
       .tagline{
-        color: #ccc;
+        color: #fff;
       }
     }
 }
@@ -137,6 +140,9 @@ header.banner.image{
     .text{
         position: relative;
         bottom: 10px;
+
+        text-shadow: 0.4em 0.4em 1.0em #000;
+
     }
   }
 
@@ -148,7 +154,6 @@ header.banner.image{
       text-align: justify;
       color: #222;
       font-size: ($font-size-base * 4.5);    
-      text-shadow: 0.03em 0.03em 0.06em #444;
       line-height: 1;
       margin-bottom: 1px;
       margin-top: 1px;

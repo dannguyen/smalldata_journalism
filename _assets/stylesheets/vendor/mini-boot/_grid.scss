@@ -4,7 +4,7 @@
 .container{
   zoom: 1;
   margin: 0 auto;
-  width: 82%;
+  width: 84%;
   @include container-fixed();
 }
 
@@ -19,7 +19,7 @@ article{
     max-width: $content-container-max-width;
     
     h1,h2,h3,h4,h5,h6,
-    p,ul,ol,li{
+    p,ul,ol,li,blockquote{
       line-height: $line-height-base;
       @include article-constraint();
     }
