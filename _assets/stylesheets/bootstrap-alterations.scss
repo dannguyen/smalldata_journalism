@@ -27,6 +27,13 @@ p{
 
 body{
   background: url($default_background_image);
+
+  font-size: $font-size-base;
+  @media (max-width: $screen-xs-max){
+    font-size: 14px;
+  }
+
+
 }
 
 body.homepage{

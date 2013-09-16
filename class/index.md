@@ -21,7 +21,7 @@ header_image: about-nyu-washingtonsquare.jpg
 **Instructor:** [Dan Nguyen](/about/#about-the-author)
 
 
-**NYU Homepage**: [http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787)
+**NYU Class Homepage**: [Sign-up here](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787).
 
 The rise of personal computing and the Internet has transformed data journalism, long a niche of the newsroom, into one of the most visible fields in today's media landscape. But while new technologies and techniques have made data journalism more accessible to audiences, they have also made data journalism increasingly intimidating to those who wish to practice it.
 
