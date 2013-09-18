@@ -2,9 +2,11 @@ module Jekyll
 
   # A project is a collection of pages with the same project_name
   class Project
-    attr_reader :introduction, :conclusion
+    attr_reader :introduction, :conclusion, :tag
 
     def initialize(project_name, array_of_pages)
+      @tag = project_name
+
       numbered_pages = array_of_pages.select{|p| p.data['project_order'].is_a?(Fixnum) }
 
       @_numbered_pages = organize_pages(numbered_pages)
@@ -38,7 +40,7 @@ module Jekyll
 
 
     def to_liquid
-      %w(introduction conclusion title url parts size).inject({}) do |h, k|
+      %w(introduction conclusion title url parts size tag).inject({}) do |h, k|
         h[k] = self.send(k)
         h
       end

@@ -75,14 +75,42 @@ This will pop open a new window showing the HTML code for this page. In other wo
 
 As we'll learn later, *everytime* you visit a website, you **are automatically downloading the webpage**. But what's important now is that you can easily access the source of any given webpage.
 
-One last exercise: View the source of this current webpage and do a **Find** again for the words "hot dog". Again, you should see it twice, but it'll be wrapped up in HTML:
+One last exercise: View the source of this current webpage and do a **Find** again for the words "hot dog". Again, you should see it **twice**, but it'll be wrapped up in HTML code:
 
 TKIMG
 
+We'll figure out what that HTML means in the next lesson.
 
-### The URL
+### The URL in the address bar
 
-TK - The address system of the web
+All right, this is really getting to basics, but browsers have changed so much across the different platforms that, by the time you read this, Chrome and its peers may not have a visible-by-default address bar.
+
+So just to be safe, when I refer to the **address bar**, I mean the place at the top of the browser in which you can enter a website's address, such as [www.wikipedia.org](http://www.wikipedia.org)
+
+![wikipedia.org in the address bar](/images/projects/inspect-the-web/01-040-url-address-wikipedia.png)
+
+The technical term for a web address is **URL**, short for, "[universal resource locator](http://en.wikipedia.org/wiki/Uniform_resource_locator)". It's the unique string of characters that you can bookmark or write down to get to that resource, from any computer on the Internet (ideally, before hackers and censorsing authorities get involved).
+
+Most URLs we'll look at will be the addresses for website, such as [www.google.com](http://www.google.com) and [yahoo.com](http://yahoo.com). But URLs can go to other kind of objects, such as images.
+
+Here's the URL for a cat photo on this website (smalldatajournalism.com):
+
+[http://www.smalldatajournalism.com/images/cat.jpg](http://www.smalldatajournalism.com/images/cat.jpg)
+
+If you click on it, your browser will take you straight to the image (though some browsers may actually download the photo as a file). It *looks* like a webpage, but that's only because it's a photo that's being viewed through your web browser (which can read many different kind of files besides HTML files, as we'll see later).
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Opening the inspector

@@ -28,7 +28,7 @@ yes yes yes
 ## Proejcts
 
 {% for project in site.projects %}
-- [{{project.title}}]({{project.url}})
+- [{{project.title}}]({{project.url}}) +++ {{project.tag}} -- {% project_manifest inspect-the-web %}
  {% for part in project.parts %}
   - [{{part.title}}]({{part.url}})
  {% endfor %}

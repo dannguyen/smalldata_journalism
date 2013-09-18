@@ -43,5 +43,5 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('reference_item', Jekyll::ReferenceItem)
+Liquid::Template.register_tag('project_manifest', Jekyll::ProjectManifest)
 =end

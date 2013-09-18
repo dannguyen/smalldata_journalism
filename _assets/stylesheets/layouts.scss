@@ -18,6 +18,12 @@ article{
       margin-top: 0.5em;
     }
   }
+
+  img{
+    margin-bottom: 2.0em;
+    border: thin solid #777;
+  }
+
 }
 
 
@@ -88,6 +94,8 @@ header.banner.image{
     }
 }
 
+
+
 #markdown-toc{
   border-bottom: thin solid #888;
   padding-bottom: 1.0em;
@@ -95,6 +103,10 @@ header.banner.image{
   li{ margin-bottom: 2px; margin-top: 2px; font-size: 15px; }
   
 }
+
+
+
+
 
 /* deal with banner image TK*/
 @media (max-width: $screen-xs-max) {
@@ -197,7 +209,9 @@ ul.references{
     padding-left: 0;
     margin-left: 0;
   li{
-    margin-bottom: 0.8em;
+    font-family: $font-family-serif;
+    
+    margin-bottom: 1.8em;
     list-style: none;
     padding-left: 0;
     margin-left: 0;
@@ -208,6 +222,7 @@ ul.references{
     }
 
     .title{
+      font-size: 1.1em;
       
     }
 

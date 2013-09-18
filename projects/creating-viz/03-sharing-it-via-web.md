@@ -10,7 +10,7 @@ project_order: 3
 
 ## Uploading to Imgur
 
-
+![Imgur front page](/images/projects/creating-viz/03-01-imgur-front-page.jpg)
 
 
 ## Uploading to Google Plus
