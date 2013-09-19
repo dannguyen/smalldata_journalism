@@ -8,7 +8,7 @@ module Jekyll
   class ProjectManifest < Liquid::Tag
 
     def initialize(tag_name, markup, tokens)
-      @project_tag = markup.strip
+      #@project_tag = markup.strip
       super
     end
 
@@ -17,9 +17,12 @@ module Jekyll
     end
 
     def render(context)
+ #     projects = context.registers[:site].config['projects']
+      page = context.registers[:page]
       projects = context.registers[:site].config['projects']
-      if project_object = get_project(@project_tag, projects )
-        return %Q{<h2>The project tag is: #{@project_tag}</h2>}
+
+      if project_object = get_project(page['project'], projects )
+        return %Q{<h2>The project tag is: #{project_object.tag}</h2>}
       else
         return %Q{could not find #{@project_tag} inside #{projects.map{|p| p.tag }}}
       end

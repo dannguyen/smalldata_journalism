@@ -102,17 +102,6 @@ If you click on it, your browser will take you straight to the image (though som
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## Opening the inspector
 
 OK, let's open up the inspector. The easiest way to jump into it is to **right-click** to open up the context-menu and select **Inspect  Element**.

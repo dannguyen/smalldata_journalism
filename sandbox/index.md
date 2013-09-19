@@ -25,10 +25,11 @@ yes yes yes
 
 </div>
 
-## Proejcts
+## Projects
 
 {% for project in site.projects %}
-- [{{project.title}}]({{project.url}}) +++ {{project.tag}} -- {% project_manifest inspect-the-web %}
+  {% assign v = 'project.tag' %}
+- [{{project.title}}]({{project.url}}) +++  -- {{ project }}
  {% for part in project.parts %}
   - [{{part.title}}]({{part.url}})
  {% endfor %}
