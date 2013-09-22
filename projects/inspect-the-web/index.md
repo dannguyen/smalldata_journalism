@@ -7,8 +7,6 @@ project: inspect-the-web
 project_order: introduction
 ---
 
-{% project_manifest %}
-
 Data journalism isn't about the Web. So why is *small data Journalism* devoting an entire series of tutorials on the "**Web** Inspector", which sounds like a geek-themed webseries?
 
 You're right to wonder; my purpose of creating *small data Journalism* was to create as much separation between data journalism and any specific technology or medium. And the web inspector is indeed very geek-themed, as it's what web developers use to debug webpages to figure out such esoteric, narrow questions, such as: "Why isn't my AJAX form working?" and "Why won't this headline spin around and turn red in Internet Explorer 6?"

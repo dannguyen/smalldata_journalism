@@ -22,7 +22,17 @@ module Jekyll
       projects = context.registers[:site].config['projects']
 
       if project_object = get_project(page['project'], projects )
-        return %Q{<h2>The project tag is: #{project_object.tag}</h2>}
+        
+        lis = project_object.all_parts.map{|p|
+             a_link_klass = (p.url == page['url']) ? 'present' : ''
+          %Q{<li><a class="#{a_link_klass}" href="#{p.url}">#{p.data['title']}</a>#{": #{p.data['tagline']}" if p.data['tagline']}</li>}
+        }.join()
+
+        return %Q{
+<ul class="list-unstyled">
+#{lis}
+</ul>}
+
       else
         return %Q{could not find #{@project_tag} inside #{projects.map{|p| p.tag }}}
       end

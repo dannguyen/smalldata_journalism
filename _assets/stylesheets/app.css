@@ -1,2 +1,7 @@
 //= require vendor/mini-boot/mini-boot
-//= require_directory .
+//= require my-variables
+//= require syntax
+//= require bootstrap-alterations
+//= require effects
+//= require layouts
+

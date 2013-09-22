@@ -1,24 +1,18 @@
 ---
 layout: page
-container: false
 title: Suggested Readings
 tagline: A short list of online articles and references on data journalism
 header_image: library.jpg
 ---
 
-<div class="container">
-<p>
-  This is a list of both useful and eclectic articles and guides to data journalism, in no particular order, though I've sorted them into rough categories for now. This list <a href="https://docs.google.com/spreadsheet/ccc?key=0At3Q3D3lDxXcdGxlS1BWZV94NVZ0TGJNYm1zM2t3d1E">is auto-generated from a Google Spreadsheet</a>.
-</p>
-</div>
+This is a list of both useful and eclectic articles and guides to data journalism, in no particular order, though I've sorted them into rough categories for now. This list [is auto-generated from a Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0At3Q3D3lDxXcdGxlS1BWZV94NVZ0TGJNYm1zM2t3d1E)
+
+{% include auto-toc.md %}
+
 
 {% for reference_arr in site.references %}
 
-<div class="banner">
-<div class="container">
-  <h2>{{reference_arr[0]}}</h2>
-</div>
-</div>
+## {{reference_arr[0]}}
 
 <div class="container">
 <ul class="references">

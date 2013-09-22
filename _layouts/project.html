@@ -14,14 +14,16 @@ layout: page
 
 {% else %}
 
- <p><strong>Part {{page.project_order}} of <a href="{{ project.url}}">{{project.title}}</a>, a {{project.size }}-part series.</strong>   
-   </p>
+ <p>
+  <strong>Part {{page.project_order}}</strong> of <a href="{{ project.url}}">{{project.title}}</a>, a {{project.size }}-part series.  
 
  {% if page.project_order > 1 %}
-<p> <strong>Previously:</strong> <a href="{{ page.prev_page.url }}">{{page.prev_page.title}}</a>
- </p> {% endif %}
 
+<strong>Previously:</strong> <a href="{{ page.prev_page.url }}">{{page.prev_page.title}}</a>
 
+ {% endif %}
+
+</p> 
 {% endif %}
 </div>
 
@@ -31,6 +33,14 @@ layout: page
 
 
 <div class="standout">
+
+<div class="project-manifest">
+<h4>Project Manifest</h4>
+
+{% project_manifest %}
+
+</div>
+
 
 <p>
 <!-- moving to prev page -->

@@ -1,25 +1,24 @@
 ---
 layout: project
 title: Forge the Web
-tagline: Using the inspector for visual pranks...er, feedback
+tagline: Instant feedback, experimentation, and laughs
 header_image: about-nyu-washingtonsquare.jpg
 project: inspect-the-web
 project_order: 3
 ---
 
-How did I show the changes mentioned in the intro.
-
 ## Edit what you want
 
-### Edit the html
+### Edit the HTML
 
 ### Edit the CSS
 
-## Saving your changes
 
-### On facebook
+## The local and the remote
 
-### The local and the remote
+### Losing your changes
+### Cache files
+
 
 
 Implications: you have a local version, and you edit only the local version

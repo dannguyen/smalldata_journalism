@@ -3,6 +3,15 @@
 
 img{max-width: 100%}
 
+p{
+  code{
+    color: #c44;
+    background: none;
+    border: none;
+    font-size: 1.0em;
+  }
+}
+
 article{ 
   ol, li{
     margin-top: 1.0em
@@ -27,12 +36,13 @@ article{
 }
 
 
+
 .banner {
 
   padding-top:    1.0em;
   padding-bottom: 1.0em;
   margin-bottom:  1.0em;
-  background-color: #ddd;
+  background-color: $banner-background;
 
   margin-top: 2.0em;
 
@@ -101,23 +111,36 @@ header.banner.image{
   padding-bottom: 1.0em;
 
   li{ margin-bottom: 2px; margin-top: 2px; font-size: 15px; }
-  
+
 }
 
 
 
+.project-manifest{
+  border-top: thin solid #777;
+  margin-top: 1.5em;
+  padding-top: 1.0em;
 
 
-/* deal with banner image TK*/
-@media (max-width: $screen-xs-max) {
+  a.present{
+    color: $text-color;
+    font-weight: bold;
+  }
+
+}
+
+
+/* smaller than an iPad */
+
+@media (max-width: $screen-tablet) {
   header.banner.image{
 
     h1{
       color: white;
     }
-    background-size: auto $header-banner-size;
+    background-size: 100% $small-header-banner-size;
     background-repeat: no-repeat;
-    height: $header-banner-size;
+    height: $small-header-banner-size;
 
 
     .banner-box{
@@ -136,7 +159,7 @@ header.banner.image{
 }
 
 
-@media (min-width: $screen-xs) {
+@media (min-width: $screen-tablet) {
   header.banner.image{
     background: black;
     background-size: auto $header-banner-size;
@@ -242,6 +265,8 @@ ul.references{
 
 .standout{
   @include article-constraint();
+  font-family: $font-family-sans-serif;
+
   margin-top: 1.0em;
   margin-bottom: 1.0em;
 }

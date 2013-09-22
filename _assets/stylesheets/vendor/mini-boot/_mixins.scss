@@ -10,7 +10,18 @@
 }
 
 
+@mixin dash-list(){
+  list-style:none;
+    margin-left:0;
+    padding-left:1em;
 
+  li:before {
+    display:inline-block;
+    content:"-";
+    width:1em;
+    margin-left:-1em;
+  }
+}
 
 @mixin article-constraint(){
       max-width: $article-container-text-width;

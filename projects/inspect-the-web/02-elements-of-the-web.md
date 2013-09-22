@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Elements of the Web
-tagline: What you see isn't what you've got
+tagline: Just text
 header_image: about-nyu-washingtonsquare.jpg
 project: inspect-the-web
 project_order: 2
@@ -142,6 +142,36 @@ OK, that's all the HTML we need for now. Again, don't be intimidated by all the 
 
 ## The CSS subpanel
 
+Now let's check out that **smaller subpanel to the right** of the HTML subpanel.
+
+Right-click and inspect the **headline** just above this paragraph (*The CSS subpanel*). You should see something like this:
+
+![CSS subpanel when inspecting the headline](/images/projects/inspect-the-web/02-300-css-panel-h2.png)
+
+You already know what's in the **left** subpanel: the HTML of that headline:
+
+      <h2 id="the-css-subpanel">The CSS subpanel</h2>
+
+On the **right** subpanel, which you can scroll up and down separately from the left subpanel, contains the **styles** of that `h2` element. By **styles**, I'm referring to *what makes that headline look the way it does*.
+
+Here's the subpanel with just the important parts highlighted:
+
+
+
+![CSS subpanel when inspecting the headline](/images/projects/inspect-the-web/02-302-css-panel-h2-outline.png)
+
+
+
+You can see that the tag name, `h2`, is referred to several times in the list of styles. Some of the syntax should be readable to you. For example:
+
+    h2 {
+        color: black;
+    }
+
+The above TKTK
+
+
+
 ### Introduction to CSS
 
 #### Selectors
@@ -169,11 +199,6 @@ There is a photo of dog that is part of this lesson but it is not in the source 
 
 (This is not a trick question.)
 
-### What is the third animal
-
-There is a third animal associated with this lesson. Find out what it is.
-
-(This is also not a trick question)
 
 ## Answers
 
@@ -185,8 +210,5 @@ How can you find a dog picture that isn't visible?
 Well, part of the challenge is knowing that there is a dog photo in the first place. And the other part is figuring out the address of that cat photo:
 
 TK
-
-### The third animal
-
 
 

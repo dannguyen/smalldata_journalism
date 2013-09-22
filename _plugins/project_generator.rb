@@ -28,6 +28,10 @@ module Jekyll
       @introduction.url
     end
 
+    def all_parts
+      [@introduction] + @_numbered_pages + [@conclusion]
+    end
+
     # just the numbered pages
     def parts
       @_numbered_pages
