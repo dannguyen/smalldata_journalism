@@ -1,0 +1,82 @@
+<style>
+  
+  #rickshaw-container {
+        position: relative;
+        display: inline-block;
+}
+
+#rickshaw-simplechart {
+        display: inline-block;
+        margin-left: 40px;
+}
+#rickshaw-y_axis {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+}
+#rickshaw-legend {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 10px;
+}
+
+</style>
+
+
+<div id="rickshaw-container">
+      <div id="rickshaw-y_axis"></div>
+    <div id="rickshaw-simplechart"></div>
+
+
+</div>
+
+<div id="rickshaw-legend"></div>
+
+
+<script>
+   $(function() {
+
+    $.getJSON( "/downloads/code/projects/inspect-the-web/data/rickshaw-data.json", function( series_data ) {
+          console.log(series_data.length);
+
+          var ajaxGraph = new Rickshaw.Graph( {
+            element: document.getElementById("rickshaw-simplechart"),
+            renderer: 'area',
+            width: 700,
+            height: 300,
+            series: series_data,
+          });
+
+
+          var x_axis = new Rickshaw.Graph.Axis.Time( { graph: ajaxGraph } );
+
+          var y_axis = new Rickshaw.Graph.Axis.Y( {
+                  graph: ajaxGraph,
+                  orientation: 'left',
+                  tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
+                  element: document.getElementById('rickshaw-y_axis'),
+          } );
+
+          var legend = new Rickshaw.Graph.Legend( {
+                  element: document.getElementById('rickshaw-legend'),
+                  graph: ajaxGraph
+          } );
+
+          ajaxGraph.render();
+
+
+      })
+      .fail(function(e) {
+         console.log( "error" );
+      }); 
+
+});
+
+
+    
+
+</script>
+
+
+

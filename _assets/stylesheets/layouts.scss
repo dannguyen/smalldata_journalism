@@ -1,9 +1,23 @@
 @import "my-variables";
 
 
-img{max-width: 100%}
+img, video{  
+  max-width: 100%;
+  margin-left: auto; margin-right: auto;
+  display: block;
+}
 
-p{
+.chart{ 
+  max-width: 100%;
+  margin-left: auto; margin-right: auto;
+  text-align: center;
+  svg{
+    margin-left: auto; margin-right: auto;
+    text-align: left;
+  }
+}
+
+p, li{
   code{
     color: #c44;
     background: none;
@@ -269,6 +283,17 @@ ul.references{
 
   margin-top: 1.0em;
   margin-bottom: 1.0em;
+}
+
+/* for use in special lesson*/
+.special-sb{
+  color: SteelBlue;
+}
+
+.special-fer{
+  height: 1px;
+  width: 1px;
+  background:url(/images/projects/inspect-the-web/other/ferret.jpg);
 }
 
 

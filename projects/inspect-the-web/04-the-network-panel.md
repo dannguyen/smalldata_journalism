@@ -11,7 +11,7 @@ In the last chapter, we saw how websites are conclusively delivering files to ou
 
 So how can we find out exactly what we're downloading? Well, we can always view the source and check the HTML for references to external files:
 
-  ! 04-001-external-file-references.png
+![Image](/images/projects/inspect-the-web/04-001-external-file-references.png)
 
 However, that presents a few problems:
 
@@ -27,21 +27,21 @@ First, **close the Web inspector** (or open a brand new browser window *without*
 
 Now re-activate the Web inspector with the way we're used to doing it: by inspecting an element on the page. The **Elements** panel will activate. But you should be able to see the names of all the *inactive* inspector panels, including **Network**:
 
-![04-004-elements-to-network-panel.png]
+![Image](/images/projects/inspect-the-web/04-004-elements-to-network-panel.png)
 
 Click on **Network** and you should see an empty panel and a  message at the bottom that says:
 
   No requests captured. Reload the page to see detailed information on the network activity.
 
 
-![04-008-empty-network-panel.png]
+![Image](/images/projects/inspect-the-web/04-008-empty-network-panel.png)
 
 
 Apparently nothing is visible because the inspector wasn't open when you visited (and then downloaded) [www.smalldatajournalism.com](http://www.smalldatajournalism.com).
 
 Now, **reload** the webpage with the **Network** panel *still* active. Now you'll see some action:
 
-[04-015-active-network-panel.png]
+![Image](/images/projects/inspect-the-web/04-015-active-network-panel.png)
 
 ### Reload for real-time traffic
 
@@ -68,11 +68,11 @@ The Network panel has two subpanels: **Table** and **Detail**.
 
 The **tabular subpanel** is what you see by default:
 
-[04-030-tabular-subpanel.png]
+![Image](/images/projects/inspect-the-web/04-030-tabular-subpanel.png)
 
 The **detailed subpanel** is what you'll see if you **click** on any of the filenames in the lefthand side of the table:
 
-[04-035-detail-subpanel.png]
+![Image](/images/projects/inspect-the-web/04-035-detail-subpanel.png)
 
 Note that this the **detailed subpanel** has its *own* subpanels, with **Headers** activated by default. 
 
@@ -80,7 +80,7 @@ For this chapter, we'll be looking at the **Table** subpanel and will cover the 
 
 However, if you find yourself in the **Detail** view accidentally, click on the little `x` at the top to return to the **Table** view:
 
-[04-037-close-detail-subpanel.png]
+![Image](/images/projects/inspect-the-web/04-037-close-detail-subpanel.png)
 
 
 OK, so make sure you're in the **Table** view before moving forward.
@@ -103,7 +103,7 @@ The table has (at the time of writing) 8 columns and at any time you can resize 
 Let's start with the left-most column: **Name** and **Path**
 
 
-[04-045-overview-name-highlight.png]
+![Image](/images/projects/inspect-the-web/04-045-overview-name-highlight.png)
 
 ### Name and path
 
@@ -114,26 +114,26 @@ The next few files (if you did a **hard reload**) will be files that are necessa
 
 This makes sense if we look at the source HTML: those files are called at the very top of the HTML:
 
-[04-050-source-code-top.png]
+![Image](/images/projects/inspect-the-web/04-050-source-code-top.png)
 
 
 You'll notice that each file entry actually has *two* lines. The first line is the purported name of the file, such as `www.smalldatajournalism.com`. But the second line is *where the file came from*.
 
 Now you might assume that every thing that makes up the `www.smalldatajournalism.com` homepage comes from, well, wherever `www.smalldatajournalism.com` is hosted. But in the Network panel, you should see a few entries in which the *second lines* refer to *other* sites. I've highlighted them in the image below:
 
-[04-060-names-with-paths.png]
+![Image](/images/projects/inspect-the-web/04-060-names-with-paths.png)
 
 
 With my mouse pointer, I've hovered over the `widget.js` file, which brings up a pop-up balloon:
 
-[04-062-hover-widget.png]
+![Image](/images/projects/inspect-the-web/04-062-hover-widget.png)
 
 
 That pop-up balloon shows the file's *absolute* location, i.e. its URL: `http://platform.twitter.com/widgets.js`
 
 So it looks like the `www.smalldatajournalism.com` homepage is pulling in files from other sites. In fact, if you look down the file list, you should see at least a couple more files that come from `platform.twitter.com` named `tweet_button`:
 
-[04-070-widgets-name-discovery.png]
+![Image](/images/projects/inspect-the-web/04-070-widgets-name-discovery.png)
 
 ### Initiator
 
@@ -159,7 +159,7 @@ And yet, the network panel makes reference to a file named: `platform.twitter.co
 
 Let's turn our attention toward the **right-half** of the table, to the column named: **Initiator**.
 
-  [04-074-widgets-name-initiator-highlight.png]
+![Image](/images/projects/inspect-the-web/04-074-widgets-name-initiator-highlight.png)
 
 This column tells us what line of code told the browser to download a given file. Look at the Initiator for the file named `widgets.js`. It should say that it came from `www.smalldatajournalism.com`, just as I told you (the numbers at the end of the URL, e.g. `:94`, tell you want the line number of the code was, but we don't need that detail right now).
 
@@ -174,7 +174,7 @@ Aha! So *this* is the chain of events:
 
 If you look in the footer of my website, you should see a little Twitter widget that looks something like this (unless my design changed drastically since I wrote this lesson):
 
-    [04-078-tweet-button-footer.png]
+![Image](/images/projects/inspect-the-web/04-078-tweet-button-footer.png)
 
 
 
@@ -187,16 +187,16 @@ As we know by now, web pages consist of many different types of files. Usually, 
 
 The **Type** column makes it easy to see the file types at a glance:
 
-[04-100-file-column.png]
+![Image](/images/projects/inspect-the-web/04-100-file-column.png)
 
 
 Try clicking on the column header &ndash; i.e. **Type**. This will sort the files by **type**, as opposed to the default chronological download order (you can sort by any column). Clicking on the **Type** header once should group the files by type, with `application/javascript` files at top:
 
-[04-110-file-column-sorted.png] 
+![Image](/images/projects/inspect-the-web/04-110-file-column-sorted.png) 
 
 Clicking again will sort the types in reverse-alphabetical order:
 
-[04-115-file-column-reverse-sorted.png]
+![Image](/images/projects/inspect-the-web/04-115-file-column-reverse-sorted.png)
 
 
 #### Filtering by file type
@@ -205,11 +205,12 @@ Sometimes we only care about a certain file type, such as images. The Web inspec
 
 Look at the very bottom of the inspector window. There should be a list of terms, and one of them, `All`, should already be selected:
 
-  TKIMGX
+
+![Image](/images/projects/inspect-the-web/04-125-all-filter.png)
 
 Click on `Images` and the list will show only image files:
 
-  TKIMGX
+![Image](/images/projects/inspect-the-web/04-130-images-filter.png)
 
 Click `All` again to see the entire list of web files again.
 
@@ -235,24 +236,29 @@ That's it for now. In the next chapter, we'll learn how to examine the files in 
 ## Exercises 
 
 
-### What is the third animal
+**Find the third animal**
 
-There is a third animal associated with this lesson. Find out what it is.
+In a [previous chapter](/projects/inspect-the-web/02-elements-of-the-web/), we found a cat and a dog photo. There's a *third* animal photo in that chapter. Try to use the Network panel to find it.
 
-TK
+**Download an online video**
 
-### YouTube
-
+Technically, when you watch a video on an online service, your browser is downloading the video data. So logically, there should be a URL that you can point your browser to. Use the Network panel to find the URL to the video below:
 
 <link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
 <script src="http://vjs.zencdn.net/4.1/video.js"></script>
 
 <video id="example_video_1" class="video-js vjs-default-skin"
-  controls preload="auto" width="640" height="264"
-  poster="http://video-js.zencoder.com/oceans-clip.png"
+  controls preload="auto" width="640" height="400"
   data-setup='{"example_option":true}'>
- <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
- <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
- <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+ <source src="/downloads/files/projects/inspect-the-web/rain-room.mp4" type="video/mp4" />
 </video>
+
+
+## Answers
+
+**The third animal:** Filter the Network panel by the **Images** file type. The [third animal photo should stick out](/images/projects/inspect-the-web/other/ferret.jpg).
+
+**The video URL:** As you might guess, the video file will be the largest file on this page. So sort the Network table by file size and the video URL should rise to the top. 
+
+![The video size](/images/projects/inspect-the-web/04-180-video-size.png)
 

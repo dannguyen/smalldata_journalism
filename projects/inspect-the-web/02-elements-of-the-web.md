@@ -58,7 +58,9 @@ Then select **Inspect Element**. This will pop-open the **Elements** panel. The 
 
 Don't worry if you don't understand the HTML code, just note that there's a <span style="color:#33d;">blue</span> highlight around what *looks* relevant to what you right-clicked:
 
+~~~ html
     <h1>small data</h1>
+~~~
 
 You recognize the words "small data" of course. The only thing that may surprise you is that the phrase is enclosed in `<h1>` and `</h1>`. That's the HTML part, and I'll refer to particular bit of code as **tags**. The letter `h` is short for "headline" and the `1` indicates that this tag for a **top-level headline**.
 
@@ -66,9 +68,11 @@ Notice that only "small data" and not "journalism" is in inside the `h1` tags. I
 
 Right-click on the word "Journalism"; the HTML subpanel still stays open, but some new HTML will be revealed:
 
+~~~ html
     <h1>
       <span class="serif">Journalism</span>
     </h1>
+~~~
 
 OK, looks like "Journalism" gets its own tags. In fact, it's wrapped up in two sets of tags: `h1` and `span`. Don't worry about what `span` means, all that's worth noting is that tags can be nested: i.e. you can have tags *within* other tags.
 
@@ -78,11 +82,15 @@ If you already know HTML, you can skip this section. If you don't, I'm only goin
 
 As we saw above, HTML consists of regular text, such as "small data", wrapped up in tags, like so:
 
+~~~ html
     <h1>small data</h1>
-  
+~~~
+
 These `h1` tags are what tells your web browser to turn the plain text of `small data` into the attractively-rendered oversize headline. If you **right-click** on the word "<b>small</b>" just now (i.e. bolded in this here sentence), the HTML subpanel will reveal this code:
 
+~~~ html
     <b>small</b>
+~~~
 
 You can take a guess that the `<b>` stands for **bold**.
 
@@ -93,7 +101,9 @@ Let's look at the element that puts the "hyper" into "HyperText Markup Language"
 
 Here's a [link](http://danwin.com). You're probably used to seeing them blue but I've made them purple for now (more on that later). **Inspect** the link element and you'll see this code:
 
+~~~ html
     <a href="http://danwin.com">link</a>
+~~~
 
 If you actually click-through that link, you'll go to my homepage, **http://danwin.com**. So knowing what little we know about tags, we can infer a couple of things:
 
@@ -104,8 +114,9 @@ If you actually click-through that link, you'll go to my homepage, **http://danw
 
 We refer to the `href` found in the opening `<a>` tag as an **attribute**. Here again is the `href` attribute in context of its anchor tag:
 
+~~~ html    
     <a href="http://example.com">Example website</a>
-
+~~~
 
 The URL, enclosed in quotation marks, is referred to as the **value** of the `href` attribute. 
 
@@ -150,7 +161,9 @@ Right-click and inspect the **headline** just above this paragraph (*The CSS sub
 
 You already know what's in the **left** subpanel: the HTML of that headline:
 
-      <h2 id="the-css-subpanel">The CSS subpanel</h2>
+~~~ html
+  <h2 id="the-css-subpanel">The CSS subpanel</h2>
+~~~
 
 On the **right** subpanel, which you can scroll up and down separately from the left subpanel, contains the **styles** of that `h2` element. By **styles**, I'm referring to *what makes that headline look the way it does*.
 
@@ -164,11 +177,13 @@ Here's the subpanel with just the important parts highlighted:
 
 You can see that the tag name, `h2`, is referred to several times in the list of styles. Some of the syntax should be readable to you. For example:
 
+~~~ css
     h2 {
         color: black;
     }
+~~~
 
-The above TKTK
+TKTK
 
 
 
@@ -182,33 +197,64 @@ The above TKTK
 
 ## Exercises
 
-### What is the color of this text
+**What is the color of this text**
 
-Use the inspector's CSS panel to find the exact shade of blue of this sentence.
+<span class="special-sb">Use the inspector's CSS panel to find the exact shade of blue of this sentence.</span>
 
 
-### Find the URL of this cat photo
 
-Here's a photo of my roommate's cat. Use the inspector to find its URL.
+**Find the URL of this cat photo**
 
-TKIMG
+Here's a photo of a cat in Italy. Use the inspector to find its URL.
 
-### Find the URL of a dog photo
+{% render_partial downloads/code/snippets/no-clicky.html %}
 
-There is a photo of dog that is part of this lesson but it is not in the source (unless you skip ahead to the Answers section. which is cheating). Find its URL.
+<div class="no-clicky">
+  <img src="/images/projects/inspect-the-web/other/cat.jpg" alt="">
+</div>
 
-(This is not a trick question.)
+
+**Find the URL of the dog photo**
+
+There is a dog photo somewhere on this site. Find its URL.
 
 
 ## Answers
 
+**The shade of blue**
 
-### The dog picture
+Just right-click the text and open up the **Elements** panel:
 
-How can you find a dog picture that isn't visible?
+TKIMGX
 
-Well, part of the challenge is knowing that there is a dog photo in the first place. And the other part is figuring out the address of that cat photo:
+The answer is: `SteelBlue`
 
-TK
+**The cat photo**
 
+There's a slight trick to this: I wrote some JavaScript to prevent right-clicking the image, a tactic some photo sites use to make it harder for users to make copies of photos. There's many easy ways to circumvent this. But for this example, just inspect a *nearby* element (any of the text) and look for the actual `<img>` tag:
+
+
+TKIMGX
+
+The answer is: 
+
+    http://www.smalldatajournalism.com/images/projects/inspect-the-web/other/cat.jpg
+
+
+
+**The dog photo**
+
+This is kind of a trick question because the dog photo isn't referenced anywhere on this page. However, if you finished the previous exercise, you *could* logically deduce that the "dog" photo is in the same directory as the "cat" photo and just change `cat` to `dog` in the URL. Try it out.
+
+Kind of a trivial trick, admittedly, as it's more social engineering ("maybe the lazy developer didn't bother obfuscating the name or directory") than technical prowess. You'd be surprised at the situations when it works, though. In one of my reporting projects, a company was required by law to post some financial documents online every quarter. However, the company would replace the last quarter's documents with the new quarter's, making it impossible to compare the current to the historic. I asked their public relations representative if they could follow the spirit of the law and keep all the documents online, but she responded, politely, that it wasn't their problem.
+
+So I inspected the link tag for the current document and saw that it had something like the word `new` in its path, as in: `website.com/documents/new/quarters/data.xml`. So I simply tried out some variation of `/documents/old/quarters/data.xml` and there it was. Maybe the web developer was told that the old data files shouldn't be visible on the site and, well, he/she technically did the job here.
+
+Note: Again, this is a trick of mostly luck; on any given server, people aren't going to be leaving their files in such obvious places. But since the inspector makes it so easy to find out what's behind a webpage, it doesn't hurt to try.
+
+
+
+
+
+<div class="special-fer"></div>
 
