@@ -60,42 +60,26 @@ There is no textbook for this class. Here's [a list of recommended online articl
 Note: This is subject to change depending on class overall technical level and availability of classroom computer lab resources.
 
 
-
-
 ### Sept. 23 - Introduction to Data Journalism
 
-![Cop blazes through Broward County - a Sun-Sentinel infographic](/images/class/sun-sentinel-speeding-graphic.png)
+- What makes data journalism different or not from traditional journalism?
 
-An overview of the many forms of data journalism, including, but not limited to:
+- Four examples of data journalism stories and how data was vital to them.
 
-- [Cheating our Children](http://www.ajc.com/s/news/school-test-scores/): Data journalism when the data involved has been tampered with. Via the Atlanta Journal-Constitution.
-- [For cops, no limit](http://www.pulitzer.org/works/2013-Public-Service): This series, which won the 2013 Pulitzer Prize for Public Service, used a data-extrapolation strategy that is so brilliant in its simplicity, yet persuasively exposed a profound danger to the public. Via the Sun-Sentinel.
-- The [512 paths to the White House](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html): A milestone in unorthodox interactive visualizations. Via the New York Times.
-- [John Snow's Cholera Map](http://www.ph.ucla.edu/epi/snow/snowmap1_1854_lge.htm): A classic of epidemology and 
-- [Dollars for Docs](http://projects.propublica.org/docdollars): The joy of parsing PDFs. Via ProPublica.
-- [Previously on Arrested Development](http://apps.npr.org/arrested-development/): The power of spreadsheets and comedy. Via NPR.
+- How to use the Web inspector.
+
+[Read the class outline here](/class/fall2013/notes-0923/).
 
 
 
-#### Workshop: The Web Inspector
-A hands-on walkthrough of one of the most useful web development tools and how we can use it to learn about the web and find the structure of data (online guide coming soon).
 
-![Scraping cat photos](/images/class/screenshot-cathair.jpg)
+## Tentative schedule
 
-
-
-#### Homework
-
-*(subject to change)*
-
-- Use the web inspector to collect a data file for next week's class
-- Set up an Amazon AWS-S3 account or a web server of your choice (step-by-step tutorial to come)
-- Set up a Google Account with access to Fusion Tables (step-by-step tutorial to come)
-- Read Adrian Holovaty's essay, "[A fundamental way newspaper sites need to change](http://www.holovaty.com/writing/fundamental-change/)"
+The content for these classes are subject to change and rearrangement.
 
 ### Sept. 30 - Introduction to Visualization
 
-![John Snow's Cholera Map](/images/class/snow-map.png)
+
 
 Keep things simple.
 
