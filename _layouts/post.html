@@ -2,10 +2,10 @@
 layout: default
 permalink: /blog/:title
 ---
+<article class="post">
 
 <div class="container">
 
-<article>
   <h2>{{ page.title }}</h2>
   <p class="meta">Posted on <a href="{{page.url}}">{{ page.date | date: "%B %d, %Y" }}</a></p>
 
@@ -13,5 +13,5 @@ permalink: /blog/:title
   {{ content }}
   </div>
 
-</article>
 </div>
+</article>

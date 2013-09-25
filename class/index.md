@@ -64,7 +64,7 @@ Note: This is subject to change depending on class overall technical level and a
 
 - What makes data journalism different or not from traditional journalism?
 
-- Four examples of data journalism stories and how data was vital to them.
+- Four examples of investigative data journalism stories and how data was vital to them.
 
 - How to use the Web inspector.
 

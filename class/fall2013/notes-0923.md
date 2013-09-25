@@ -218,17 +218,21 @@ Reference material:
 
 ## Homework
 
-Read at least two of the series covered in class. Come prepared to talk about the source of the data for the stories and how the data was gathered.
-
 In the [homicide map hosted by the New York Times](http://projects.nytimes.com/crime/homicides/map), find the oldest named victim in their listings. (Hint: If you don't know how to use the web inspector to do this, contact me before searching the interactive manually).
 
 List at least 10 places in New York that are among your favorites to eat and drink at. You can use Microsoft Excel or Google Spreadsheet. Your spreadsheet should have these columns:
 
 - Restaurant name, e.g. Shake Shack
-- Street number and address, 100 E. 25th Street
+- Street number, eg. 141
+- Street name, E. 25th Street
+- Building name, e.g. #4 (if applicable)
+- Priciness, on a scale of 1-5, eg. 2
 - Borough, e.g. Manhattan
-- Category, e.g. Restaurant
-- Subcategory, e.g. Burgers
+- Category, e.g. Burgers
+
+You can use my [sample spreadsheet here](https://docs.google.com/spreadsheet/ccc?key=0At3Q3D3lDxXcdFk2Q2d4WW1GQllxRS1UN3k5MExBeVE#gid=0) and **make a copy of it**
+
+**Optional:** Read at least two of the series covered in class. Come prepared to talk about the source of the data for the stories and how the data was gathered.
 
 
 ## Upcoming work
