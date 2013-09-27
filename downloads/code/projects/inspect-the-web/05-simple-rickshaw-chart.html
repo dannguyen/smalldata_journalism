@@ -38,8 +38,6 @@
    $(function() {
 
     $.getJSON( "/downloads/code/projects/inspect-the-web/data/rickshaw-data.json", function( series_data ) {
-          console.log(series_data.length);
-
           var ajaxGraph = new Rickshaw.Graph( {
             element: document.getElementById("rickshaw-simplechart"),
             renderer: 'area',

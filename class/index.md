@@ -5,7 +5,7 @@ tagline:  The Fall 2013 syllabus and class schedule for WRIT1-CE9787
 header_image: about-nyu-washingtonsquare.jpg
 ---
 
-**Note:** If you're reading this before the class start date of **Sept. 23, 2013**, [you can still enroll here](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock).
+**Note:** It's past the start date of **Sept. 23, 2013**, but [you can still enroll here](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock). Otherwise, you're free to follow the notes and guides on this site as you wish. Also, check out [Chrys Wu's list of other Fall 2013 data journalism classes](http://bitly.com/bundles/macdivaona/Q).
 
 
 {% include auto-toc.md %}

@@ -32,32 +32,20 @@ Learn Google Spreadsheets
 Fusion Tables mapping and clustering
 make a map
 
-Homework: look up campus crime statistics
 
 
 ## Joining, Analysis
 
+NYU Crime:
+https://docs.google.com/spreadsheet/ccc?key=0Ap8SzDVx3BthdFdsWGQwUEFlV1hDeXRpVi1DOWpkeEE&usp=sharing
 
 
+## Workshop: Google Fusion Tables
+
+Work on restaurant data
 
 
+## Homework
 
-
-
-
-http://www.theguardian.com/news/datablog/2011/jan/27/data-store-office-for-national-statistics
-
-
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/annual-detail/august-2013.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/annual-detail/july-2013.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/annual-detail/june-2013.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/may-2013.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/annual-detail/april-2013.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/annual-detail/march-2013.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/annual-detail/february-2013.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/annual-detail/november-2012.html
-http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics/annual-detail/october-2012.html
-
-
-## Intro to Google Fusion Tables
+Map campus crimes
+Homework: look up campus crime statistics
