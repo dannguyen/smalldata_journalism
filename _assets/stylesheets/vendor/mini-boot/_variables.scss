@@ -62,6 +62,7 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 // -------------------------
 
 $body-bg:               #eee !default;
+$well-bg:               darken($body-bg, 5%) !default;
 $text-color:            $gray-dark !default;
 $headings-color:        #000;
 
