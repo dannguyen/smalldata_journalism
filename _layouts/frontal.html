@@ -1,5 +1,33 @@
 ---
-layout: site
+layout: page
+container: false
+header: false
+banner: false
 --- 
+
+{% if page.is_homepage == true %}
+  <div id="logo">
+      <div class="sdj">
+        <div class="container article-constraint">
+          <h1>small data</h1>
+        </div>
+      </div>
+    <div class="container article-constraint">
+      <h1><span class="serif">Journalism</span></h1>
+    
+      <p class="tagline">
+        The smaller the data, the bigger the story.
+        <span class="byline">Edited by Dan Nguyen 
+          // <a href="https://twitter.com/dancow">@dancow</a>
+        </span>
+        
+      </p>
+
+    </div>  
+  </div>
+
+{% endif %}
+
+
 
 {{ content }}

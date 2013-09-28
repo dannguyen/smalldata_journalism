@@ -30,7 +30,21 @@ p, li{
   }
 }
 
-article{ 
+.image-credit{
+  font-style: italic;
+}
+
+
+article blockquote {
+  cite {
+    font-style: italic;
+    a { word-wrap: break-word; }
+    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} }
+  }
+}
+
+
+article.page{ 
   ol, li{
     margin-top: 1.0em
   }
@@ -125,20 +139,28 @@ header.banner.image{
 
 
 #markdown-toc{
-  border-bottom: thin solid #888;
+  border-bottom: $borderline;
+  margin-top: 0;
+  margin-bottom: 1.0em; 
   padding-bottom: 1.0em;
-
+  
   li{ margin-bottom: 2px; margin-top: 2px; font-size: 15px; }
+}
 
+h3.no_toc{
+  margin-bottom: 0px;
 }
 
 
 
 .project-manifest{
-  border-top: thin solid #777;
+  border-top: $borderline;
   margin-top: 1.5em;
   padding-top: 1.0em;
 
+  border-bottom: $borderline;
+  margin-bottom: 1.0em;
+  padding-bottom: 1.0em;
 
   a.present{
     color: $text-color;
@@ -156,9 +178,8 @@ header.banner.image{
     h1{
       color: white;
     }
-    background-size: 100% $small-header-banner-size;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    height: $small-header-banner-size;
 
 
     .banner-box{
@@ -177,6 +198,8 @@ header.banner.image{
 }
 
 
+
+/* BIGGER THAN AN IPAD */
 @media (min-width: $screen-tablet) {
   header.banner.image{
     background: black;
@@ -213,7 +236,8 @@ header.banner.image{
     }
     
     .sdj{
-      background: url(asset_path('rain-room.jpg'));
+      /* this is double defined...here, and in the index.html for front page */
+      background: url(/images/headers/rain-room.jpg);
       background-repeat:no-repeat;
       background-position:right; 
 
@@ -238,7 +262,7 @@ header.banner.image{
 /************ bespoke stuff  **/
 
 #table_of_contents{
-  h1,h2,h3{
+  h1,h2,h3, h5{
     font-family: $font-family-display;
   }
 }
@@ -281,10 +305,17 @@ ul.references{
   }
 }
 
+
+/* for post listing */
+.posts h4{
+  font-family: $font-family-display;
+  
+}
+
+
 .standout{
   @include article-constraint();
   font-family: $font-family-sans-serif;
-
   margin-top: 1.0em;
   margin-bottom: 1.0em;
 }

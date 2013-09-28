@@ -15,10 +15,10 @@ This is a list of both useful and eclectic articles and guides to data journalis
 ## {{reference_arr[0]}}
 
 <div class="container">
-<ul class="references">
+<ul class="references isotope">
 {% for r in reference_arr[1] %}
 
-  <li>
+  <li class="item">
     <div class="title">
     <span class="type">{{r.type}}:</span>
     <a href="{{r.source_url}}">{{r.title}}</a>
@@ -34,3 +34,6 @@ This is a list of both useful and eclectic articles and guides to data journalis
 </ul>
 </div>
 {% endfor %}
+
+
+{% include isotope %}

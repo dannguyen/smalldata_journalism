@@ -5,6 +5,14 @@ tagline: Introduction to Structured Data
 header_image: about-nyu-washingtonsquare.jpg
 ---
 
+
+
+## Discussion
+
+http://www.theatlanticcities.com/politics/2013/09/if-you-live-near-other-people-youre-probably-democrat-if-your-neighbors-are-distant-republican/7047/
+
+
+
 ## The power of spreadsheets
 
 - What makes a spreadsheet

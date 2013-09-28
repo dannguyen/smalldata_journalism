@@ -244,7 +244,23 @@ Here's what the data looks like in tabular format:
 
 ## Naked data
 
-Hopefully, this tour of the **Network** panel has illuminated a few useful truths about the Web for you. With the **Elements** panel, we saw how much of the Web is *just* text. Now we see that web pages can also be made of many different files. 
+Hopefully, this tour of the **Network** panel has illuminated a few useful truths about the Web for you. With the **Elements** panel, we saw how much of the Web is *just* text. Now we see that web pages can also be made of many different files.
+
+This means that with the Network panel, we can inspect each file individually. Many interactive web pages are *containers* that pull in data files. When we inspect those data files individually to see their raw data, we're essentially telling the web page: *Thanks, but we'll take the data as is. No need to pretty it up for us.*
+
+I made use of this concept during the [Dollars for Doctors investigation at ProPublica](http://projects.propublica.org/docdollars), in which I had to collect and parse lists of financial transactions from several different drug companies.
+
+One company had decided to display their list as a Flash application, which, while attractive, made it impossible to just highlight and copy the text. Whether or not the company did this deliberately to try to make their list harder to copy, I couldn't say. But after inspecting the web traffic on the page, their data ended up being the easiest to copy. You can see [the details in my writeup here](http://www.propublica.org/nerds/item/reading-flash-data).
+
+So the Network panel has some practical uses when it comes to finding source files. And if you ever become a web developer, the Network panel is indispensable for diagnosing your work. But the main insight you should internalize before moving on to the final chapter is: TK
+
+
+
+
+
+
+
+
 
 
 

@@ -2,10 +2,15 @@
 layout: project
 title: Inspect the Web
 tagline: How to see the underpinnings of the Web
-header_image: about-nyu-washingtonsquare.jpg
 project: inspect-the-web
 project_order: introduction
+header_image: high-line-theater.jpg
+header_image_caption: The 26th Street Viewing Spur at the High Line Park in Manhattan. Photo by Dan Nguyen
+header_image_source: http://www.flickr.com/photos/zokuga/6188412140/
 ---
+
+{% include auto-toc.md %}
+
 
 Data journalism isn't about the Web. So why am I devoting an entire series of tutorials to something called "the  **Web** inspector?" 
 
@@ -36,9 +41,29 @@ For the purposes of this series, we'll be using [Google Chrome](https://www.goog
 Also, you'll need to do this with a standard desktop or laptop computer. The Web inspector wasn't designed for mobile devices and tablets.
 
 
-TK img text
+
+## Short summary
+
+Our interest is in data journalism, a field that is not necessarily related to the web, yet I'll be devoting an entire series of lessons about something that sounds web-centric: The Web Inspector.
+
+Data Journalism may not *be* the web, but currently, it is both a prominent canvas and a source for data journalists. So it's worthwhile to demystify the Web and in this lesson, you'll hopefully come away with a several immediate and *practical* benefits for data journalists. At its core, HTML is a language that provides the structure of what we see and experience on the Web. And data is, after all, structured information.
+
+### A high-level view of what we'll learn
+
+
+
+There are immediate consequences of this, though, including the very nature of how Web pages are made up: they aren't paintings, but more like compositions of many different pieces. Each piece of the web can be examined differently. How data turns into what you see is a very intricate process and one that, as we'll see in the final chapter, has its own consequences for how we are tracked.
+
+Ultimately, though, this chapter is not just about the Web, but being an active explorer of data and information. The logic the engineering behind the Web will be the same for any information construct. As data journalists, we seek to be investigators of information and not simply consumers.
+
+You could learn all of this in a book, or a few books. But I've chosen to use the Web inspector, because it illustrates all these concepts in a user-friendly way, and even if the Inspector is your introduction to the Web, it is a tool so powerful that you'll be using it for as long as the Web exists.
+
+
+
 
 ## Just Text
+
+TK img text
 
 A friend once asked me how long it would take to fix something on his company's website. He wanted to change the shade of blue used in the headline fonts and his IT department said it would take "a few weeks" to do.
 
@@ -53,6 +78,9 @@ That is, the code that corresponds to the actual text of the headline, the code 
 The Web inspector is going to seem complex (because it is). And the World Wide Web itself is even more complicated. But remember the overarching strategy of *small data Journalism*, keep thinking about the smallest concepts.
 
 And the smallest concept here is that, in the end, either in the browser or in the inspector, we're basically dealing with text.
+
+
+
 
 
 

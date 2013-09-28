@@ -1,11 +1,15 @@
----
-layout: site
---- 
-{% include header.html %}
+{% include meta-header.html %}
+<body class="{% if page.is_homepage %}homepage{% endif %}">    
+   
 
 <div class="woz content">
   
     
-      {{ content }}
+  {{ content }}
 
 </div>
+
+
+    {% include footer.html %}
+    </body>
+</html>

@@ -1,6 +1,9 @@
 ---
 layout: page
 ---
+
+<!-- note: everything is by default in page container -->
+
 <div class="standout">
 {% assign project = page.project_object %}
 
@@ -34,18 +37,10 @@ layout: page
 
 <div class="standout">
 
-<div class="project-manifest">
-<h4>Project Manifest</h4>
-
-{% project_manifest %}
-
-</div>
-
-
+<!-- prev/next -->
 <p>
 <!-- moving to prev page -->
 {% if page.prev_page %}
-
   <strong>Previous:</strong> <a href="{{ page.prev_page.url}}">
   {{ page.prev_page.title }}</a>
   <br>
@@ -59,6 +54,22 @@ layout: page
 {% endif %}
 
 </p>
+
+
+
+<div class="project-manifest">
+
+
+
+
+<h2>Project Manifest</h2>
+
+{% project_manifest %}
+
+</div>
+
+
+
 </div>
 
 

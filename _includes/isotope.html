@@ -1,0 +1,13 @@
+{% javascript vendor/jquery/isotope %}
+
+<script>
+  $(document).ready(function(){
+    console.log('hey');
+    
+    $('.isotope').isotope({
+      // options
+      itemSelector : '.item',
+      layoutMode : 'fitRows'
+    });
+  });
+</script>

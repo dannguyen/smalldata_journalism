@@ -43,10 +43,14 @@ body.homepage{
 }
 
 .navbar{
-  font-family: $font-family-display;
-  font-size: $navbar-font-size;
-  border-radius: 0;
-  border-bottom: thin solid #000;
+
+  ul li{
+    font-family: $font-family-display;
+    font-size: $navbar-font-size;
+    border-radius: 0;
+    border-bottom: thin solid #000;    
+  }
+
 }
 
 

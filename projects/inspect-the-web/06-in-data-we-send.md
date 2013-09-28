@@ -2,7 +2,7 @@
 layout: project
 title: A Bit for a Bit
 tagline: You don't get something for nothing.
-header_image: about-nyu-washingtonsquare.jpg
+header_image: eye-high-line.jpg
 project: inspect-the-web
 project_order: 6
 ---

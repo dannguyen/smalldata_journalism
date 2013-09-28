@@ -1,9 +1,17 @@
 ---
 layout: default
 ---
-{% include page_banner.html %}
 
-<article class="page">
+{% unless page.header == false %}
+{% include header.html %}
+{% endunless %}
+
+{% unless page.banner == false %}
+ {% include page_banner.html %}
+{% endunless %}
+
+
+<article class="{% unless page.is_homepage == true %}page{%endunless%}">
 
 
 {% if page.guff %} 
@@ -24,5 +32,28 @@ layout: default
 {% unless page.container == false %}
 </div>
 {% endunless %}
+
+
+{% if page.header_image_caption %}
+<div class="container standout">
+  <p class="image-credit"> Header image credit:
+  {% if page.header_image_source %}
+    <a href="{{page.header_image_source}}">
+  {% endif %}   
+
+    {{ page.header_image_caption }}
+
+  {% if page.header_image_source %}
+    </a>
+  {% endif %}   
+  </p>
+  
+  <a href="{{page.header_image_source}}">
+  <img src="/images/headers/{{ page.header_image }}" alt="{{page.header_image_caption}}" />
+  </a>
+
+</div>
+{% endif %}
+
 
 </article>

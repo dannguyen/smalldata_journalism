@@ -253,8 +253,32 @@ So I inspected the link tag for the current document and saw that it had somethi
 Note: Again, this is a trick of mostly luck; on any given server, people aren't going to be leaving their files in such obvious places. But since the inspector makes it so easy to find out what's behind a webpage, it doesn't hurt to try.
 
 
-
-
-
 <div class="special-fer"></div>
 
+
+## The basic elements
+
+We've just had a whirlwind tour of HTML and CSS, and if it's your first time, it'll be overwhelming, *and that's OK*. Web designers and developers have spent years mastering the syntax and functionality of HTML/CSS; you're not going to suddenly understand it in one hour.
+
+But what you *can* understand is that HTML and CSS &ndash; the two languages that define what we *see* on the Web &ndash; are ultimately *just text*. For example, to make a hyperlink around the word `website` below:
+
+    This website is worth visiting
+
+You simply wrap `<a>` tags around it, with an `href` attribute to endow that word, `website`, with the ability to send clickers to a different website:
+
+~~~ html
+    This <a href="http://en.wikipedia.com/wiki/Hello">website</a> is worth visiting
+~~~  
+
+And the result: 
+
+This <a href="http://en.wikipedia.com/wiki/Hello">website</a> is worth visiting
+
+
+If you want to learn more about HTML and CSS, there's a huge amount of free resources online, including at [HTMLDog](http://www.htmldog.com/guides/html/beginner/) and [Codecademy](http://www.codecademy.com/courses/html-one-o-one). But if you're just interested in knowing the basic concepts of what the Web is made of, then here's what we learned: *The elements of the Web are made up of just text.*
+
+And if that's the case, then creating our own Web elements should be as easy as typing in text, right? 
+
+*Yes.*
+
+But there's no need to experiment from scratch with a text editor. The Web inspector has all we need to write and edit our own (temporary) Web pages, as we'll see in the next chapter.

@@ -125,13 +125,13 @@ The flavor of Markdown I use is [Kramdown](http://kramdown.rubyforge.org/), whic
 
 The fonts I use are:
 
-- [Arvo](http://www.google.com/fonts/specimen/Arvo) for the display and headline fonts
-- [Droid Serif](http://www.google.com/fonts/specimen/Droid+Serif) for the body text
-- [Ubuntu](http://www.google.com/fonts/specimen/Ubuntu) as the sans-serif font.
+- <span style="font-family:Arvo;">[Arvo](http://www.google.com/fonts/specimen/Arvo) for the display and headline fonts</span>
+- <span style="font-family:'Droid Serif';">[Droid Serif](http://www.google.com/fonts/specimen/Droid+Serif) for the body text</span>
+- <span style="font-family:'Helvetica Neue'; font-weight: 300;">[Helvetica Neue](http://en.wikipedia.org/wiki/Helvetica#Neue_Helvetica_.281983.29), `font-weight: 300`, as the sans-serif font.</span>
 
 The off-white background pattern is from [SubtlePatterns](http://subtlepatterns.com/), a site that every web-designer should bookmark.
 
-I haven't coded very many charts yet but I'm planning to use [D3](http://d3js.org/) exclusively. It's my favorite JavaScript charting library and it has the added advantage of creating charts that can be exported as images.
+I haven't coded very many charts yet but I'm planning to use [D3](http://d3js.org/) exclusively. It's my favorite JavaScript charting library and it has the added advantage of creating charts that can be exported as images. For some of the basic charts, I'm using [Shuttertock's Rickshaw wrapper](http://code.shutterstock.com/rickshaw/examples/).
 
 ----
 
