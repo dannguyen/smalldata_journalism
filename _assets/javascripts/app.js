@@ -7,6 +7,8 @@
 
 $(document).ready(function(){
 
+    // Back to Top 
+    // Link
     var $root = $('html, body');
 
     $('a').click(function() {
@@ -22,6 +24,10 @@ $(document).ready(function(){
         });
         return false;
     });
+
+
+    $('p img').unwrap();
+
 })
 
 

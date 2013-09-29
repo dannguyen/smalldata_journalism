@@ -1,11 +1,17 @@
 ---
 layout: project
 title: Forge the Web
-tagline: Instant feedback, experimentation, and laughs
+tagline: Instant experimentation with HTML and CSS
 header_image: about-nyu-washingtonsquare.jpg
 project: inspect-the-web
 project_order: 3
 ---
+
+
+It's one thing to just inspect the HTML and CSS code behind a page, it's another to *create*. But we'll get to do both the Web inspector and get a better understanding of what actually happens when our browser visits a URL.
+
+{% include auto-toc.md %}
+
 
 ## Edit what you want
 
@@ -31,10 +37,8 @@ project_order: 3
 ![](03-090-change-img-url-to-cat.jpg)
 
 
-## The local and the remote
+## Every visit is a download
 
-### Losing your changes
-### Cache files
 
 
 

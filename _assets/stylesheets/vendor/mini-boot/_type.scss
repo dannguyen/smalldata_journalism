@@ -164,3 +164,14 @@ blockquote:after {
   }
 }
 
+.code-size{
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+code, pre{
+  @extend .code-size;
+}
+
+
+
