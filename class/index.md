@@ -71,15 +71,24 @@ Note: This is subject to change depending on class overall technical level and a
 [Read the class outline here](/class/fall2013/notes-0923/).
 
 
+### Sept. 30 - Introduction to Structured Data
 
+The joy of spreadsheets, including the concept of delimiters, pivot tables, and crowdsourcing data-gathering. [Read the class outline here](/class/fall2013/notes-0930/)
 
 ## Tentative schedule
 
 The content for these classes are subject to change and rearrangement.
 
-### Sept. 30 - Introduction to Visualization
+### Oct. 7 - Data Mashing
+
+Single-source data is as unreliable as news story with one perspective. We'll learn about the concepts of foreign keys and data mashing to cross-reference different data sets.
+
+#### Workshop: Fusion Tables and Open Refine
+- Use Google Fusion Tables to merge different datasets
+- Browse and clean data with this [cross-platform, user-friendly power tool](http://openrefine.org/).
 
 
+### Oct. 14 - Visualization and Analysis
 
 Keep things simple.
 
@@ -87,12 +96,17 @@ Keep things simple.
 - [PowerPoint does Rocket Science - and Better Techniques for Technical Reports](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001yB&topic_id=1) via Edward Tufte.
 - [Visual Literacy in an Age of Data](http://source.mozillaopennews.org/en-US/learning/visual-literacy-age-data/) via Source.
 - [Charts and Things](http://chartsnthings.tumblr.com/) via the NYT's Kevin Quealy.
+- [The perils of polling Twitter](http://source.mozillaopennews.org/en-US/learning/perils-polling-twitter/)
+- [Oscar Predictions, Election Style](http://fivethirtyeight.blogs.nytimes.com/2013/02/22/oscar-predictions-election-style/)
+- [Know your Stats](http://source.mozillaopennews.org/en-US/learning/know-your-stats/)
 
 
-#### Workshop: Google Fusion Tables
+
+#### Workshop: Charting and Mapping via Spreadsheets and Google Fusion tables
 One of the easiest ways to build data-heavy visualizations (step-by-step guide to come)
 
-#### Homework
+
+**Tasks:**
 
 - Create a webpage with an embedded map
 - Create a webpage with charts
@@ -101,44 +115,8 @@ One of the easiest ways to build data-heavy visualizations (step-by-step guide t
 - Install Open Refine, practice on a sample dataset (step-by-step guide to come)
 
 
-
-### Oct. 7 - Introduction to Data Curation and Mashing
-
-Single-source data is as unreliable as news story with one perspective. We'll learn about the concepts of foreign keys and data mashing to cross-reference different data sets.
-
-#### Workshop: Open Refine
-Browse and clean data with this [cross-platform, user-friendly power tool](http://openrefine.org/).
-
-#### Homework
-
-Write three different data project proposals, describing the sources of data, how the datasets link together, possible visualizations, and of course, the point of the story.
-
-**Readings:** TBA, but will likely focus on how to merge Fusion tables and/or use pivot tables in Excel.
-
-
-
-
-### Oct. 14: Basic Analysis
-
-Correlation does not equal causation. Correlation does not equal causation. Correlation does not equal causation. Correlation does not equal causation.
-
-Also, prefer the median instead of the average.
-
-- [The perils of polling Twitter](http://source.mozillaopennews.org/en-US/learning/perils-polling-twitter/)
-- [Oscar Predictions, Election Style](http://fivethirtyeight.blogs.nytimes.com/2013/02/22/oscar-predictions-election-style/)
-- [Know your Stats](http://source.mozillaopennews.org/en-US/learning/know-your-stats/)
-
-
-#### Workshop: TBA - project related
-
-#### Homework
-
-- From a given set of news stories, find 20 erroneous statistical claims and assumptions.
-- Finish projects, upload to web.
-
-
-
 ### Oct. 21: Project Discussion and Final
+
 
 Possible questions on the final:
 

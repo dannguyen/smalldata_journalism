@@ -13,9 +13,22 @@ project_order: 3
 ### Edit the HTML
 
 
+![](03-010-really-big-data-edit.png)
 
+![](03-012-really-big-data-change.png)
 
 ### Edit the CSS
+
+![](03-040-really-big-data-css-color-white.png)
+
+
+![](03-050-really-big-data-css-color-red.png)
+
+![](03-070-change-img-url.jpg)
+
+![](03-071-change-img-url-edit.png)
+
+![](03-090-change-img-url-to-cat.jpg)
 
 
 ## The local and the remote
