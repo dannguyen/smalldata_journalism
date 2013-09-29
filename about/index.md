@@ -45,9 +45,10 @@ As data journalists, we have the same mindset for public data. A year's tally of
 
 ## Journalism that counts
 
-{% blockquote Dr. Atul Gawande, Better: A Surgeon's Notes on Performance http://amazon.com/dp/B000QCSAB8 %}
+{% blockquote Dr. Atul Gawande http://amazon.com/dp/B000QCSAB8  Better: A Surgeon's Notes on Performance %}
 If you count something you find interesting, you will learn something interesting.
 {% endblockquote %}
+
 
 As the data becomes more detailed and numerous, it requires a similar increase of logistics and technical skill. This is what gives data journalism its reputation for being too complicated, as it's easy to be lost in the details and the techniques.
 
