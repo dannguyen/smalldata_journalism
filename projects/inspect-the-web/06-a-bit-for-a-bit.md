@@ -9,6 +9,10 @@ project_order: 6
 
 A [web data firm recently offered its secrets to the public](http://www.npr.org/blogs/alltechconsidered/2013/09/04/218889785/get-a-glimpse-of-the-data-marketers-have-about-you). By *secrets*, I mean, the secrets *you* have shared, through your web browsing,  methodically gathered by this data firm and its many brokers.
 
+> The data on the site, called AbouttheData.com, includes biographical facts, like education level, marital status and number of children in a household; homeownership status, including mortgage amount and property size; vehicle details, like the make, model and year; and economic data, like whether a household member is an active investor with a portfolio greater than $150,000. Also available will be the consumer’s recent purchase categories, like plus-size clothing or sports products; and household interests like golf, dogs, text-messaging, cholesterol-related products or charities.
+
+http://www.nytimes.com/2013/09/01/business/a-data-broker-offers-a-peek-behind-the-curtain.html?_r=0&pagewanted=all
+
 *How did they find out?*
 
 In this final chapter of our brief acquaintance with the Web inspector, we'll take what we've learned thus far to one of its logical conclusions: If webpages &ndash; their text, images, and widgets &ndash; are an assemblage of discrete pieces. And each piece is something we send *requests* for. Then our requests themselves are a piece about who we are.

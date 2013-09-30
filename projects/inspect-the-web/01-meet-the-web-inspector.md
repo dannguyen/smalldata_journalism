@@ -100,32 +100,49 @@ Here's the URL for a cat photo on this website (smalldatajournalism.com):
 If you click on it, your browser will take you straight to the image (though some browsers may actually download the photo as a file). It *looks* like a webpage, but that's only because it's a photo that's being viewed through your web browser (which can read many different kind of files besides HTML files, as we'll see later).
 
 
+## Inspector basics
 
 
-## Opening the inspector
+### Activating the inspector
 
-OK, let's open up the inspector. The easiest way to jump into it is to **right-click** to open up the context-menu and select **Inspect  Element**.
+OK, let's open up the Web inspector. The easiest way to jump into it is to **right-click** to open up the context-menu and select **Inspect  Element**.
 
-Try it on the headline above:
+On the New York Times homepage:
 
-TKIMG
+![](nytimes-right-click.jpg)
 
-By default, a new subpanel at the bottom of your browser should open up:
-
-TKIMG
-
-The left-side of that panel should look familiar: it's the source code of this webpage. And if you clicked the headline, **Opening the inspector**, you'll see it highlighted.
-
-This is the **Elements subpanel** of the Web inspector, which we cover in detail in the next lesson. For now, we'll just acquaint ourselves with a few of its navigational conventions.
+After selecting **Inspect Element**, you'll see the Web inspector pop up in the bottom half of your browser:
 
 
-## Basic navigation
+![](nytimes-inspector.jpg)
+
+Move your mouse around the HTML code in the Inspector panel. Notice how elements on the webpage will become highlighted as you move your mouse around the inspected code. The inspector is showing you which HTML element is associated with which webpage element.
+
+This is the **Elements subpanel** of the Web inspector, which we cover in detail in the next lesson. For now, we'll just acquaint ourselves with a few of the inspector's navigational conventions.
 
 ### Find 
-### The submenu panels
+
+First, click somewhere on the panel
+
+Hitting Ctrl-F (or Cmd-F) while the Web inspector is the "active" panel (i.e. you've just clicked on it) will open up the text-finding dialog that you saw before, except within the context of the inspector panel. This allows you to search for text and terms within the raw code (as opposed to what's displayed normally on the webpage)
+
+### The menubar
+
+The inspector has its own menubar. You'll see terms such as **Elements**, **Resources**, **Network**, and so forth:
+
+TKIMG
+
+For the purpose of this lesson, we'll only be working with the **Elements** and **Network** panels. Use the menubar to switch between them.
+
+
 ### Pop out
 
+Spot this icon in the lower-left of the Inspector panel:
 
-## Exercises
-- inspect an element
-- view the source
+TKIMG
+
+Clicking it will pop out the Web inspector into its own window. This is nice if you have an extra-large or extra monitor:
+
+TKIMG
+
+

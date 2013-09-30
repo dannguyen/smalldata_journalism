@@ -14,7 +14,6 @@ We already know how to **view the source** of a webpage. But if you're new to HT
 {% include auto-toc.md %}
 
 
-
 ## What you see isn't what you've got
 
 If HTML and CSS is "just text", then how does the browser turn them into the highly-visual websites we see today?
