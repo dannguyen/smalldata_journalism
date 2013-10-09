@@ -18,12 +18,16 @@ Welcome to spreadsheet fun.
 
 ### Discussion
 
-"Correlation does not imply causation" &ndash; the basic principle that data analysts struggle with.
+For the remainder of the semester, we'll be looking critically at data analyses. Nearly all such critiques will be a variation of:
+
+*"Correlation does not imply causation"*
+
+Here's a humorous introduction to this concept: [Correlation or Causation?](http://www.businessweek.com/magazine/correlation-or-causation-12012011-gfx.html) By Vali Chandrasekaran for BusinessWeek, Dec. 01, 2011.
+
 
 ![BusinessWeek Chart](/images/class/2013-09-30/bweek-night-correlation.jpg)
 
 
-[Correlation or Causation?](http://www.businessweek.com/magazine/correlation-or-causation-12012011-gfx.html) By Vali Chandrasekaran for BusinessWeek, Dec. 01, 2011.
 
 
 ### Review of homework
@@ -56,7 +60,7 @@ Fifty years after 58 cargo containers were shipped by boat, from Newark to Houst
 
 ![IKEA in Brooklyn](/images/class/2013-09-30/ikea-boxes.jpg)
 
-Though the engines and power systems that manufactured and *moved* products were improving drastically in the post-World War 2 era, the bottleneck was in the shipping process. Levinson writes that up to 60 to 75 percent of the cost of shipping cargo was spent on what the ship did at dock &ndash; waiting for longshoremen to hand-sort and carry items on and off the boats. A ship could spend as many days loading its cargo and unloading it as it would to cross the Atlantic.
+Though the engines and power systems that manufactured and *moved* products were improving drastically in the post-World War 2 era, the bottleneck was in the shipping process. Levinson writes that up to **60 to 75 percent** of the cost of shipping cargo **was spent on what the ship did at dock** &ndash; waiting for longshoremen to hand-sort and carry items on and off the boats. A ship could spend as many days loading its cargo and unloading it as it would to cross the Atlantic.
 
 {% blockquote Marc Levinson http://www.amazon.com/The-Box-Shipping-Container-Smaller/dp/0691136408 The Box %}
 
@@ -73,7 +77,7 @@ What is it about the container that is so important? Surely not the thing itself
 {% endblockquote %}
 
 
-It's OK to think of spreadsheets as the "soulless" part of data journalism, compared to parts where you do reporting and then publish a fancy graphic. But easier you make the uninteresting part of data work, the more time and energy you have for the interesting parts.
+It's OK to think of spreadsheets as the "soulless" part of data journalism, compared to parts where you do reporting and then publish a fancy graphic. But the easier you make the organizing of data, the more time and energy you have for the fun parts.
 
 
 
@@ -227,7 +231,7 @@ Notice how the **equals sign** acts as kind of a **delimiter**, telling the spre
 
 There are four things, explained in detail below:
 
-1. Using data files I'll provide you, use Excel or Google Spreadsheets to answer the specified questions.
+1. Using data files I'll provide you, use Excel or Google Spreadsheets to answer the specified questions. (*Note to actual Fall 2013 class: We didn't get to Pivot Tables so you can ignore this*)
 2. Explore the NYC data site and find two data sources (or more) that you'd like to link together and try to analyze/visualize. Explain how you anticipate linking the datasets together.
 3. Read the assigned New York Times article and answer the questions I've listed.
 4. Make an attempt to set up web hosting for yourself. No actual deliverable here, I just want to know if you ran into problems and what those problems were.
@@ -307,6 +311,20 @@ Note: This requires an Amazon account and a credit card. This does not require y
 For what it's worth, the entire [smalldatajournalism.com](http://www.smalldatajournalism.com.com) site is hosted on Amazon S3. The actual Amazon S3 address for the homepage is:
 
 http://www.smalldatajournalism.com.s3.amazonaws.com/index.html
+
+
+## Appendix and Extras
+
+In tonight's class, I had students split up the work of [tallying the kinds of crimes that occur on NYU campuses](http://www.nyu.edu/life/safety-health-wellness/be-safe/public-safety/crime-reports-statistics.html). This was a handy example of how to crowdsource data collection and an illustration of data summarization of flat files. 
+
+However, it was also a practical lesson of how much of a pain it is to collect data and that once you get fed up with manual data entry, it's time to find better ways. Here's a script I wrote to scrape the NYU crime data sites in about 5 seconds (OK, it took me about 10 minutes to write the script).
+
+About 90% of the code is just comments and printing to screen, because I thought I could do a custom install of Ruby on a NYU lab computer and execute it during class, but I was wrong. It reads this list of URLs from [NYU's Public Safety Dept](/downloads/code/projects/nyu-crime/data-hold/nyu-crime-urls.txt). 
+
+The [results of the scrape are here](/downloads/code/projects/nyu-crime/data-hold/nyu-crime-list.csv).
+
+{% include_code projects/nyu-crime/scrape.rb %}
+
 
 
 

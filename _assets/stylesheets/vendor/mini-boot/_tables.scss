@@ -11,6 +11,16 @@ th {
   text-align: left;
 }
 
+td{
+  font-family: $font-family-sans-serif;
+  font-size: 15px;
+}
+td.highlight{
+  color: #33aa33;
+}
+
+
+
 
 // Baseline styles
 

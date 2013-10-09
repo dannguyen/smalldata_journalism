@@ -10,6 +10,72 @@ header_image: about-nyu-washingtonsquare.jpg
 
 {% include auto-toc.md %}
 
+## Schedule
+
+Note: This is subject to change depending on class overall technical level and availability of classroom computer lab resources.
+
+
+### Sept. 23 - Introduction to Data Journalism
+
+What makes data journalism different or not from traditional journalism? And as an introduction to how information is structured in our day to day lives, we learn how to use the Web inspector.
+
+[Read the class outline here](/class/fall2013/notes-0923/).
+
+
+### Sept. 30 - Introduction to Structured Data
+
+The joy of spreadsheets, including the concept of delimiters, pivot tables, and crowdsourcing data-gathering. 
+
+[Read the class outline here](/class/fall2013/notes-0930/)
+
+### Oct. 7 - Data Mashing
+
+Single-source data is as unreliable as a news story with just one perspective. We'll learn about the concepts of foreign keys and how to merge different data sets together to find interesting insights.
+
+[Read the class outline here](/class/fall2013/notes-1007/)
+
+## Tentative schedule
+
+The content for these classes are subject to change and rearrangement.
+
+### Oct. 14 - No class, Columbus Day
+
+
+
+### Oct. 21 - Visualization and Analysis
+
+Keep things simple.
+
+- [We Have Met the Enemy and He Is PowerPoint](http://www.nytimes.com/2010/04/27/world/27powerpoint.html) via the New York Times.
+- [PowerPoint does Rocket Science - and Better Techniques for Technical Reports](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001yB&topic_id=1) via Edward Tufte.
+- [Visual Literacy in an Age of Data](http://source.mozillaopennews.org/en-US/learning/visual-literacy-age-data/) via Source.
+- [Charts and Things](http://chartsnthings.tumblr.com/) via the NYT's Kevin Quealy.
+- [The perils of polling Twitter](http://source.mozillaopennews.org/en-US/learning/perils-polling-twitter/)
+- [Oscar Predictions, Election Style](http://fivethirtyeight.blogs.nytimes.com/2013/02/22/oscar-predictions-election-style/)
+- [Know your Stats](http://source.mozillaopennews.org/en-US/learning/know-your-stats/)
+
+
+
+#### Workshop: Charting and Mapping via Spreadsheets and Google Fusion tables
+One of the easiest ways to build data-heavy visualizations (step-by-step guide to come)
+
+
+
+### Oct. 28: Project Discussion and Final
+
+
+Possible questions on the final:
+
+- Given five data schemas, explain the foreign keys used to join them together.
+- Given five data schemas and potential foreign keys, explain the data cleaning strategy needed to reliable joins
+- Here is a map of something, explain why it shouldn't be a map.
+- What are 5 things wrong in a given analysis?
+
+Again, for the full list of readings that we may use in this class, [check out the Readings page](/readings).
+
+We'll discuss project ideas and expectations. The project due date will be in late November.
+
+
 ## Course Description
 
 **Name:** [WRIT1-CE9787](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787), through NYU-SCPS, and part of the [Certificate in Digital Journalism](http://www.scps.nyu.edu/content/scps/academics/departments/humanities-arts-and-writing/academics/noncredit/certificate-in-digital-journalism.html).
@@ -52,80 +118,6 @@ This class will be taught in a small group setting with a focus on hands-on inst
 ### Text and Resources
 
 There is no textbook for this class. Here's [a list of recommended online articles and collections](/readings) relevant to the coursework.
-
-
-
-## Schedule
-
-Note: This is subject to change depending on class overall technical level and availability of classroom computer lab resources.
-
-
-### Sept. 23 - Introduction to Data Journalism
-
-- What makes data journalism different or not from traditional journalism?
-
-- Four examples of investigative data journalism stories and how data was vital to them.
-
-- How to use the Web inspector.
-
-[Read the class outline here](/class/fall2013/notes-0923/).
-
-
-### Sept. 30 - Introduction to Structured Data
-
-The joy of spreadsheets, including the concept of delimiters, pivot tables, and crowdsourcing data-gathering. [Read the class outline here](/class/fall2013/notes-0930/)
-
-## Tentative schedule
-
-The content for these classes are subject to change and rearrangement.
-
-### Oct. 7 - Data Mashing
-
-Single-source data is as unreliable as news story with one perspective. We'll learn about the concepts of foreign keys and data mashing to cross-reference different data sets.
-
-#### Workshop: Fusion Tables and Open Refine
-- Use Google Fusion Tables to merge different datasets
-- Browse and clean data with this [cross-platform, user-friendly power tool](http://openrefine.org/).
-
-
-### Oct. 14 - Visualization and Analysis
-
-Keep things simple.
-
-- [We Have Met the Enemy and He Is PowerPoint](http://www.nytimes.com/2010/04/27/world/27powerpoint.html) via the New York Times.
-- [PowerPoint does Rocket Science - and Better Techniques for Technical Reports](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001yB&topic_id=1) via Edward Tufte.
-- [Visual Literacy in an Age of Data](http://source.mozillaopennews.org/en-US/learning/visual-literacy-age-data/) via Source.
-- [Charts and Things](http://chartsnthings.tumblr.com/) via the NYT's Kevin Quealy.
-- [The perils of polling Twitter](http://source.mozillaopennews.org/en-US/learning/perils-polling-twitter/)
-- [Oscar Predictions, Election Style](http://fivethirtyeight.blogs.nytimes.com/2013/02/22/oscar-predictions-election-style/)
-- [Know your Stats](http://source.mozillaopennews.org/en-US/learning/know-your-stats/)
-
-
-
-#### Workshop: Charting and Mapping via Spreadsheets and Google Fusion tables
-One of the easiest ways to build data-heavy visualizations (step-by-step guide to come)
-
-
-**Tasks:**
-
-- Create a webpage with an embedded map
-- Create a webpage with charts
-- Read Matt Ericson's [When Maps Shouldn’t Be Maps](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/), to make up for the class time we spent violating that precept. 
-- Browse [NYC's Socrata data site](https://nycopendata.socrata.com/‎) and think of story ideas.
-- Install Open Refine, practice on a sample dataset (step-by-step guide to come)
-
-
-### Oct. 21: Project Discussion and Final
-
-
-Possible questions on the final:
-
-- Given five data schemas, explain the foreign keys used to join them together.
-- Given five data schemas and potential foreign keys, explain the data cleaning strategy needed to reliable joins
-- Here is a map of something, explain why it shouldn't be a map.
-- What are 5 things wrong in a given analysis?
-
-Again, for the full list of readings that we may use in this class, [check out the Readings page](/readings).
 
 
 ## Policies and Academics

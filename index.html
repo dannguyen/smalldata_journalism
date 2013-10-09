@@ -15,15 +15,18 @@ header_image_source: http://www.flickr.com/photos/zokuga/9223081499/in/photostre
 <div class="container">
 
   
-    
-   <p>
-    <i>small data Journalism</i> was created to accomodate the <a href="/class">Fall 2013 Data Journalism course</a> at New York University's School of Continuing and Professional Studies.</p> 
+  <h2>Latest updates</h2>
+  <div class="posts">
+<ul>
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+  
+  </ul> 
 
-  <p>
-    I wanted my students to have a convenient place to find course-related information, data files, and guides. Since the course aims to take a practical and generalized approach to data journalism, there's no reason not to open it to the world. And since <a href="https://github.com/{{site.github_repo}}">it's on Github</a>, feel free to submit fixes, suggestions, and criticism. 
-   </p>
 
-  <p>There's not much info here except for a <a href="/readings">list of readings</a> and the <a href="/class">class syllabus</a>, but I'll update it throughout the session (and afterwards). You can read more about the authorship and technical details behind this book in the <a href="/about">About section</a>.</p>
+   </div>
+
 
   
   <div class="article-constraint">  {% include tweet-this.html %}</div>
@@ -35,6 +38,18 @@ header_image_source: http://www.flickr.com/photos/zokuga/9223081499/in/photostre
   <div class="banner">
     <div class="container">
       <h2>Contents</h2>  
+
+
+       <p>
+    <i>small data Journalism</i> was created to accomodate the <a href="/class">Fall 2013 Data Journalism course</a> at New York University's School of Continuing and Professional Studies.</p> 
+
+  <p>
+    I wanted my students to have a convenient place to find course-related information, data files, and guides. Since the course aims to take a practical and generalized approach to data journalism, there's no reason not to open it to the world. And since <a href="https://github.com/{{site.github_repo}}">it's on Github</a>, feel free to submit fixes, suggestions, and criticism. 
+   </p>
+
+  <p>There's not much info here except for a <a href="/readings">list of readings</a> and the <a href="/class">class syllabus</a>, but I'll update it throughout the session (and afterwards). You can read more about the authorship and technical details behind this book in the <a href="/about">About section</a>.</p>
+
+
     </div>
   </div>
 

@@ -10,45 +10,45 @@ project_order: 6
 ## Create an Amazon/AWS account
 
 TKIMGX - Sign in or Create an AWS Account
-![aws](/images/projects/create-a-viz/06-010-register-aws.png)
+![aws](/images/projects/creating-viz/06-010-register-aws.png)
 
-![aws](/images/projects/create-a-viz/06-015-aws-credit-card.png)
+![aws](/images/projects/creating-viz/06-015-aws-credit-card.png)
 
 TKIMGX - Verify identity
-![aws](/images/projects/create-a-viz/06-017-aws-verify-phone.png)
+![aws](/images/projects/creating-viz/06-017-aws-verify-phone.png)
 
 TKIMGX - Select basic Support
-![aws](/images/projects/create-a-viz/06-018-aws-support-plan.png)
+![aws](/images/projects/creating-viz/06-018-aws-support-plan.png)
 
 -> Launch the AWS Management Console 
-![aws](/images/projects/create-a-viz/06-020-aws-services-list.png)
+![aws](/images/projects/creating-viz/06-020-aws-services-list.png)
 
 - Create a Bucket - Select a Bucket Name and Region
-![aws](/images/projects/create-a-viz/06-022-aws-welcome-to-s3.png)
+![aws](/images/projects/creating-viz/06-022-aws-welcome-to-s3.png)
 
-![aws](/images/projects/create-a-viz/06-025-create-name-a-bucket.png)
+![aws](/images/projects/creating-viz/06-025-create-name-a-bucket.png)
 
 - Select "Properties"
-![aws](/images/projects/create-a-viz/06-028-select-bucket-properties.png)
+![aws](/images/projects/creating-viz/06-028-select-bucket-properties.png)
 
 - Enable Web Hosting
-![aws](/images/projects/create-a-viz/06-030-select-static-web-hosting.png)
+![aws](/images/projects/creating-viz/06-030-select-static-web-hosting.png)
 
 - Click on the bucket
 - Create a new folder 
-![aws](/images/projects/create-a-viz/06-065-create-a-s3-folder.png)
+![aws](/images/projects/creating-viz/06-065-create-a-s3-folder.png)
 
 - Upload - Add Files TKIMGX
-![aws](/images/projects/create-a-viz/06-075-upload-files-prompt.png)
+![aws](/images/projects/creating-viz/06-075-upload-files-prompt.png)
 
-![aws](/images/projects/create-a-viz/06-077-select-files-to-upload.png)
+![aws](/images/projects/creating-viz/06-077-select-files-to-upload.png)
 
 
 Make Public - TKIMGX
-![aws](/images/projects/create-a-viz/06-080-s3-file-context-menu.png)
+![aws](/images/projects/creating-viz/06-080-s3-file-context-menu.png)
 
 
-![aws](/images/projects/create-a-viz/06-090-make-folder-public.png)
+![aws](/images/projects/creating-viz/06-090-make-folder-public.png)
 
 - TKIMGX - file selection
 
