@@ -65,25 +65,25 @@ You can get to Google Spreadsheets by visiting [https://drive.google.com](https:
 
 Click the big red button labeled **Create** and pick **Spreadsheet**.
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-170-drive-create-new.png)
 
 ### Importing a CSV
 
 You'll be greeted with an empty table. That's OK, we already have data. Click the **File** menu and then **Import**
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-185-import-new-spreadsheet.png)
 
 You will be asked to **Choose File** and the **Import action**. Select the CSV file you just downloaded and then select the **Replace current sheet** option (it's empty anyway, so no harm).
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-190-spreadsheet-import-options.png)
 
 A little animation effect will pop up and you'll see a preview of the spreadsheet data:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-195-import-spreadsheet-preview.png)
 
 Click the blue **Import** button and you'll see your new data:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-200-new-spreadsheet.png)
 
 There's not much interesting about this data but we can get it ready for the
 TK
@@ -99,7 +99,7 @@ But small steps first. One of the things I like about Google's flavor of spreads
 
 Go to the **View** menu in the Spreadsheets toolbar and select **Freeze Rows**. Then select **Freeze 1 row**.
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-212--freeze-row-submenu.png)
 
 The result will be that you can scroll up and down the data and the headers will stay in place.
 
@@ -107,11 +107,11 @@ The result will be that you can scroll up and down the data and the headers will
 
 To sort a column, simply click on a column header. As you mouse over it, a little down arrow should appear:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-213-header-down-arrow.png)
 
 Click on it to bring up dropdown menu. Choosing **Sort sheet A->Z** will order things alphabetically, or, if they're numbers, from smallest to largest:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-216-sort-columns.png)
 
 
 ### Preparing our data for mapping
@@ -128,7 +128,7 @@ For example, from one of the `MCDONALD'S` row, we can use the columns for `build
 
 Entering that [into Google Maps gets you this](https://maps.google.com/maps?q=943+FLATBUSH+AVENUE+11226&hl=en&ll=40.647922,-73.952301&spn=0.004966,0.009334&sll=40.697488,-73.979681&sspn=0.507051,0.990143&hnear=943+Flatbush+Ave,+Brooklyn,+New+York+11226&t=m&z=16):
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-225-google-maps.png)
 
 
 So to get Fusion Tables to map all of our points, we just need to send over the address information. One big caveat, however: The address data needs to be in **one field** (or two, if you have latitude and longitude data, which we don't). But our address data is in three fields: `building`, `street`, `zipcode`
@@ -157,13 +157,14 @@ OK, now after typing in an equals sign, type in something formula-ish. Like, `98
 
 (again, **remember the equals sign at the beginning**)
 
-TKIMG
 
 When you hit **Enter**, Spreadsheets will *calculate* your formula and give you an answer. In this case, it's `20490778`
 
 Now double-click on the cell again, you should see your  *formula* as its contents, not the number `20490778`:
 
       =9823*2086
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-331-formula-num.png)
 
 #### Formulas with other cells
 
@@ -176,17 +177,22 @@ So **double-click** another empty cell, preferably in **Row 5** (though not nece
 
     =D5 + E5
 
-When you refer to specific cells by their **column letters** and **row numbers**, Spreadsheets knows that you're trying to add those two *cells* together.
+When you refer to specific cells by their **column letters** and **row numbers**, Spreadsheets knows that you're trying to add those two *cells* together:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-345-add-cells.png)
 
 In my case, the values in `zipcode` and `phone` for **Row 5** were `11203` and `7184510834`, respectively. The **sum** of those two numbers is `7184522037`, which is the result of the formula `=D5 + E5`.
 
 #### The CONCATENATE function
 
+
+
 So how do formulas help us with our original goal? What we need to do is actually kind of math-like: we need to **add** three fields *together*, except they contain text, not numbers. However, we can't use simple `+` signs for our formula.
 
 Instead, we need to use a special function named `CONCATENATE`. 
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-425-begin-concat.png)
+
 
 **Functions** in Google Spreadsheets have a few conventions:
 
@@ -225,13 +231,14 @@ OK, enough demonstration, here's what the `CONCATENATE` will look like for our p
 
 First, create a new column header, and bear with me, call it `my_custom_column`.
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-390-add-custom-column.png)
+
 
 Then, in the next row (which should be **row 2**), type in this formula:
 
     =CONCATENATE(B2, " ", C2, ", NY ,", D2)
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-450-finish-concatenate.png)
 
 OK, that formula is a little hard to parse at first. If your `building`, `street`, and `zipcode` are in columns `B`, `C`, and `D`, then the above formula can be described, in English, as:
 
@@ -253,12 +260,11 @@ Now we just have to repeat that formula about 1,000 more times. Fortunately, Spr
 
 Click your newly created cell and turn your attention to its **lower-right corner**, which should have a slightly-emphasized square:
 
-!google-fusion-519--auto-column-low-corner.png
+![img](/images/projects/fusion-spreadsheets/google-fusion-519--auto-column-low-corner.png)
 
 Now move your mouse pointer over that corner. Your pointer should now turn into **cross-hairs**. Just double-click, and if you've done it right, the formula in the first column should repeat all the way down: 
 
-
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-520-my-custom-column-filled.png)
 
 Pretty neat.
 
@@ -278,7 +284,7 @@ But when it comes to building Web interactives, FT provides some great out-of-th
 
 Go back to [http://drive.google.com](http://drive.google.com) and click on the red **Create** button. This time, click **Fusion Table**.
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-511-create-fusion-table.png)
 
 
 There's a couple of ways to import data into a Fusion Table.
@@ -288,11 +294,17 @@ There's a couple of ways to import data into a Fusion Table.
 
 We'll end up going through both ways. For now, you should choose the *quickest*: Choose **Google Spreadsheets**. Then go back to the browser window with the spreadsheet you were working on, **copy** the URL, and paste it in the field where it says, "Or paste a web address here:"
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-549-import-enter-url.png)
 
 The dialog boxes that follow should be relatively straightforward and you shouldn't have to change anything:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-565-mid-import.png)
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-555-select-sheet-import.png)
+
+Voila, here is our data in Fusion Tables:
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-580-imported-into-fusion.png)
 
 
 **Note:** This import process is quick, but Fusion Tables has crashed on me many times. You may have to import a CSV file from your computer. This first involves **exporting** your data as a CSV from Google Spreadsheets. You can read through this guide to see where I describe the process if you can't figure out on your own.
@@ -310,9 +322,11 @@ That's what we *want*, of course. But I want to show you how to *manually* set w
 
 First, move your **mouse over the right-side of** the `my_custom_column` header. A down-arrow will appear; click it to pop up a new menu and then select the **Change...** item.
 
-TKIMG
 
 You should now see a form with several fields you can edit. The one we care about is **Type**. Currently, `my_custom_column` should have the type of **Text**. Change its type to **Location**.
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-592-changing-column-location.png)
+
 
 To be brief: even though everything in our data is technically text, you can have Fusion Tables treat it different by *column*. In this situation, we want FT to see the `my_custom_column` as a "Location". For our purposes, this means that Google will attempt to map the points.
 
@@ -324,32 +338,38 @@ In the **tabs** of your table, which so far include `Rows` and `Cards`, you shou
 
 Click it and you'll see the option of **Add map**. Click that and you should see a screen like this:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-620-add-map-dropdown.png)
 
 You have created a map view but you can't see anything yet because Google has to first geocode those 1,000+ addresses we gave it. This may take 15 to 20 minutes, so go get some coffee.
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-650-geocode-progress.png)
 
 ### Play with the Google map
 
 Look at what came from our humble spreadsheet of data; A map!
 
-TKIMG
-
 OK, it's not too impressive in the default view because it's so zoomed out. Why is it so zoomed out? Because some of the points are mapped *way* out of New York, even into Canada!
 
 Bad Google! But wait...click on any of those outliers to see what it contains:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-655-bad-geocode.png)
 
 OK, so that address *is* a bit ambiguous, and it's understandable why Google didn't geocode it correctly. Even with a solid data source like the NYC Department of Health, we see that data is never perfect. In fact, data is almost *always* riddled with errors and inconsistencies. Dealing with that is one of the most difficult and soul-killing parts of data journalism.
 
 But screw that, let's go back to explore our cool map. Keep zooming in until the map is focused on New York City:
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-660-nyc-map-red-closeup.png)
 
 Look at that mass of fast food franchises!
 
+
+#### Map styles
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-673--change-map-styles.png)
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-675-choose-yellow-icon.png)
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-676-yellow-dot-map.png)
 
 ### Filter the data (and the map)
 
@@ -359,15 +379,25 @@ Before we get into Fusion's most powerful feature, let's try **filtering** the d
 
 Click on the <span style="color:#44f;">blue button</span> in the **top left** of the map labeled **Filter**. This should bring up a selection menu of your data **column headers**. 
 
+![img](/images/projects/fusion-spreadsheets/google-fusion-665--choose-filter.png)
+
 Click the option **name**. This gives you a form field to fill in. Type in a partial name, like "`STARB`" (for Starbucks). As quickly as you type, Fusion Tables will try to autocomplete.
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-667-filter-auto.png)
 
 But **don't** auto-complete. Instead, leave your partial term in the text field and then click the **Find** button. The map view should update showing fewer dots. If you click on each dot, you'll see that the map now only shows datapoints which have a **name** that includes `STARB`.
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-668-filter-starb.png)
 
 Pretty cool, we can now see the number and distribution of Starbucks versus McDonalds vs Dunkin' Donuts.
+
+Here's McDonalds:
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-669-filter-mcd.png)
+
+And Dunkin Donuts, which eclipses them both in franchise count:
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-670-filter-dunkins.png)
 
 Before we move on, click the **X** button in the filter menu so that all the datapoints are redrawn on the map.
 
@@ -379,6 +409,11 @@ Alright, the map was cool, but the killer feature of Fusion Tables, in my opinio
 Remember that we actually have two data tables. One is simply the list of restaurant establishments, which we just imported into Fusion Tables and mapped. 
 
 But the *fun* data &ndash; their **health inspection reports**, is in its own table. This is how it comes in the original NYC-DOH dataset because each establishment could have multiple reports. I've pruned the inspections to include only their latest scored inspection. But the reality remains: we have two separate lists that we want to *merge together*.
+
+### Import the Inspections table
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-550-import-inspections.png)
+
 
 ### Foreign keys and unique IDs
 
@@ -399,14 +434,17 @@ Fusion Tables, as you might guess, makes this process extremely easy, and with j
 (**Note:** if you've ever used proper database software, such as SQL or even Microsoft Access, this section will *piss you off* because Fusion Tables is not nearly as flexible or powerful in joining tables. But for a cloud-based point-and-click solution, it's pretty good.)
 
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-680--select-merge-dropdown.png)
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-683-choose-table-merge.png)
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-685-merge-columns-default-name.png)
 
-TKIMG
+![img](/images/projects/fusion-spreadsheets/google-fusion-686-merge-columns-match-source.png)
 
+![img](/images/projects/fusion-spreadsheets/google-fusion-698-merge-columns-choose.png)
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-700-merge.created.png)
 
 When you go back to your table
 
@@ -416,6 +454,14 @@ When you go back to your table
 
 #### Buckets and thresholds and colors
 
+![img](/images/projects/fusion-spreadsheets/google-fusion-702-map-bucket-pick-score-dropdown.png)
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-703-map-bucket-score.png)
+
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-705-colored-dots-by-score.png)
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-710-big-red-marker.png)
 
 
 ## Summarizing data with Fusion Tables
@@ -432,13 +478,21 @@ So let's try it out:
 - Click on the little down-arrow to bring up a menu
 - Click summarize
 
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-714-dropdown-summary.png)
+
+
+
 We basically have *three* types of restaurants: Starbucks, McDonald's, and Dunkin Donuts, and these types are reflected in their names. So we want to **summarize by Name**
 
 And what we want to *summarize* is the `score` of their health inspections. Click `minimum`, `maximum`, and `average` checkboxes because it'd be interesting to see the best and worst scores of each company.
 
-OK, hit **Save** and your table will have a different view:
+![img](/images/projects/fusion-spreadsheets/google-fusion-718-attempted-summary.png)
 
-TKIMG
+
+Now hit **Save** and your table will have a different view:
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-720-dirty-summary-names.png)
 
 OK, if you think this is confusing, then you followed my steps correctly. The summary here *is* confusing, and that's because our data is just plain *messy*. We wanted to summarize by name, but our restaurants aren't named nice and neat. Instead of just `DUNKIN DONUTS`, we have: TK TK
 
@@ -449,15 +503,26 @@ The summarizer of Fusion Tables is kind of dumb. It will only match exact terms 
 So what can we do? We'll take a brief tour into the dirty world of messy data cleaning. First, we have to get our data out of Fusion Tables and back into Google Spreadsheets.
 
 
+![img](/images/projects/fusion-spreadsheets/google-fusion-743-merge-oops.png)
 
 ### Export into CSV
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-745-download-csv.png)
+
+### Import into CSV
 
 
 ## Data-munging with Google Spreadsheets
 
 
-### Import into CSV
+### Formulas with regular expressions
 
+![img](/images/projects/fusion-spreadsheets/google-fusion-750-regex-dunkin.png)
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-751-regex-dunkin-true.png)
+
+
+![img](/images/projects/fusion-spreadsheets/google-fusion-755-no-upper-oops.png)
 
 ## Map classification
 
