@@ -10,20 +10,20 @@ header_image: about-nyu-washingtonsquare.jpg
 
 Here's a **visual summary of this very long tutorial**
 
-We will go from this [spreadsheet of New York Health Dept. inspections](https://docs.google.com/a/nyu.edu/spreadsheet/ccc?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&usp=drive_web#gid=0) 
+We will go from this [spreadsheet of New York Health Dept. inspections](https://docs.google.com/a/nyu.edu/spreadsheet/ccc?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&usp=drive_web#gid=0)...
 
 ![img](/images/projects/fusion-spreadsheets/google-fusion-110-spreadsheet-data.png)
 
 
-To [this interactive map](/projects/oneoffs/fusion-doh-map) 
+...To [this interactive map](/projects/one-offs/fusion-doh-map) 
 
-<a href="/projects/oneoffs/fusion-doh-map">
+<a href="/projects/one-offs/fusion-doh-map">
     
 ![img](/images/projects/fusion-spreadsheets/google-fusion-120-map-data.jpg)
 
 </a>
 
-(this is just a screenshot; [the full interactive page is here](/projects/oneoffs/fusion-doh-map))
+(this is just a screenshot; [the full interactive page is here](/projects/one-offs/fusion-doh-map))
 
 If you're new to data analysis and visualization, this guide is (hopefully) for you. It covers [the most recent overhaul of Fusion Tables in 2013](https://support.google.com/fusiontables/answer/2475373?hl=en) but the concepts are meant to be universal.
 
@@ -841,7 +841,7 @@ You then have to make the map **public**. And after that, you have a couple of o
 ![img](/images/projects/fusion-spreadsheets/google-fusion-921-publish-privacy.png)
 
 
-Here's [the webpage I made using Google Fusion embeds](/projects/oneoffs/fusion-doh-map). I've combined both the tabular data and the map, plus some explanatory text.
+Here's [the webpage I made using Google Fusion embeds](/projects/one-offs/fusion-doh-map). I've combined both the tabular data and the map, plus some explanatory text.
 
 
 Want to know how to publish a webpage from scratch? You can read my beginner's guide to using [Amazon S3 for web hosting here](http://www.smalldatajournalism.com/projects/one-offs/using-amazon-s3/).
@@ -851,7 +851,7 @@ Want to know how to publish a webpage from scratch? You can read my beginner's g
 ------
 
 
-I hope you've gotten a sense of what data analysis entails: there's lots of annoying data cleaning, but once you get the hang of it, you can manage datasets of hundreds to hundreds of thousands of rows. And [it's not too hard to make a useful interactive graphic out of it](/projects/oneoffs/fusion-doh-map).
+I hope you've gotten a sense of what data analysis entails: there's lots of annoying data cleaning, but once you get the hang of it, you can manage datasets of hundreds to hundreds of thousands of rows. And [it's not too hard to make a useful interactive graphic out of it](/projects/one-offs/fusion-doh-map).
 
 There's a lot of tedious, application specific steps in this specific example. But don't focus on memorizing the steps. Focus on *why* we did something to the data and how it was necessary to get to the next step. Whether it's Google Spreadsheets, Excel, SQL, or the next coming of dBase, the concepts of data integrity and structure will be the same.
 
