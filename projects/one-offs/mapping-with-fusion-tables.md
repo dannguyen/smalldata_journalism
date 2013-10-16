@@ -6,16 +6,14 @@ header_image: about-nyu-washingtonsquare.jpg
 ---
 
 
-**Note:** *This is a short tutorial I wrote for the students in my [Data Journalism class](/class). I have a longer series about the concepts of spreadsheets, delimited data, and visualization. But for now, my class just needs a step-by-step guide to basic data mashing and visualization via Google Fusion Tables.*
+**Note:** *This was meant to be a short tutorial I wrote for the students in my [Data Journalism class](/class), so that they would have a reference for basic data mashing concepts as well as a practical walkthrough of how to use Google Fusion Tables for visualization.*
 
-Here's a **visual summary of this very long tutorial**
-
-We will go from this [spreadsheet of New York Health Dept. inspections](https://docs.google.com/a/nyu.edu/spreadsheet/ccc?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&usp=drive_web#gid=0)...
+Here's a **visual summary of this very long tutorial** We will start with this [spreadsheet of New York Health Dept. inspections](https://docs.google.com/a/nyu.edu/spreadsheet/ccc?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&usp=drive_web#gid=0)...
 
 ![img](/images/projects/fusion-spreadsheets/google-fusion-110-spreadsheet-data.png)
 
 
-...To [this interactive map](/projects/one-offs/fusion-doh-map) 
+...And produce [this interactive map](/projects/one-offs/fusion-doh-map) 
 
 <a href="/projects/one-offs/fusion-doh-map">
     
@@ -25,7 +23,7 @@ We will go from this [spreadsheet of New York Health Dept. inspections](https://
 
 (this is just a screenshot; [the full interactive page is here](/projects/one-offs/fusion-doh-map))
 
-If you're new to data analysis and visualization, this guide is (hopefully) for you. It covers [the most recent overhaul of Fusion Tables in 2013](https://support.google.com/fusiontables/answer/2475373?hl=en) but the concepts are meant to be universal.
+If you're new to data analysis and visualization, this guide is (*hopefully*) for you. It covers [the most recent overhaul of Google Fusion Tables in 2013](https://support.google.com/fusiontables/answer/2475373?hl=en) but the concepts are meant to be universal.
 
 
 {% include auto-toc.md %}
@@ -719,17 +717,19 @@ In a sense, we've created a new data table. And now we need to **merge** it into
 
 ### Merging problems
 
-OK, this is where software problems comes in. Fusion Tables is relatively young and may choke for any number of reasons by design or through cruel chance.
+OK, this is where software problems can crop up. Fusion Tables is powerful, but it's a relatively young piece of software by Google. So the reasons that it may hang unexpectedly may be through unfinished design or just plain cruel chance.
 
-When I tried it, it simply would not let me merge my new spreadsheet of categories with my existing Fusion Tables. I got this unresponsive screen instead:
+
+For instance, in this current example, Fusion Tables simply would not let me merge my new spreadsheet of categories with my existing Fusion Tables. I got this unresponsive screen instead:
 
 ![img](/images/projects/fusion-spreadsheets/google-fusion-743-merge-oops.png)
 
-For whatever reason (I won't go into them here), Fusion Tables puts certain constraints on a merged table. I've apparently run into a software flaw, but even when the constraints work as expected, you may still have a problem.
+For reasons that could either be sensible or just momentary technical flaws, Fusion Tables puts certain constraints on what you can do with a merged table. In the screenshot above, I've apparently run into a software flaw. But there may be legitimate technical reasons why your merged table won't be as flexible as you like.
+
 
 #### Export to CSV
 
-Annoying, but no matter. Remember that everything we're working with is **just text**. So let's **export** our Fusion Table (the one that was the **merge between inspections and restaurants**) into a plaintext CSV file:
+It's annoying, but we can deal with it. Remember that everything we're working with is **just text**. So let's **export** our Fusion Table (the one that was the **merge between inspections and restaurants**) into a plaintext CSV file:
 
 ![img](/images/projects/fusion-spreadsheets/google-fusion-802-download-as-csv.png)
 
@@ -813,25 +813,11 @@ Starbucks is in green, McDonalds in yellow, and Dunkin Donuts in brown. You [can
 I was surprised at the market penetration of Dunkin' Donuts. Wherever you are, no matter what borough, you may never be more than a mile or two from glazed heaven.
 
 
-## The next iteration
-
-So there's nothing groundbreaking in this data, but this was just an exercise and one of the simplest ways that this inspection data can be examined. In the NYC-DOH data, there's an entire table of **violations** that I didn't join. Want to find which of these locations had mice and/or cockroaches? Just get the database of violations and **merge** them into your inspections table.
-
-That was the original goal of this tutorial but, as you can see, this was lengthy as is. I'll finish the complete tutorial at some point (and break it into more manageable reading pieces). So feel free to check back later or follow my [Twitter account for updates](http://www.twitter.com/dancow).
-
-If you're interested in doing more complex analysis and visualizations, I highly recommend reading WNYC data editor John Keefe's blog, where his Fusion skills have tackled everything from [political donations](http://johnkeefe.net/dollars-in-a-district), [hurricane evacuations](http://johnkeefe.net/making-the-nyc-evacuation-map), and [Census demographics](http://johnkeefe.net/47474697).
-
-
-![img](/images/projects/fusion-spreadsheets/wnyc-fusion-census-map.png)
-
-
-
-
 ## Publishing
 
-Analyzing data can be a fun pursuit, but if you're like most journalists, the real fun is in publishing. Fusion Tables also makes this easy.
+While analyzing and cleaning data can be a fulfilling joy (if you're crazy), most journalists aim for publishing things. Fusion Tables also makes this easy and gives you a variety of options for displaying your data, either as tables or maps.
 
-Click any of the tabs, such as your map's, and choose the **Publish...** option:
+Click any of the tabs, such as the one for your map, and choose the **Publish...** option:
 
 ![img](/images/projects/fusion-spreadsheets/google-fusion-920-publish-dropdown.png)
 
@@ -847,6 +833,21 @@ Here's [the webpage I made using Google Fusion embeds](/projects/one-offs/fusion
 Want to know how to publish a webpage from scratch? You can read my beginner's guide to using [Amazon S3 for web hosting here](http://www.smalldatajournalism.com/projects/one-offs/using-amazon-s3/).
 
 
+## The next iteration
+
+So there's nothing groundbreaking in this data, but this was just an exercise and one of the simplest ways that this inspection data can be examined. In the NYC-DOH data, there's an entire table of **violations** that I didn't join. Want to find which of these locations had mice and/or cockroaches? Just get the database of violations and **merge** them into your inspections table.
+
+Fusion Tables (along with Google Spreadsheets and Excel) have some limitations, but if you combine their features (by moving data back and forth), you can do some pretty impressive (and shareable) data work. 
+
+If you're interested in doing more complex analysis and visualizations with Fusion Tables, I highly recommend reading WNYC data editor John Keefe's blog, where his Fusion skills have tackled everything from [political donations](http://johnkeefe.net/dollars-in-a-district), [hurricane evacuations](http://johnkeefe.net/making-the-nyc-evacuation-map), and [Census demographics](http://johnkeefe.net/47474697).
+
+<a href="http://johnkeefe.net/47474697">
+
+![img](/images/projects/fusion-spreadsheets/wnyc-fusion-census-map.png)
+
+</a>
+
+
 
 ------
 
@@ -855,7 +856,7 @@ I hope you've gotten a sense of what data analysis entails: there's lots of anno
 
 There's a lot of tedious, application specific steps in this specific example. But don't focus on memorizing the steps. Focus on *why* we did something to the data and how it was necessary to get to the next step. Whether it's Google Spreadsheets, Excel, SQL, or the next coming of dBase, the concepts of data integrity and structure will be the same.
 
-If you're interested in data journalism, [check out my curated list of data journalism articles and books](/readings). You can also follow me on Twitter at [@dancow](https://twitter.com/dancow)
+If you're interested in data journalism, [check out my curated list of data journalism articles and books](/readings). You can also follow me on Twitter at [@dancow](https://twitter.com/dancow). If you have questions or comments, feel free to email me at [dan@danwin.com](mailto:dan@danwin.com).
 
 
 
