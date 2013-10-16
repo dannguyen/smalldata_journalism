@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Introduction to Mapping with Google Fusion Tables
-tagline: How to turn spreadsheet data into interactive maps.
+title: Intro to Data Mashing and Mapping with Google Fusion Tables
+tagline: How to turn spreadsheets into interactive maps.
 header_image: about-nyu-washingtonsquare.jpg
 ---
 
 
-**Note:** *This was meant to be a short tutorial I wrote for the students in my [Data Journalism class](/class), so that they would have a reference for basic data mashing concepts as well as a practical walkthrough of how to use Google Fusion Tables for visualization.*
+**Note:** *This was originally intended to be a short tutorial for students in my [Data Journalism class](/class) that would be both a primer for basic data mashing concepts and a practical walkthrough for the latest iteration of Google Fusion Tables.*
 
 Here's a **visual summary of this very long tutorial** We will start with this [spreadsheet of New York Health Dept. inspections](https://docs.google.com/a/nyu.edu/spreadsheet/ccc?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&usp=drive_web#gid=0)...
 
@@ -15,15 +15,14 @@ Here's a **visual summary of this very long tutorial** We will start with this [
 
 ...And produce [this interactive map](/projects/one-offs/fusion-doh-map) 
 
-<a href="/projects/one-offs/fusion-doh-map">
-    
+
 ![img](/images/projects/fusion-spreadsheets/google-fusion-120-map-data.jpg)
 
-</a>
 
-(this is just a screenshot; [the full interactive page is here](/projects/one-offs/fusion-doh-map))
 
-If you're new to data analysis and visualization, this guide is (*hopefully*) for you. It covers [the most recent overhaul of Google Fusion Tables in 2013](https://support.google.com/fusiontables/answer/2475373?hl=en) but the concepts are meant to be universal.
+(Note: This is just a non-interactive screenshot; Visit the [full interactive page is here](/projects/one-offs/fusion-doh-map))
+
+If you're new to data analysis and visualization, this guide is (*hopefully*) for you. It covers [the most recent overhaul of Google Fusion Tables in 2013](https://support.google.com/fusiontables/answer/2475373?hl=en) but the concepts are meant to be universal. It starts with how to upload a CSV file and ends with how to properly categorize your data in a published interactive map.
 
 
 {% include auto-toc.md %}
@@ -51,7 +50,7 @@ For the purposes of this guide, I'm using a subset of restaurant inspections dat
 
 There are two tables we'll be using:
 
-1. `restaurants` - This primarily contains business information, such as business name and address. [Download it here](https://docs.google.com/spreadsheet/pub?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&single=true&gid=1&output=csv).
+1. `restaurants` - This primarily contains business information, such as business name and address. [Download it here](https://docs.google.com/spreadsheet/pub?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&single=true&gid=0&output=csv).
 2. `inspections` - This contains the results of inspections conducted by the DOH, including the inspection date and the numerical score awarded (**lower** is better). [Download it here](https://docs.google.com/spreadsheet/pub?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&single=true&gid=1&output=csv)
 
 
@@ -59,16 +58,16 @@ There are two tables we'll be using:
 
 Some of the changes and limitations in this data include:
 
-- The `restaurants` table only includes Starbucks, Dunkin Donuts, and McDonalds locations. Not to pick on these chains or anything, but just because there are a *lot* of them and make for an interesting map, and you've probably been to at least one of them for coffee and breakfast in your life.
-- The `inspections` table only includes the latest inspections per restaurant, as of early October. Some of the places may have been re-inspected since then, so do not assume that the scores here reflect the restaurant's latest status. [Again, check out the NYDOH site for the latest results](http://www.nyc.gov/html/doh/html/environmental/disclaimer.shtml).
+- The `restaurants` table only includes Starbucks, Dunkin Donuts, and McDonald's locations. It's to pick on these chains or anything, but there just happens to be a *lot* of them to look through. And you've probably been to at least one of them for coffee and breakfast in your life.
+- The `inspections` table only includes the **latest** inspections per restaurant, **as of early October 2013**. Some of the places may have been re-inspected since then, so do not assume that the scores here reflect the restaurant's latest status. [Again, check out the NYDOH site for the latest results](http://www.nyc.gov/html/doh/html/environmental/disclaimer.shtml).
 - I've left out the `violations` table for a future lesson. You'll have to look at the DOH site to see the details of the violations.
 
-**Disclaimer note:** You're welcome to access the data tables and make copies. However, you must accept that this data is presented as is for a class exercise, and is **not meant for actual production and publishing**. I make no claims for the accuracy or integrity of this data and you assume all liability and sole responsibility for verifying and correcting the data.
+**Disclaimer note:** You're welcome to access the data tables and make copies. However, you must accept that this data is presented as is for a class exercise, and is **not meant for production and publishing** beyond a proof of concept. I make no claims for the accuracy or integrity of this data and you assume all liability and sole responsibility for verifying and correcting the data.
 
 
 ## Transforming data in Google Spreadsheets
 
-Start out by downloading the **CSV text file** of DOH-inspected businesses [from this link I've provided](https://docs.google.com/spreadsheet/pub?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&single=true&gid=1&output=csv). 
+Start out by downloading the **CSV text file** of DOH-inspected businesses [from this link I've provided](https://docs.google.com/spreadsheet/pub?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&single=true&gid=0&output=csv). 
 
 You can open it in Excel if you'd like. I encourage you to open it with a **plain text editor** to verify that it indeed is just text:
 
@@ -841,11 +840,9 @@ Fusion Tables (along with Google Spreadsheets and Excel) have some limitations, 
 
 If you're interested in doing more complex analysis and visualizations with Fusion Tables, I highly recommend reading WNYC data editor John Keefe's blog, where his Fusion skills have tackled everything from [political donations](http://johnkeefe.net/dollars-in-a-district), [hurricane evacuations](http://johnkeefe.net/making-the-nyc-evacuation-map), and [Census demographics](http://johnkeefe.net/47474697).
 
-<a href="http://johnkeefe.net/47474697">
 
 ![img](/images/projects/fusion-spreadsheets/wnyc-fusion-census-map.png)
 
-</a>
 
 
 
