@@ -46,7 +46,7 @@ The lists of bestselling books comes from [NPR's bestsellers website](http://www
 This is performance data from the New York schools department. The homework for next week includes making a mashup from these tables (and any others you may find):
 
 - [Information about each school building and classification](https://www.google.com/fusiontables/DataSource?docid=1duHlT8D7xMWbmev8HGClFb5h4IS7gPMnWMUdM3k)
-- [2012 SAT Scores](https://www.google.com/fusiontables/DataSource?docid=1duHlT8D7xMWbmev8HGClFb5h4IS7gPMnWMUdM3k)
+- [2012 SAT Scores](https://www.google.com/fusiontables/DataSource?docid=1FDdMCyacc7zKDpbKnP9ex1pOoJzr9LSsf9wkxtU#rows:id=1)
 - [2010 SAT Scores](https://www.google.com/fusiontables/DataSource?docid=1rO6xTPVhS0mVIFQd7TWp7jZtnZRutmW1GE8s27c)
 - [Graduation rates](https://www.google.com/fusiontables/DataSource?docid=1IUdopQEGjFGHoSqzFGNh-PzWbVjKFL_Ta7-KtwM)
 - [School Progress Reports](https://www.google.com/fusiontables/data?docid=1wh_abtRKawqnpOPl84GQdLGUWrJXVSJO1XSiYLs#rows:id=1)

@@ -8,7 +8,7 @@ header_image: about-nyu-washingtonsquare.jpg
 
 **Note:** *This was originally intended to be a short tutorial for students in my [Data Journalism class](/class) that would be both a primer for basic data mashing concepts and a practical walkthrough for the latest iteration of Google Fusion Tables.*
 
-Here's a **visual summary of this very long tutorial** We will start with this [spreadsheet of New York Health Dept. inspections](https://docs.google.com/a/nyu.edu/spreadsheet/ccc?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&usp=drive_web#gid=0)...
+Here's the **visual summary for this very long tutorial**: We will start with this [spreadsheet of New York Health Dept. inspections](https://docs.google.com/spreadsheet/ccc?key=0At3Q3D3lDxXcdGI0VXF1TFRKSjJDVFdxRUlQRVVTMGc&usp=drive_web#gid=0)...
 
 ![img](/images/projects/fusion-spreadsheets/google-fusion-110-spreadsheet-data.png)
 
@@ -36,9 +36,9 @@ If you're new to data analysis and visualization, this guide is (*hopefully*) fo
 You **must have a Google Account** as we'll be using two of their cloud-based spreadsheet-like applications:
 
 - **Google Spreadsheets**: This will be most familiar to you if you've ever used Excel &ndash; in fact, you can use Excel if you prefer. For this lesson, we use Spreadsheets to **transform** our data set before we visualize it.
-- **Google Fusion Tables**: This uses the same structured data as Spreadsheets, but allows you to **merge** different data tables together. It's not quite as powerful as your typical database software, but it is easy and will give you an idea of how powerful this concept can be. Also, Fusion Tables makes it extremely easy to create an interactive map (almost *too* easy).
+- **Google Fusion Tables**: This uses the same structured data as Spreadsheets, but allows you to **merge** different data tables together. It's not as full-featured as your typical database software. But it is easy to use even without knowing any programming and will give you a sense of how powerful data work can be. Also, Fusion Tables makes it extremely easy to create and publish interactive maps ([whether the data should be mapped is another question](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/))
 
-Though these are two different programs, they both can export and import to **comma-delimited** text files. In fact, I would argue that understanding CSVs (rather, *delimitation* in general), is the most important and universal thing to know when doing data work. However, I won't be going into detail about it for this technical walkthrough.
+Though these are two different programs, they both can export and import to **comma-delimited** text files. In fact, I would argue that understanding CSVs (rather, *delimitation* in general), is the most important and universal thing to know when doing data work. I won't be going into detail about the principles of delimitation, but I'll walk you through the import and exporting process.
 
 Just remember that the data here is *just text*, and if you want to get from one application to the other, **export as CSV** and then, in your destination application, **import as CSV**.
 
@@ -58,7 +58,7 @@ There are two tables we'll be using:
 
 Some of the changes and limitations in this data include:
 
-- The `restaurants` table only includes Starbucks, Dunkin Donuts, and McDonald's locations. It's to pick on these chains or anything, but there just happens to be a *lot* of them to look through. And you've probably been to at least one of them for coffee and breakfast in your life.
+- The `restaurants` table only includes Starbucks, Dunkin Donuts, and McDonald's locations. It's not to pick on these chains or anything, but there just happens to be a *lot* of them to look through. And you've probably been to at least one of them for coffee and breakfast in your life.
 - The `inspections` table only includes the **latest** inspections per restaurant, **as of early October 2013**. Some of the places may have been re-inspected since then, so do not assume that the scores here reflect the restaurant's latest status. [Again, check out the NYDOH site for the latest results](http://www.nyc.gov/html/doh/html/environmental/disclaimer.shtml).
 - I've left out the `violations` table for a future lesson. You'll have to look at the DOH site to see the details of the violations.
 
@@ -106,17 +106,17 @@ Click the blue **Import** button and you'll see your new data:
 
 ### Freezing rows and sorting columns
 
-If you've ever used Excel, Google Spreadsheets should seem very familiar to you. Much of Excel's intermediate-level functionality is here. That, plus the ability to collaborate and share data in real time, from any workstation, makes Google Spreadsheets the greatest tool for data journalism today, in my humble opinion.
+If you've ever used Excel, Google Spreadsheets should seem very familiar to you. Much of Excel's intermediate-level functionality is here. That, plus the ability to collaborate and share data in real time, from any workstation, makes Google Spreadsheets one of the greatest tools for data journalism today, in my humble opinion.
 
 #### Freeze rows
 
-But small steps first. One of the things I like about Google's flavor of spreadsheets is that sorting is slightly more intuitive. However, before we sort, let's **freeze** the headers to keep them in place:
+But small steps first. One of the things I like about Google's flavor of spreadsheets is that sorting-by-column is slightly more intuitive. Before we sort, let's **freeze** the headers to keep them in place:
 
 Go to the **View** menu in the Spreadsheets toolbar and select **Freeze Rows**. Then select **Freeze 1 row**.
 
 ![img](/images/projects/fusion-spreadsheets/google-fusion-212--freeze-row-submenu.png)
 
-The result will be that you can scroll up and down the data and the headers will stay in place.
+The result of this is now you can scroll the data up and down and the headers will stay in place.
 
 #### Sort columns
 
@@ -828,6 +828,7 @@ You then have to make the map **public**. And after that, you have a couple of o
 
 Here's [the webpage I made using Google Fusion embeds](/projects/one-offs/fusion-doh-map). I've combined both the tabular data and the map, plus some explanatory text.
 
+If you've gotten this far and are completely lost, here's the link to the [Google Fusion Table that contains the final data and maps](https://www.google.com/fusiontables/DataSource?docid=1oMx96J6oygjYuOb7-TSiHc6CM99q8RRS47cWlCU&pli=1#rows:id=1).
 
 Want to know how to publish a webpage from scratch? You can read my beginner's guide to using [Amazon S3 for web hosting here](http://www.smalldatajournalism.com/projects/one-offs/using-amazon-s3/).
 

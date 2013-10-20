@@ -6,10 +6,21 @@ tagline: A simple data-mashup using NYC health data and Google Fusion Tables
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
+<style>
+  
+.mapCanvas img{
+    max-width: none !important;
+    margin-bottom: 2.0em; border: thin solid #777;
+}
+
+</style>
+
 The two interactive maps on this page display the locations of New York's many Starbucks, McDonald's, and Dunkin Donuts. The data comes from the [NYC health department and their inspection results](http://www.nyc.gov/html/doh/html/services/restaurant-inspection.shtml), as of early October 2013.
 
-These maps are the end product of my [tutorial on how to do data visualizations with spreadsheets and Google Fusion Tables](/projects/one-offs/mapping-with-fusion-tables/).
+These maps are the end product of my [tutorial on how to do data visualizations with spreadsheets and Google Fusion Tables](/projects/one-offs/mapping-with-fusion-tables/). There are some anomalies in the data (such as a few geocoded locations) and I've left them in as part of the [tutorial](/projects/one-offs/mapping-with-fusion-tables/).
 
+
+### Mapping by ownership
 
 This first map shows the locations marked by **type**: 
 
@@ -17,11 +28,11 @@ This first map shows the locations marked by **type**:
 - <span style="color:#ECE530">yellow</span> for McDonald's
 - <span style="color:#835F04">brown</span>  for Dunkin Donuts
 
-
-<div id="googft-mapCanvas" style="width: 100%; height: 600px;">
+<div id="googft-mapCanvas" class="mapCanvas" style="width: 100%; height: 600px; margin-bottom: 2.0em; border: thin solid #777;">
 
 </div>
 
+As this is only the most basic of plots you can do with Fusion Tables, I'll leave it to the statisticians and Malcolm Gladwell to explain the seemingly strong correlation between the locations of Starbucks and the population density of New Yorkers who are able to afford living and/or purchasing Frappucinos in Manhattan.
 
 <script type="text/javascript">
 
@@ -100,7 +111,7 @@ This second map shows the same locations, but marked according to the **score** 
 - <span style="color:#CFAF2F;">C</span> is **28** points and above.
 
 
-<div id="googft-mapCanvas2" style="width: 100%; height: 600px;">
+<div id="googft-mapCanvas2" class="mapCanvas" style="width: 100%; height: 600px;">
   
 
 </div>
@@ -169,9 +180,11 @@ map.setOptions({styles: styles});
 Here is some summary data for the three major brands:
 
 
-<table class="table table-striped table-bordered"><thead><tr><th>Company</th><th>Number of</th><th>Minimum score</th><th>Max score</th><th>Average score</th></tr></thead><tbody><tr><td>Dunkin Donuts</td><td>507</td><td>0</td><td>39</td><td>8.761316872</td></tr><tr><td>McDonald's</td><td>235</td><td>2</td><td>67</td><td>10.56837607</td></tr><tr><td>Starbucks</td><td>269</td><td>2</td><td>29</td><td>6.69581749</td></tr></tbody></table>
+<table class="table table-striped table-bordered"><thead><tr><th>Company</th><th>Number of</th><th>Minimum score</th><th>Max score</th><th>Average score</th></tr></thead><tbody><tr><td>Dunkin Donuts</td><td>507</td><td>0</td><td>39</td><td>8.76</td></tr><tr><td>McDonald's</td><td>235</td><td>2</td><td>67</td><td>10.59</td></tr><tr><td>Starbucks</td><td>269</td><td>2</td><td>29</td><td>6.70</td></tr></tbody></table>
 
-**Note:** This summary only covers the most recent inspections for these locations as of early October 2013. But I don't think it varies much over the history of the NYC inspection program. The scores here are pretty good. If you're surprised, it's because you thought there was a correlation between tastiness of food and cleanliness of location. It's more likely that bigger companies have better standardized processes for keeping things within the health code.
+**Note:** This summary only covers the most recent inspections for these locations as of early October 2013. But I don't think the scores vary greatly over the history of the NYC inspection program. 
+
+The scores for the big chains are pretty good. If you're surprised, it's because you thought there was a correlation between tastiness of food and cleanliness of location. However, it's more likely that bigger companies have better standardized processes for keeping things within the health code.
 
 
 ### Make your own mashup
