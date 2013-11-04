@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Class notes for Sept. 23, 2013
-tagline: Introduction to Data Journalism
+title: Introduction to Data Journalism
+tagline: Class notes for Sept. 23, 2013
 header_image: about-nyu-washingtonsquare.jpg
 ---
 

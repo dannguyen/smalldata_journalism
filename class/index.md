@@ -5,7 +5,7 @@ tagline:  The Fall 2013 syllabus and class schedule for WRIT1-CE9787
 header_image: about-nyu-washingtonsquare.jpg
 ---
 
-**Note:** It's past the start date of **Sept. 23, 2013**, but [you can still enroll here](http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787#sectionBlock). Otherwise, you're free to follow the notes and guides on this site as you wish. Also, check out [Chrys Wu's list of other Fall 2013 data journalism classes](http://bitly.com/bundles/macdivaona/Q).
+**Note:** It's past the start date of **Sept. 23, 2013**. But you're free to follow the notes and guides on this site as you wish. Also, check out [Chrys Wu's list of other Fall 2013 data journalism classes](http://bitly.com/bundles/macdivaona/Q).
 
 
 {% include auto-toc.md %}
@@ -34,46 +34,21 @@ Single-source data is as unreliable as a news story with just one perspective. W
 
 [Read the class outline here](/class/fall2013/notes-1007/)
 
-## Tentative schedule
-
-The content for these classes are subject to change and rearrangement.
-
-### Oct. 14 - No class, Columbus Day
-
-
 
 ### Oct. 21 - Visualization and Analysis
 
-Keep things simple.
+Keep things simple. [Read the class outline](/class/fall2013/notes-1021/)
 
-- [We Have Met the Enemy and He Is PowerPoint](http://www.nytimes.com/2010/04/27/world/27powerpoint.html) via the New York Times.
-- [PowerPoint does Rocket Science - and Better Techniques for Technical Reports](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001yB&topic_id=1) via Edward Tufte.
-- [Visual Literacy in an Age of Data](http://source.mozillaopennews.org/en-US/learning/visual-literacy-age-data/) via Source.
-- [Charts and Things](http://chartsnthings.tumblr.com/) via the NYT's Kevin Quealy.
-- [The perils of polling Twitter](http://source.mozillaopennews.org/en-US/learning/perils-polling-twitter/)
-- [Oscar Predictions, Election Style](http://fivethirtyeight.blogs.nytimes.com/2013/02/22/oscar-predictions-election-style/)
-- [Know your Stats](http://source.mozillaopennews.org/en-US/learning/know-your-stats/)
-
-
-
-#### Workshop: Charting and Mapping via Spreadsheets and Google Fusion tables
+**Workshop:** Charting and Mapping via Spreadsheets and Google Fusion tables
 One of the easiest ways to build data-heavy visualizations (step-by-step guide to come)
 
 
 
-### Oct. 28: Project Discussion and Final
+### Oct. 28: Killer Visualizations
 
-
-Possible questions on the final:
-
-- Given five data schemas, explain the foreign keys used to join them together.
-- Given five data schemas and potential foreign keys, explain the data cleaning strategy needed to reliable joins
-- Here is a map of something, explain why it shouldn't be a map.
-- What are 5 things wrong in a given analysis?
-
-Again, for the full list of readings that we may use in this class, [check out the Readings page](/readings).
-
-We'll discuss project ideas and expectations. The project due date will be in late November.
+- The [topic is on how complex visualizations can kill](/class/fall2013/notes-1028/). We will also play around with Open Refine.
+- [The take-home final can be found here](/class/fall2013/class-final-2013). It is due next week, on **Monday, November 4**.
+- The take-home project is due on **November 20**. [The requirements and description can be found here](/class/fall2013/project-fall-2013)
 
 
 ## Course Description

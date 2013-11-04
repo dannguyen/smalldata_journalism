@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Class notes for Oct. 7, 2013
-tagline: Data Mashing
+title: Data Mashing
+tagline: Class notes for Oct. 7, 2013
 header_image: about-nyu-washingtonsquare.jpg
 ---
+
+**Note:** the majority of the Fusion Tables and Spreadsheet steps we covered in this lecture can be found in my [step-by-step walkthrough on using Fusion Tables to mash and map data](http://www.smalldatajournalism.com/projects/one-offs/mapping-with-fusion-tables/).
 
 {% include auto-toc.md %}
 
