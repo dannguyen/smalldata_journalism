@@ -12,7 +12,7 @@ Today is the last in-person class for the NYU-SCPS Fall 2013 data journalism cou
 Three important things for today and beyond:
 
 - You should have received an email to perform an online evaluation of this course. [You can do so at this link](https://www.scps.nyu.edu/evaluate.html). Students who complete the evaluations are eligible for one of four $500 book scholarships at the NYU Bookstores
-- [The take-home final can be found here](/class/fall2013/class-final-2013). It is due next week, on **Monday, November 4**.
+-  The [take-home final can be found here](/class/fall2013/class-final-2013). It is due next week, on **Monday, November 4**
 - The take-home project is due on **November 20**. [The requirements and description can be found here](/class/fall2013/project-fall-2013).
 
 
