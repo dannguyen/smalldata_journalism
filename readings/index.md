@@ -18,7 +18,7 @@ This is a list of both useful and eclectic articles and guides to data journalis
 
 <div class="stretch container">
 
-<table class="table table-striped table-condensed references">
+<table id="sortable-table" class="table table-striped table-condensed references">
 <thead>
   <tr>
     <th>Title</th>
@@ -64,5 +64,7 @@ This is a list of both useful and eclectic articles and guides to data journalis
 
 </div>
 
+
+{% include tablesort.html %}
 
 

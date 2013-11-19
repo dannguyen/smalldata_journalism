@@ -21,7 +21,6 @@ This is a list of both useful and eclectic articles and guides to data journalis
 
   <li class="item">
 
-    <div class="imgwrap"><img src="http://placekitten.com/400/200" /></div>
 
     <div class="title">  
       <a href="{{r.source_url}}">{{r.title}}</a>
