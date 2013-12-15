@@ -2,7 +2,7 @@
 layout: project
 title: Elements of the Web
 tagline: Just text
-header_image: about-nyu-washingtonsquare.jpg
+header_image: high-line-theater.jpg
 project: inspect-the-web
 project_order: 2
 ---

@@ -31,6 +31,8 @@ In this final chapter of our brief acquaintance with the Web inspector, we'll ta
 
 ![](/images/projects/inspect-the-web/06-002-osha-form.png)
 
+TK Explain
+
 [Sample input](https://www.osha.gov/pls/imis/establishment.search?p_logger=1&establishment=food&State=NY&officetype=all&Office=all&p_case=all&p_violations_exist=yes&startmonth=09&startday=22&startyear=2008&endmonth=09&endday=22&endyear=2013)
 
 ![](/images/projects/inspect-the-web/06-005-osha-results.png)
@@ -108,16 +110,20 @@ The parameters when you don't
 
 ![](/images/projects/inspect-the-web/06-307-twitter-new-tweets-request.png)
 
-Look at since_id
-Look at interval: 30000 ms
+Look at `since_id`
+TK: Explain
+
+Look at `interval`: `30000 ms`
+TK: Explain
 
 ### Chartbeat Scroll Depth
 
 Scroll Depth: Pinpoint your
 homepage’s digital fold.
 
-See exactly where your readers are actively engaging with your stories. And where you’re losing their attention. Scroll Depth measures how far down the page your audience is reading so you can adjust your homepage content accordingly. We count pixels, so you get data.
+> See exactly where your readers are actively engaging with your stories. And where you’re losing their attention. Scroll Depth measures how far down the page your audience is reading so you can adjust your homepage content accordingly. We count pixels, so you get data.
 
+TK Explain
 
 https://chartbeat.com/privacy/
 

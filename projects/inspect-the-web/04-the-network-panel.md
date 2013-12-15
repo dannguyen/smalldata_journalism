@@ -2,7 +2,7 @@
 layout: project
 title: The Network Panel
 tagline: See the traffic of the Internet
-header_image: about-nyu-washingtonsquare.jpg
+header_image: high-line-theater.jpg
 project: inspect-the-web
 project_order: 4
 ---

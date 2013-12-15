@@ -2,7 +2,7 @@
 layout: project
 title: Meet the Web Inspector
 tagline: How to find and activate the Web inspector
-header_image: about-nyu-washingtonsquare.jpg
+header_image: high-line-theater.jpg
 project: inspect-the-web
 project_order: 1
 ---

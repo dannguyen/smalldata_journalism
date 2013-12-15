@@ -2,7 +2,7 @@
 layout: project
 title: Forge the Web
 tagline: Instant experimentation with HTML and CSS
-header_image: about-nyu-washingtonsquare.jpg
+header_image: high-line-theater.jpg
 project: inspect-the-web
 project_order: 3
 ---

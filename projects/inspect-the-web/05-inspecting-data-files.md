@@ -2,7 +2,7 @@
 layout: project
 title: Inspecting Data Files
 tagline: The data is just text, too
-header_image: about-nyu-washingtonsquare.jpg
+header_image: high-line-theater.jpg
 project: inspect-the-web
 project_order: 5
 ---
@@ -207,7 +207,9 @@ The map [on the demo page](/examples/data-inspection/) differs in that I'm showi
 
 The fact that I've ripped off [Bostock's code](http://bl.ocks.org/mbostock/4060606) should immediately clue you in what to expect. The code used to generate the map must pull in data from some easily switchable source. In fact, this is what you should suspect of most non-trivial web widgets and graphics. 
 
-It's not as if Bostock created a program for the purpose of displaying U.S. 2008 unemployment rate by county as a choropleth map. Rather, Bostock has created a choropleth-map-making program that, in his example, happens to display U.S. 2008 unemployment rates by county. 
+It's not as if Bostock created a program for the *sole purpose* of displaying U.S. 2008 unemployment rates by county as a choropleth map. 
+
+Rather, Bostock has created a *choropleth-map-making program* that, in his example, happens to display U.S. 2008 unemployment rates by county. 
 
 In other words, his choropleth code is a *reusable container* for data. This is more than a semantic difference, it's the sane mindset of every good developer. For our purposes though, it means that the data behind the map will likely be in their own (text) files, as it has been in the previous examples in the demo.
 
