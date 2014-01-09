@@ -41,12 +41,15 @@ Beware of the authorative-sounding nature of percentages, just because a claim i
 </span>
 
 <span class="my-notes">
-In the assertion above, it's not the rate _alone_ that is important, but the _population_ from which the grenade and knife death rates are derived. Are we talking about 0.5 deaths for every 100,000 _grenade owners_? Or just 100,000 in the _general population_? Because if it is the latter, then the comparison of death rate is nearly useless. Assuming that in a general (peacetime) population, there are far more knife owners than grenade owners, then the fact that grenade deaths are very rare could mean that just very few people are actually around grenades. If more people owned (and used) grenades in everyday life, the rates here are likely to change.
+It's not the rate _alone_ that is important, but the _population_ from which the grenade and knife death rates are derived. Are we talking about 0.5 deaths for every 100,000 _grenade owners_? Or just 100,000 in the _general population_? Because if it is the latter, then the comparison of death rate is nearly useless. 
+
+Assuming that in a general (peacetime) population, there are far more knife owners than grenade owners, then the fact that grenade deaths are very rare could mean that just very few people are actually around grenades. If more people owned (and used) grenades in everyday life, the rates here are likely to change.
 </span>    
 
 <span class="my-notes">
-There's an excellent real-life example of this in the New York Times. TK -
+There's an excellent real-life example of this in the [New York Times investigation into child gun  accidents](http://www.nytimes.com/2013/09/29/us/children-and-guns-the-hidden-toll.html?). A gun rights group is quoted as stating, "that children are '130 percent more likely to die from choking on their dinner' than from accidental shootings."
 
+That may be so. But nearly 100% of children in America eat dinner every day of their lives. Whereas a smaller percentage of children handle guns even on a weekly basis. 
 </span>
 
 
@@ -145,6 +148,51 @@ Here's one of the steps:
 
 **Now describe the rest of the steps.**
 
+<span class="my-notes">
+
+The point of this awkwardly worded exercise is to test the understanding of how different datasets can be joined together. Technically, there are __two__ different data __sources__: the restaurant inspections and the 311 reports.  However, the restaurant inspections consists of three tables:
+
+1. __Restaurant listings__ - the names and addresses of establishments.
+2. __Inspection reports__ - the names of restaurants, and the grades and dates of their inspections.
+3. __Violations noted__ - For each inspection, there can be more than one violation found.
+
+So let's start with doing the __two__ joins needed to merge these three tables together:
+
+1. The __foreign key__ between __restaurant listings__ and __reports__ is straightforward: Use the __restaurant name__ to connect each establishment to the inspections it received.
+2. While it is possible to join __violations__ directly to the __restaurant listings__ using the __name__ field , it makes more sense to join to the __inspections__ table first. We do this by concatenating the __inspection date__ and __restaurant __name__ fields in __violations__ and __inspections__ to serve as the __foreign key__ joining each violation to each inspection.
+
+The resulting merged restaurant inspections will look like this:
+
+
+
+<table class="table table-striped table-bordered"><thead><tr><th>Name</th><th>Address</th><th>Zip</th><th>Category</th><th>Health grade</th><th>Inspection date</th><th>Violation type</th></tr></thead><tbody><tr><td>Bob's Burgers</td><td>98 Broadway</td><td>10004</td><td>Burgers</td><td>B</td><td>10/14/2010</td><td>Refrigerator not cold enough</td></tr><tr><td>Bob's Burgers</td><td>98 Broadway</td><td>10004</td><td>Burgers</td><td>B</td><td>10/14/2010</td><td>Rodent droppings</td></tr><tr><td>Bob's Burgers</td><td>98 Broadway</td><td>10004</td><td>Burgers</td><td>C</td><td>4/14/2011</td><td>Rodent droppings</td></tr></tbody></table>
+
+By joining the tables, you end up having a row for every combination of restaurant and associated violation -- in the above example, I've added a couple of more hypothetical violations for "Bob's Burgers" to illustrate this __one-to-many__ relationship, i.e. each __restaurant__ has many __violations__. The fact that there's a lot of redundant data (e.g. the repeated addresses) here is just a little messiness we put up with for not using proper database software.
+
+__One note:__ Actually, you can just join the __restaurant listings__ directly to the __violations__ table, using the __name__ field, unless you care about the actual health grade, which we don't, for the purposes of this exercise.
+
+
+OK, now we join our merged table to the __311 reports__, which consists of a single table. But there's no obvious key between them. The 311 data just shows intersections, not exact addresses nor name of establishment.
+
+
+So the concept here is that data can be joined through _implied_, if not _exact_ relationships. The __intersections__ field is too varied to directly link it to restaurant addresses. However, __latitude__ and __longitude__, which is an unambiguous representation of location, is something we can work with.
+
+__We just have to get the latitude and longitude for each of the restaurant addresses__. Then we can associate 311 reports to restaurant locations via the [distance formula](https://www.khanacademy.org/math/algebra/linear-equations-and-inequalitie/more-analytic-geometry/v/distance-formula) (remember high school geometry class?)
+
+In this class, we didn't cover database query language or the kind of scripting that could easily generate these derived fields, so it's enough to explain it conceptually:
+
+> We create a new table of 311 reports and restaurant inspection data by associating every rodent report to a restaurant inspection __if the restaurant and 311 report are within 200 meeters of each other__
+
+One more detail: we aren't simply correlating the geographical proximity of inspections and rodent sightings, but also the __chronological__ timing. This is where the __inspection date__ is important to have, so that you can see if,__ within a certain number of weeks of a 311 rodent sighting__, nearby restaurants were also found to have rodent problems?
+
+It's important to realize that just because you have the data in an analyzable form doesn't mean that the analysis will be _sound_. For one thing, 311 reports are voluntary. Just because no one called in a rodent sighting doesn't mean there aren't rodents nearby. And places with a lot of 311 rodent reports may just be places where there happen to be a lot of watchful citizens. And of course, restaurant inspections are subject to human error.
+
+But testing those assumptions requires getting the data into shape _in the first place_, and that is its own problem-solving task... 
+</span>
+
+
+
+
 
 ## Visualization
 
@@ -161,21 +209,68 @@ The second map shows Math SAT scores in 2012:
 
 
 
-
-
 You can see the interactive versions of the maps in these links: [2010](https://www.google.com/fusiontables/DataSource?docid=104fGFiIH8MgjgQ41FhfYiuBOSv3c2uGtSM_eZZ4#map:id=5) and [2012](https://www.google.com/fusiontables/DataSource?docid=104fGFiIH8MgjgQ41FhfYiuBOSv3c2uGtSM_eZZ4#map:id=6)
 
 
 
-1. Describe how these maps might make the data *harder* to comprehend.
-2. Propose a different visualization that would more effectively make my point.
-3. If this data *must* be shown as a map, how can its visualization styles be changed to at least make it less confusing?
+\1. Describe how these maps might make the data *harder* to comprehend.
+
+The answer to this can basically be found in Matt Ericson's "[When Maps Shouldn't Be Maps](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/)". In musing whether a map overlaying Katrina flood damage and resident income, he writes:
+
+> But while maps like that are interesting to look at, it also forces readers who want to figure out the correlation between income and flooding to try and visually sum up all the colors on the map in their head. The map shows there’s low-income areas in the flooded areas and there’s also low-income areas outside the flooded areas. There’s middle- and upper-income areas in each, too. Unless the pattern is super clearcut, trying to figure out how much of a relationship exists is a tricky task.
+
+
+In my crude maps of SAT scores, I'm not even trying to show correlation between two data points, but just a simple comparison: each school's 2010 and 2012 average SAT math score. But to see if a school improved or declined, you not only have to look from one map to the other, but in that transition, you have to keep track of which dot was which color, and whether you're even looking at the correct dot.
+
+99% of the ink is devoted to showing __geographic data__ because, well, _that's what maps do_. And yet what we ostensibly care about is math scores per school, independent of where those schools are physically located.
+
+You may argue that it's worth looking at neighborhood income levels and finding a correlation between school SAT scores, but that's a different problem. For the question at hand &ndash; _which_ (not _why_) schools need better math instruction &ndash; a map provides more distraction than illumination.
+
+And to compound the problem, I've used 5 different colors, or "buckets", to divvy up the school performances, which only adds to the visual confusion.
 
 
 
------
+\2. Propose a different visualization that would more effectively make my point.
 
-That's all. [Email me](mailto:dcn1@nyu.edu) if you have any questions. The final is due to me (by email) on **Monday, November 4**. 
+Just about any of the simple visualization types, such as bar graphs, would be better. Or how about a simple table?
+
+TK IMG
+
+Now the interested reader can skim the table to see which schools are on a downward swing. Also, when it comes to SAT scores, it's not just _percentage_ of change that matters, but the actual scores themselves. A school that averages at 100 and improves to 200 is, by most educator's standards, a school that still requires math instruction, though the large change might help policymakers investigate positive factors that can be reinforced.
+
+\3. If this data *must* be shown as a map, how can its visualization styles be changed to at least make it less confusing?
+
+Summarize the data so that it can be shown on __one_ map and reduce the number of "buckets". This map could consist solely of dots colored red, green, or yellow, with the colors representing the difference between 2012 and 2010. This at least eliminates the difficulty of comparing two maps against each other:
+
+TKMAP img
+
+https://www.google.com/fusiontables/DataSource?docid=104fGFiIH8MgjgQ41FhfYiuBOSv3c2uGtSM_eZZ4#map:id=4
+
+
+__More thoughts on maps:__ In my class, most of our visualization work involved creating maps. However, this was not because maps were ideal, but because they were so easy to create once you figured out Google Fusion Tables. We didn't have enough time to cover basic data journalism concepts, data-joining/cleaning techniques, _and_ creating visualizations, so resorting to making maps of our datasets was a compromise.
+
+However, this is the state of web visualization in general. Creating interactive maps is so easy that once your dataset includes address data, _why not_ make a map out of it? Anecdotally, even if tables are clearer in presenting your analysis, maps always seem to grab more attention.
+
+For example, the New York Times' default view for its election results are maps. [Here's the page for the 2012 Senate races](http://elections.nytimes.com/2012/results/senate):
+
+
+
+
+
+The map is beautifully done, but look how much of it is wasted on non-existent data: the gray states in which no Senate race occurred. And even in the states that did have Senate races, does the map tell an interested viewer anything that isn't already obvious? Texas, Utah, Mississippi, et. al now have Republican senators. New York and California have Democratic senators. To find out any more about the races, you have to manually hover over each state.
+
+Now [check out the "Big Board" view of the Senate race](http://elections.nytimes.com/2012/results/senate/big-board):
+
+
+There's no "gray" ink here, every datapoint matters. Even more importantly, the results are given important context: which races were deemed tossups, and which party won those tossups. Winning or retaining the majority is an absolute game-changer for a political party, and the Big Board gets to that point with a minimum amount of fuss, whereas the nationwide map spends most of its ink reminding you where U.S. states are geographically located.
+
+But if you were to glance at the map versus the Big Board, which is immediately more pleasing and seemingly engaging? Or, to put it another way, if you were a designer, which of the two visualizations would you place first on your design portfolio?
+
+So the question of "which visualization is always better?" usually doesn't have an easy obvious answer. The Times' Matt Ericson explores the tradeoffs in map-based visualizations in his 2011 post, [When Maps Shouldn’t Be Maps](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/)
+
+
+
+
 
 
 
