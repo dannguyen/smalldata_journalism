@@ -269,16 +269,22 @@ h3.no_toc{
 
 
 table.references{
+
+
   
   font-family: $font-family-sans-serif;
   font-size: 14px;
+
+  th{
+    cursor: pointer;
+  }
 
   td{
     padding: 10px;
   }
   td.title-desc{
     max-width: 600px;
-    min-width: 350px;
+    min-width: 500px;
     .title{
       font-family: $font-family-serif;
       font-size: 16px;
