@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Dan Nguyen
-title:  "First Commit"
+title:  The reading list grows
 date:   2014-01-19 14:00:00
 categories: update
 permalink: /blog/more-readings-01-19
